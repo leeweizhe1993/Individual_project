@@ -1,0 +1,178 @@
+\section{量子色动力学, 杨-Mills 理论}
+
+~~~~略一思考就可发现, 使核子凝结成核的相互作用, 或者强子~(包括重子, 介子) 之间的相互作用, 是一种不同于万有引力或电磁力的新的相互作用; 我们称为强相互作用; 是物质间的四种基本相互作用之一. 正如其名字显示的那样, 强相互作用是四种基本相互作用中最强的. 对比于电磁相互作用的结构常数~$\alpha=\frac{e^2}{4\pi\hbar c}\approx137$, 强相互作用下可有~$\frac{g^2}{4\pi\hbar c}\approx1\sim10$. 另外, 强相互作用是一种短程力~(但比弱力稍长), 其作用矩离约为原子核中核子之间的矩离. 最后, 强相互作用比其它三种力, 有更大的对称性, 即有更多的守恒律. 量子色动力学理论, 把强相互作用归结为由夸克之间交换胶子而产生. 本章即来研究之.
+
+\subsection{夸克: 六种味与三种荷, 色空间的~SU(3) 规范变换, 八种胶子, 杨-Mills 规范场拉氏密度}
+~~~~
+夸克有~6 味: u,~d,~s,~c,~t,~b; 可用下标~$f=1,\cdots,6$ 标记. 每味又分~3 色~(所以算上反粒子, 夸克共有~36 种): R,~G,~B; 可用下标~$n=1,2,3$ 标记. 每味夸克的三个荷态, 都张成一个三维内部空间, 称为色空间, 可以表示为
+\begin{align}
+\psi=\psi_f=(\psi_1,\psi_2,\psi_3)^T.
+\end{align}
+注意夸克是自旋为 1/2 的费米子, 即每个色态~$\psi_n$ 都是狄拉克旋量. 于是~(自由) 夸克的拉氏密度就可写为
+~$\mathcal{L}_q=\bar{\psi}(i\gamma^\mu\partial_\mu-m)\psi$; 其中~$m$ 显然就成了矩阵, 称为质量矩阵. 注意夸克质量与色无关, 所以质量矩阵是常数倍的单位阵. 关于夸克有两个基本现象, 一是夸克的色禁闭, 另一是渐近自由.
+
+在夸克色的三维复空间内的保持矢量长度不变的转动操作~$U$~(是~$3\times3$ 的复矩阵, 有~18 个参数) 形成~SU(3) 群, 它是幺模~($\det U=1$) 幺正~($U^\dag U=1$) 的. 由此, $U$
+操作矩阵独立参数只有~8 个. 于是我们便可将~$U$ 矩阵用八个独立的厄米矩阵--称为盖尔曼矩阵\footnote{SU(3) 中盖尔曼矩阵的地位, 即类似于~SU(2) 情况下泡利矩阵的地位. 下面我们具体写出盖尔曼矩阵的形式
+\begin{gather}
+\lambda_1=\left[\begin{array}{ccc}0&1&0\\1&0&0\\0&0&0\end{array}\right],~\lambda_2=\left[\begin{array}{ccc}0&-i&0\\i&0&0\\0&0&0\end{array}\right],
+~\lambda_3=\left[\begin{array}{ccc}1&0&0\\0&-1&0\\0&0&0\end{array}\right],\nonumber\\
+\lambda_4=\left[\begin{array}{ccc}0&0&1\\0&0&0\\1&0&0\end{array}\right],~\lambda_5=\left[\begin{array}{ccc}0&0&-i\\0&0&0\\i&0&0\end{array}\right],\nonumber\\
+~~~~~~~\lambda_6=\left[\begin{array}{ccc}0&0&0\\0&0&1\\0&1&0\end{array}\right],~\lambda_7=\left[\begin{array}{ccc}0&0&0\\0&0&-i\\0&i&0\end{array}\right],~\lambda_8=\frac{1}{\sqrt{3}}\left[\begin{array}{ccc}1&0&0\\0&1&0\\0&0&-2\end{array}\right].
+\end{gather}}--$\lambda^a$ 表示为
+\begin{align}
+U=e^{i\theta_a\lambda^a/2}:=e^{i\theta_a T^a},~a=1,\cdots,8.
+\end{align}
+盖尔曼矩阵有性质~$\textrm{tr}\lambda^a=0,~\textrm{tr}\lambda^a\lambda^b=2\delta^{ab}$. SU(3) 群的李代数是
+\begin{align}
+[T_a,T_b]=if_{abc}T_c;
+\end{align}
+其中结构常数~$f_{abc}$ 对任意两个指标都是反对称的. 由雅可比恒等式~$[A,[B,C]]+[B,[C,A]]+[C,[A,B]]=0$, 可推出本群结构常数满足~$f_{ade}f_{bcd}+f_{bde}f_{cad}+f_{cde}f_{abd}=0$. 本群结构常数不为零的分量有
+\begin{gather}
+f_{123}=1,~f_{458}=f_{678}=\frac{\sqrt{3}}{2},\\
+f_{147}=-f_{156}=f_{246}=f_{257}=f_{345}=-f_{367}=\frac{1}{2}.
+\end{gather}
+
+
+
+夸克场在色空是的规范变换为~$\psi\rightarrow\psi'=U\psi=e^{i\theta_aT^a}\psi$. 自由夸克场在色空间具有严格的整体规范不变性. 下面我们来规范~(把一个整体对称性扩大为定域
+对称性, 我们往往称之为规范这个对称性; 一个整体对称性只有是严格的, 才能被规范) 这个对称性. 方法是显然的, 即我们仍然作从一般偏微分到协变微商的变换:
+$\partial_\mu\rightarrow D_\mu=\partial_\mu+iqA_\mu$; 并要求当~$D_\mu\rightarrow D'_\mu=\partial_\mu+iq A'_\mu$ 时,
+\begin{align}
+A_\mu\rightarrow A'_\mu=UA_\mu U^\dag+\frac{i}{q}(\partial_\mu U)U^\dag=UA_\mu U^\dag-\frac{i}{q}U\partial_\mu U^\dag,
+\end{align}
+我们就可得~$D_\mu\psi\rightarrow D'_\mu\psi'=UD_\mu\psi=UD_\mu U^\dag\psi'$, 或
+\begin{align}
+D_\mu\rightarrow D'_\mu=UD_\mu U^\dag.
+\end{align}
+也就是说, 这样, 我们就得到了一个定域规范不变的理论了: $\mathcal{L}_{q+qg}=\bar{\psi}(i\gamma^\mu D_\mu-m)\psi=\bar{\psi}(i\gamma^\mu \partial_\mu-m)\psi-q\bar{\psi}\gamma^\mu\psi A_\mu$.
+
+
+SU(3) 群生成元是内部空间的矩阵, 一般互不对易, 这样的群称为非阿贝尔群. 故我们称由~SU(3) 的转动不变性而引入的场, 为非阿贝尔场, 或杨-Mills 规范场.
+
+下面我们讨论~$A_\mu$ 的一般性质. 将前述~$A_\mu$ 的规范变换取共轭, 即有~$A^\dag_\mu\rightarrow A'^\dag_\mu=UA^\dag_\mu U^\dag-\frac{i}{q}U\partial_\mu U^\dag$; 于是可得~$A'^\dag_\mu-A'_\mu=U(A^\dag_\mu-A_\mu)U^\dag$. 也就是说, $A^\dag_\mu-A_\mu=0$ 规范不变. 这就意味着, 若我们在某规范下取定场~$A_\mu$ 是厄米的, 则它在任何规范下都是厄米的.
+
+
+因为~$\textrm{tr}T^a=0$, 所以可得~$\textrm{tr}A'_\mu=\textrm{tr}A_\mu$, 即规范场的迹是规范不变的. 于是我们可取定~$\textrm{tr}A_\mu=0$, 即相当于取定
+\begin{align}
+A_\mu=A^a_\mu T_a
+\end{align}
+此与夸克通过色耦合的~8 个~杨-Mills 规范场~$A^a_\mu$, 即~8 个胶子. 描述夸克色与它们相互作用的理论, 即称为~QCD: 量子色动力学.
+
+
+
+在无限小规范变换下, $U=e^{i\theta_a T^a}=1+i\theta_a T^a$, 于是我们有~$A_\mu\rightarrow A'_\mu=A_\mu+i\theta^a[T^a,A_\mu]-\frac{1}{q}\partial_\mu\theta_a\cdot T^a$; 进一步可得~
+\begin{align}
+A^a_\mu\rightarrow A'^a_\mu=A^a_\mu-f_{abc}\theta^bA^c_\mu-\frac{1}{q}\partial_\mu\theta^a:=A^a_\mu-\frac{1}{q}D_\mu^{ab}\theta^b,
+\end{align}
+其中~$D_\mu^{ab}=\delta^{ab}\partial_\mu+qf_{abc}A^c_\mu$.
+
+
+
+现在我们找出杨-Mills 规范场的拉氏密度. 在麦克斯韦场情况, 即~U(1) 规范场情形, 我们就可发现~$[D_\mu,D_\nu]=iqF_{\mu\nu}$; 在~杨-Mills 情形, 我们即把此即作为规范场~$F_{\mu\nu}$ 的定义:
+\begin{align}
+F_{\mu\nu}=\frac{1}{iq}[D_\nu,D_\nu]=\partial_\mu A_\nu-\partial_\nu A_\mu+iq[A_\mu,A_\nu].
+\end{align}
+我们已取~$\textrm{tr}A_\mu=0$, 故亦有~$\textrm{tr}F_{\mu\nu}=0$, 所以我们亦可将~$F_{\mu\nu}$ 表为~$F_{\mu\nu}=F^a_{\mu\nu}T_a$. 于是对此分量情况我们就可得~$F^a_{\mu\nu}=\partial_\mu A^a_\nu-\partial_\nu A^a_\mu-qf^{abc}A^b_\mu A^c_\nu$.
+
+我们考虑下述无限小规范变换
+\begin{align}
+F_{\mu\nu}\rightarrow F'_{\mu\nu}=&UF_{\mu\nu}U^\dag=F^a_{\mu\nu}UT_aU^\dag=F^a_{\mu\nu}T_a+i\theta^bF^a_{\mu\nu}[T^b,T^a]\nonumber\\
+=&(F^a_{\mu\nu}-f^{abc}\theta^bF^c_{\mu\nu})T^a,
+\end{align}
+也就是说~$F^a_{\mu\nu}\rightarrow F'^a_{\mu\nu}=F^a_{\mu\nu}-f^{abc}\theta^bF^c_{\mu\nu}$. 这表明, $F_{\mu\nu}$, 进而~$-\frac{1}{4}F_{\mu\nu}F^{\mu\nu}$, 是不具有规范不变性的; 同时亦可见具有规范不变性的是其迹, 即
+\begin{align}
+\mathcal{L}=-\frac{1}{2}\textrm{tr}F_{\mu\nu}F^{\mu\nu}=-\frac{1}{4}F^a_{\mu\nu}F^{\mu\nu}_a.
+\end{align}
+我们取上式为杨-Mills 规范场的拉氏密度.
+
+
+
+
+
+\subsection{杨-Mills 场的路径积分量子化, Faddeev-Popov 方法}
+~~~~
+所有可能的~$A_\mu$, 包括物理的~(不能用规范变换相联系) 与由规范变换联系着的, 张成一个超空间; 物理的子空间作为此空间的超曲面存在. 所谓规范条件, 即把~$A_\mu$ 的取值限定在某超曲面上的方程:
+\begin{align}
+G^a[A_\mu(x)]=0.
+\end{align}
+由于不同规范条件给出的物理结果是等价的, 所以此超曲面可以有多种不同的选择, 彼此亦是物理等价的.
+
+选定了超曲面后, 其上一点~(物理解), 通过规范变换就得到在此点上单穿过此曲面的一条曲线. 曲面上不同点的规范曲线互不相交. 总之, 物理超曲面通过规范变换构成高维简并空间, 即前述提到的超空间.
+
+为了践行上述思想, Faddeev 与~Popov 提出的办法, 是在生规范场的成泛函中插入下列等式:
+\begin{align}
+1=\Delta[A_\mu]\int\mathcal{D}U\delta[G[A^U_\mu]].
+\end{align}
+其中, $A^U_\mu$ 是由~$A_\mu$ 通过规范变换~$U$ 得到的~$A'_\mu$, 即由~$U$ 衍生出的规范曲线上的其它某点; 而~$\delta[G[A^U_\mu]]=\prod_{a,x}\delta\left(G^a[A^U_\mu(x)]\right)$ 是~$\delta$ 泛函. 上述~Faddeev-Popov 等式, 事实上即~$\Delta[A_\mu]$ 的定义. 因为泛函积分结果是一个行列式, 所以我们又称~$\Delta[A_\mu]$ 为~Faddeev-Popov 行列式. 相继做两次规范变换不难发现, Faddeev-Popov 行列式是规范不变的, 即有
+\begin{align}
+\Delta[A_\mu]=~\Delta[A^U_\mu].
+\end{align}
+
+现在我们写出引入~Faddeev-Popov 等式的生成泛函:
+\begin{align}
+Z[J]=\int\mathcal{D}A\mathcal{D}U\Delta[A_\mu]\delta[G[A^U_\mu]]e^{iS}=\int\mathcal{D}A\Delta[A_\mu]\delta[G[A_\mu]]e^{iS}.
+\end{align}
+我们将规范条件写作
+\begin{align}
+G^a[A_\mu(x)]=\Omega^a[A_\mu(x)]-\omega^a(x)=0,
+\end{align}
+则可得生成泛函为
+\begin{align}
+Z[J]=\int\mathcal{D}A\Delta[A_\mu]e^{i(S-\Omega^2/2\xi)}.
+\end{align}
+其中~$-\Omega^2/2\xi$ 就是规范固定项. 例如若取~$\Omega^a[A_\mu(x)]=\partial^\mu A_\mu^a$, 就得到我们在麦克斯韦场中所取的一般规范.
+
+为了能从生成泛函作具体运算, 我们还须将~Faddeev-Popov 行列式改写成指数形式. 由于这样的要求, Faddeev-Popov 行列式必须被写为~格拉斯曼数的泛函积分:
+\begin{align}
+\Delta[A_\mu]=\int\mathcal{D}\bar{\eta}\mathcal{D}\eta e^{-i\bar{\eta}M\eta}.
+\end{align}
+这相当于引入了一个与规范场耦合的又一种场~(消去多余自由度的代价是导致与鬼场的耦合); 但此场虽然引入了格拉斯曼变量, 却不是旋量场, 而是玻色场. 由于这种反常关系, 这种场并非物理的, 我们称之为~Faddeev-Popov 鬼场. 它只出现在圈中, 并不会成为外线. 总之, 杨-Mills 规范场完整的生成泛函就是
+\begin{align}
+Z[J]=\int\mathcal{D}A\Delta[A_\mu]e^{i(S-\Omega^2/2\xi-\bar{\eta}M\eta)};
+\end{align}
+其中
+\begin{align}
+\mathcal{L}_{\textrm{eff}}=\mathcal{L}_A-\frac{1}{2\xi}\Omega^2-\bar{\eta}M\eta,
+\end{align}
+包含的规范固定项与鬼项, 称为~Faddeev-Popov 拉氏密度.
+
+
+
+
+\subsection{BRST 对称性}
+~~~~
+在协变规范中, 含物质场的总~Faddeev-Popov 拉氏密度为
+\begin{align}
+\mathcal{L}=\bar{\psi}(i\gamma^\mu D_\mu-m)\psi-\frac{1}{4}(F^a_{\mu\nu})^2-\frac{1}{2\xi}(\partial^\mu A^a_\mu)^2-\bar{\eta}^a\partial^\mu D^{ab}_\mu\eta^b.
+\end{align}
+我们可以将鬼场诠释为亦由规范变换所引入的一个场, 即将变换参数表为
+\begin{align}
+\theta^a=-g\epsilon\eta^a;
+\end{align}
+其中~$\epsilon$ 是格拉斯曼数. 于是规范场与夸克场的规范变换~(无穷小) 就是
+\begin{align}
+\delta A^a_\mu=\epsilon D_\mu^{ab}\eta^b,~\delta\psi=-ig\epsilon \eta^a T^a\psi.
+\end{align}
+为了保持总拉氏密度在上述变换下保持不变, 鬼场还应有如下变换行为
+\begin{align}
+\delta\eta^a=\frac{1}{2}g\epsilon f^{abc}\eta^b\eta^c,~\delta\bar{\eta}^a=-\frac{\epsilon}{\xi}\partial^\mu A^a_\mu.
+\end{align}
+上两式与前两式, 合称为~BRST 变换. 可以验证, 上述总拉氏密度, 在~BRST 变换下的确是不变的.
+
+在~BRST 变换下的不变性, 又称为~BRST 对称性. 本小节拉氏密度的~BRST 对称性, 是一种变换参数为~$\epsilon$ 的整体对称性; 其中包含了物质场与规范场的定域不变性. 总之可见, BRST 对称性是定域规范对称性的一种拓展.
+%\begin{align}
+%\mathcal{L}=\overline{\psi}(i\gamma ^\mu D_\mu -m)\psi+\sum _{k=1}^{\dim (G)}\left[ \frac{-1}{4}F_{\mu\nu}^kF^{\mu \nu k}+\frac{1}{2\xi}(\partial _\mu A^{\mu
+%k})^2+\sum _{i=1}^{\dim (G)}\overline{c}^k(-\partial _\mu D^{\mu ki})c^i\right] .
+%\end{align}
+
+一般地, 我们可以把任意一个场的~BRST 变换表为~$\delta \phi=\epsilon Q\phi$; 其中~$Q$ 是作用于场上的算符, 称为~BRST 算符. 可以求得一般地我们有
+\begin{align}
+Q^2=0;
+\end{align}
+我们将此事称为~BRST 变换或算符是零幂的.
+
+
+
+
+
+

@@ -1,0 +1,472 @@
+\section{电弱统一: GWS 理论; 标准模型}
+
+%CKM 混合, 夸克味变, 代变; 但轻子似乎尚无.
+
+\subsection{电弱相互作用的拉氏密度: 以轻子为例; 初始轻子无质量; 弱同位旋, 弱超荷; 温伯格转动, 弱混合角; Gell-Mann-Nishijima 公式; 弱同位旋的带电流与中性流}
+%我们已道, 在~QED 理论中, 电磁相互作用影响所有带电荷的粒子, ~QCD 中强相互作用影响所有带色荷的粒子; 稍后将发现, 在~GWS 理论中, 我们把粒子间的弱相互作用归结为粒子所带的弱同位旋及其中间玻色子的作用.
+~~~~诸如~$\beta$ 衰变等原子核/亚原子粒子的放射性衰变, 其中必须有一种能改变粒子的味量子数的基本相互作用的参与. 我们称这种相互作用为弱相互作用. 弱作用是四种基本相互作用中作用距离最短的, 低能时近似成为四费米子的直接的定域相互作用, 中间玻色子有很大的质量. 另外, 弱作用必须要有带电的中间玻色子. 在基本粒子中, 弱相互作用影响所有费米子~(轻子, 夸克), 以及希格斯玻色子. 本节, 我们将以轻子为例. 我们知道, 6 个~(称为~6 种味; 算上反粒子则共有~12个) 轻子共分三代, 其中电子~$\mu$ 子与~$\tau$ 子带电, 相应的中微子不带电, 且质量极小.
+
+1956 年, 杨振宁与李政道指出弱作用过程中宇称~$P$ 不守恒. 以后人们进一步认识到, 在弱作用过程中~(以及在任何时候), 中微子总是左旋的. 这为我们进一步构建弱作用的理论, 指明了方向: 因为质量项会造成左右旋的耦合, 所以以上发现就意味着, 弱相互作用拉氏密度中轻子不能有质量项. 也就是说, 我们假设初始轻子是无质量的. (而轻子往往是有质量的; 质量如何获得? 这将由下一节的希格斯机制赋予.)  于是我们可将轻子的电弱拉氏密度写为
+\begin{align}
+\mathcal{L}_{EW}=\sum_{e:=e,\mu,\tau}i(\bar{e}\gamma^\mu\partial_\mu e+\bar{\nu_e}\gamma^\mu\partial_\mu\nu_e);
+\end{align}
+其中我们已采取粒子物理中的习惯, 即将某种粒子的场就用彼种粒子的符号表示. 我们假设每代轻子的左旋分量, 构成一个二维内部空间--称为弱同位旋空间--的矢量, 记为
+\begin{align}
+L_e:=\left[\begin{array}{c}\nu_e\\e_L\end{array}\right];
+\end{align}
+称为弱同位旋二重态. 显然, 弱同位旋空间具有~SU(2) 群的对称性, 其转动操作/规范变换为~$e^{i\alpha^iT^i}=e^{i\alpha^i\sigma^i/2}$; 其中~$\sigma^i$ 是二维复空间转动的成生元, 即泡利矩阵. 这就意味着, $L$ 具有同位旋~$T=1/2$, 即~$TL=\frac{1}{2}\sigma L$; 而考察同位旋的第三分量, 中微子与相应的荷电子分另别具有~$T^3=1/2$ 与~$-1/2$. 另外, 我们定义~$R_e=e_R$~(事实上, 在有双重态与单态相作用时, 我们应取~$R_e=\left[\begin{array}{c}0\\e_R\end{array}\right]$), 并称其具有同位旋量值为~0, 命名为弱同位旋单态. 至此, 我们可将电弱拉氏密度进一步表为
+\begin{align}
+\mathcal{L}_{EW}=i\bar{L}_e\gamma^\mu\partial_\mu L_e+i\bar{R}_e\gamma^\mu\partial_\mu R_e;
+\end{align}
+其中略去了求和符号, 有时我们也可将脚标~$e$ 略去. 另注意此时~$\bar{L}=L^\dag\left[\begin{array}{cc}\gamma^0&0\\0&\gamma^0\end{array}\right]$; 也就是说, 在弱同位旋二重态这个由两个狄拉克旋量构成的空间中, 要么把~$\gamma^\mu$ 看成具有直接移动的功能, 要么把它看作~$\left[\begin{array}{cc}\gamma^\mu&0\\0&\gamma^\mu\end{array}\right]$.
+
+下面我们继续对弱作用规范变换的研究. 除了上述提到的~SU(2) 对称性, 弱作用拉氏量对~SU(1) 规范变换~$e^{i\beta Y_W/2}$ 亦是不变的; 其中~$Y_W$ 称为弱超荷算符, 它在二重态与单态上的本征值记为~$Y_W L=Y_L L,~Y_W R=Y_R R$; $Y_{L/R}$ 的具体数值, 我们将在稍后确定. 最后, 显然可见同位旋空间对~$T_W$ 是简并的, 即有~$[T^i,Y_W]=0$; 于是我们可得电弱相互作用的两种规范变换可合写为
+\begin{align}
+U=e^{i\beta Y_W/2+i\alpha^iT^i}.
+\end{align}
+
+%电荷是对应是酉一的荷, 这是单一的电磁相互作用中的情况; 在电弱下, 酉一对应弱超荷, 酉二对应弱同位旋. 完美!
+
+下面, 我们来规范电弱相互作用的两种规范对称性, 亦即进行引入规范场的工作. 当然, 这仍从写出协变微商开始:
+\begin{align}
+D_\mu=\partial_\mu+igT^iW_\mu^i+i\frac{1}{2}g'Y_WB_\mu.
+\end{align}
+具体地, 协变微商作用在弱同位旋单态与二重态上分别为
+\begin{align}
+D_\mu R_e=&\left(\partial_\mu+i\frac{1}{2}g'Y_R B_\mu\right)R_e,\\
+D_\mu L_e=&\left(\partial_\mu+ig\frac{1}{2}\sigma^iW_\mu^i+i\frac{1}{2}g'Y_L B_\mu\right)L_e\nonumber\\
+=&\partial_\mu L_e+\frac{i}{2}\left[\begin{array}{cc}gW_\mu^3+g'Y_LB_\mu&gW_\mu^1-igW_\mu^2\\gW_\mu^1+igW_\mu^2&-gW_\mu^3+g'Y_LB_\mu\end{array}\right]\left[\begin{array}{c}\nu_e\\e_L\end{array}\right]\nonumber\\
+:=&\partial_\mu L_e+\frac{i}{2}\left[\begin{array}{cc}gW_\mu^0+g'Y_LB_\mu&\sqrt{2}gW^+_\mu\\\sqrt{2}gW^-_\mu&-gW_\mu^0+g'Y_LB_\mu\end{array}\right]\left[\begin{array}{c}\nu_e\\e_L\end{array}\right].
+\label{weinberg}
+\end{align}
+可以看出, 上式中
+\begin{align}
+W^+_\mu:=\frac{1}{\sqrt{2}}(W_\mu^1-iW_\mu^2),~
+W^-_\mu:=\frac{1}{\sqrt{2}}(W_\mu^1+iW_\mu^2)
+\end{align}
+是具有明确的物理意义的, 即为传递弱相互作用的两种~(带电的) 中间玻色子. 同时亦可看出, $W^0_\mu:=W^3_\mu$ 与~$B_\mu$ 因为同时与中微子与带电轻子耦合, 所以不可能被诠释为弱作用或电磁作用各自的规范场. 但动动脑子不难想出, 后者, 必当是~$W^0_\mu$ 与~$B_\mu$ 的叠加; 我们假设此叠加为一酉转动:
+\begin{align}
+\left[\begin{array}{c}A_\mu\\Z^0_\mu\end{array}\right]=\left[\begin{array}{cc}\cos\theta_W&\sin\theta_W\\-\sin\theta_W&\cos\theta_W\end{array}\right]
+\left[\begin{array}{c}B_\mu\\W^0_\mu\end{array}\right].
+\end{align}
+上式称为温伯格转动, 而~$\theta_W$ 称为弱混合角, 或温伯格角. 下面的事情, 就是要确定下此角. 不难看出, 在原式~(\ref{weinberg}) 中, 含~$A_\mu$ 又与中微子耦合的项是矩阵中左上角一项; 于是用温伯格转动反解出
+\begin{align}
+B_\mu=&\cos\theta_W\cdot A_\mu-\sin\theta_W \cdot Z^0_\mu,\\
+W^0_\mu=&\sin\theta_W\cdot A_\mu+\cos\theta_W \cdot Z^0_\mu,
+\end{align}
+就可算出此项是
+\begin{align}
+gW_\mu^0+g'Y_LB_\mu=(g\sin\theta_W+g'Y_L\cos\theta_W)A_\mu+(g\cos\theta_W-g'Y_L\sin\theta)Z^0_\mu.
+\end{align}
+当然, 为了把~$A_\mu$ 诠释为电磁相互作用的中间玻色子~(于是~$Z^0_\mu$ 就成了弱作用的第三种中间玻色子, 是不带电的), 我们必须要求它与中微子是没有耦合的, 即要求~$g\sin\theta_W+g'Y_L\cos\theta_W=0$; 于是可得
+\begin{align}
+\sin\theta_W=\frac{-g'Y_L}{\sqrt{g^2+g'^2Y_L^2}},~\cos\theta_W=\frac{g}{\sqrt{g^2+g'^2Y_L^2}}.
+\end{align}
+温伯格角的具体数值, 必须由实验得出; 最新测值约为~$\sin^2\theta_W=0.2223(21)$. 通过简单的叠加, 就得到了物理的规范场, 温伯格转动实至妙哉, 美哉!
+
+现在, 我们来分离中前述电弱相互作用中的电磁部分; 此项即~(\ref{weinberg}) 中矩阵的右下角一项:
+\begin{align}
+D_\mu=&\partial_\mu+ig'\frac{1}{2}Y_W\cos\theta_W A_\mu+igT^3\sin\theta_W A_\mu\nonumber\\
+=&\partial_\mu+ig'\cos\theta_W(\frac{Y_W}{2}-Y_LT^3)A_\mu.
+\end{align}
+与我们已知的电磁作用的协变微商作比较, 我们可得~$g'\cos\theta_W:=e$ 是基本电荷; 而圆括号中的一项即电荷算符:
+\begin{align}
+Q=-Y_LT^3+\frac{Y_W}{2}.
+\end{align}
+上式与强相互作用中的~Gell-Mann-Nishijima 公式具有相同的形式. 要求以上算符作用于单态与二重态给出正确的电荷量子数, 即~$QR=Y_R/2=-1,~QL=Q\left[\begin{array}{c}\nu_e\\e_L\end{array}\right]=
+\left[\begin{array}{c}(-Y_L\frac{1}{2}+\frac{Y_L}{2})\nu_e\\(Y_L\frac{1}{2}+\frac{Y_L}{2})e_L\end{array}\right]=\left[\begin{array}{c}0\cdot\nu_e\\1\cdot e_L\end{array}\right]$, 我们就可得出
+\begin{align}
+Y_L=-1,~Y_R=-2.
+\end{align}
+据此, 我们可将前述所有出现~$Y_L,~Y_R$ 的式子进行化简, 例如~$Q=T^3+\frac{Y_W}{2}$, 或电荷
+\begin{align}
+e=g'\cos\theta_W=\frac{gg'}{\sqrt{g^2+g'^2}}=g\sin\theta_W.
+\end{align}
+至此, 我们可进一步将式~(\ref{weinberg}) 写为
+\begin{align}
+D_\mu L_e=&\partial_\mu L_e+\frac{i}{2}\left[\begin{array}{cc}\sqrt{g^2+g'^2}Z^0_\mu&\sqrt{2}gW^+_\mu\\\sqrt{2}gW^-_\mu&-2eA_\mu+\frac{g'^2-g^2}{\sqrt{g^2+g'^2}}Z^0_\mu\end{array}\right]\left[\begin{array}{c}\nu_e\\e_L\end{array}\right].
+\end{align}
+写出具有定域规范不变, 即引入与规范场耦合的轻子拉氏密度, 就是简单不过的事了:
+\begin{align}
+\mathcal{L}_{\textrm{free+int}}=i\bar{L}_e\gamma^\mu D_\mu L_e+i\bar{R}_e\gamma^\mu D_\mu R_e=\mathcal{L}_{\textrm{free}}+\mathcal{L}_{\textrm{int}};
+\end{align}
+其中相互作用部分为
+\begin{align}
+\mathcal{L}_{\textrm{int}}=&-\frac{1}{2}(\nu_e^\dag,e_L^\dag)\left[\begin{array}{cc}\gamma^0&0\\0&\gamma^0\end{array}\right]
+\left[\begin{array}{cc}\sqrt{g^2+g'^2}Z\!\!\!\!/~^0 &\sqrt{2}gW\!\!\!\!\!/~^+\\\sqrt{2}gW\!\!\!\!\!/~^-&-2eA\!\!\!/+\frac{g'^2-g^2}{\sqrt{g^2+g'^2}}Z\!\!\!\!/~^0\end{array}\right]
+\left[\begin{array}{c}\nu_e\\e_L\end{array}\right]\nonumber\\
+&+\bar{R}_e\left(eA\!\!\!/-\frac{g'^2Z\!\!\!\!/~^0}{\sqrt{g^2+g'^2}}\right)R_e=\mathcal{L}_{eA}+\mathcal{L}_{lW}+\mathcal{L}_{lZ};
+\end{align}
+最后的标记意味上述相互作用拉氏密度可分为电磁耦合项, 轻子-$W$ 耦合项以及轻子-$Z$ 耦合项; 下面我们分别写出. 电磁耦合项为
+\begin{align}
+\mathcal{L}_{eA}=e\bar{e}_L\gamma^\mu A_\mu e_L+e\bar{e}_R\gamma^\mu A_\mu e_R=e\sum_{l=e,\mu,\tau}\bar{\psi}_l\gamma^\mu A_\mu \psi_l,
+\end{align}
+这完全就是我们在~QED 中的结论. 轻子与~$W^\pm$ 耦合的项为
+\begin{align}
+\mathcal{L}_{lW}=-\frac{g}{\sqrt{2}}\sum(\bar{\nu}_e\gamma^\mu W_\mu^+ e_L+\bar{e}_L\gamma^\mu W_\mu^-\nu_e).
+\end{align}
+现在我们找出本场的守恒流, 顺便像以前在~QED 中所做的那样, 把上述拉氏密度耦合项表为流与规范场相乘的形式. 应用诺特定理的守恒流表达式~(\ref{noether cu.}), 我们可求出本轻子场的守恒矢量流为
+\begin{align}
+j^{\mu i}=\sum \bar{L}_e\gamma^\mu\sigma^iL_e.
+\end{align}
+若再命~$j^{\mu\pm}=j^{\mu1}\pm ij^{\mu2},~\sigma^{\pm}=(\sigma^1\pm i\sigma^2)/2$, 则我们可得
+\begin{align}
+j^{\mu\pm}=\sum 2\bar{L}_e\gamma^\mu\sigma^\pm L_e.
+\end{align}
+由此~$\mathcal{L}_{lW}$ 就可进一步表为
+\begin{align}
+\mathcal{L}_{lW}=-\frac{g}{2\sqrt{2}}\sum(j^{\mu+}W_\mu^++j^{\mu-}W_\mu^-).
+\end{align}
+在弱作用研究的早期, 人们正是以先猜定上述带电弱流表达式来工作的. 下面我们写出~$\mathcal{L}_{lZ^0}$ 项:
+\begin{align}
+\mathcal{L}=&-\frac{1}{2}\left( \sqrt{g^2+g'^2}\bar{\nu}_e\gamma^\mu\nu_eZ_\mu^0+ \frac{g'^2-g^2}{\sqrt{g^2+g'^2}}\bar{e}_L\gamma^\mu e_L Z_\mu^0
++ \frac{2g'^2}{\sqrt{g^2+g'^2}}\bar{e}_R\gamma^\mu e_RZ_\mu^0\right)\nonumber\\
+=&-\frac{1}{2}\left( \sqrt{g^2+g'^2}\bar{L}_e\gamma^\mu\sigma^3L_eZ^0_\mu+\frac{2g'^2}{\sqrt{g^2+g'^2}}\bar{e}\gamma^\mu eZ^0_\mu\right)\nonumber\\
+=&-\frac{1}{2}\frac{g}{\cos\theta_W}\sum\left(\bar{L}_e\gamma^\mu\sigma^3L_e+2\sin^2\theta_W\bar{e}\gamma^\mu e\right)Z^0_\mu;
+\end{align}
+%矩阵, 就是对谁有怎样不同的值. 所以, 一个量子力学量算符, 即可以作为矩阵, 又可以简单指定出它作用在不同量子态上的值是多少. 这两种方法是一致的.
+%三个轻子弱流, 两个改变电荷, 一个不变. 三个分别与三个玻色子耦合.
+前述我们已预猜~$Z^0_\mu$ 是传递弱作用的不带电的玻色子, 这由上式可以得证: 上述表明~$Z^0_\mu$ 即能与带电轻子耦合又能与中微子耦合, 而中微子不带电, 即不接受电磁作用, 于是~$Z^0_\mu$ 只能是传递弱作用的中间玻色子. 另外, 在上述结果中
+\begin{align}
+j^{\mu0}:=\bar{L}_e\gamma^\mu\sigma^3L_e+2\sin^2\theta_W\bar{e}\gamma^\mu e
+\end{align}
+即为轻子场与~$Z^0_\mu$ 中性玻色子耦合的中性弱流. 此中性流是由理论首先预言, 而后由实验证实的. 此一事情, 亦大大促使了人们对本电弱统一理论的接受.
+
+
+前文已经提到过, 本节的理论, 我们假设了参与电弱作用的初始轻子与规范粒子都是无质量的. 不同于此假设, 事实上, 不仅电子等轻子, 就连弱作用的中间玻色子都是有质量的; 而且后者的质量还十分地大~(参与规范变换的是获得质量前的弱作用玻色子, 且是后者的叠加, 所以真实弱中间玻色子有质量与规范粒子必须无静质量这个看似的矛盾, 就得以解开). 如何让它们获得质量, 我们即将在下一节中探讨.
+
+
+
+\subsection{整体规范对称性的自发破缺, 希格斯场, Goldstone 定理; 定域破缺, 希格斯机制: 规范场吃掉~Goldstone 玻色子获得质量; $W^\pm,~Z^0$ 以及轻子的质量的获得}
+
+~~~~
+复标量场~$\phi=\chi_1+i\chi_2$ 的~$\phi^4$ 模型为
+\begin{align}
+\mathcal{L}=\partial_\mu\phi^\dag\partial^\mu\phi-m^2\phi^\dag\phi-\lambda(\phi^\dag\phi)^2:=\partial_\mu\phi^\dag\partial^\mu\phi-V(\phi,\phi^\dag);
+\end{align}
+上式当然是具有整体规范~$\phi\rightarrow\phi'=e^{i\gamma}\phi$ 不变性的. 场的基态/真空对应于势能的极小:
+\begin{align}
+\frac{\partial}{\partial\phi^\dag}V=m^2\phi+2\lambda\phi(\phi^\dag\phi)=0.
+\end{align}
+当~$m^2>0$, 上式给出的极小点为~$\phi=\phi^\dag=0$, 即真空在复平面坐标零点, 是惟一的. 而若~$m^2<0$, 复平面坐标零点反倒成了势能极大处, 不再是场的真空; 场的真空处满足
+\begin{align}\label{va}
+|\phi|^2=\chi_1^2+\chi_2^2=-\frac{m^2}{2\lambda}:=a^2,
+\end{align}
+即~$|\phi|=a$. 也就是说, 距复平面零点距离为~$a$ 的圆线上的所有点, 都是场的真空; 场的真空此种状况下是无限简并的.
+
+拉氏量对各个真空都是对称的; 但物理的真空, 只是诸多真空中的一个, 不再具有规范变换~(相位变换, 即复平面内的转动). 我们把这件事情, 称为场~$\phi$ 的~(真空的) 自发对称破缺.
+
+
+另外, 式~(\ref{va}) 亦表明, 场的真空期待值为~$|\langle0|\phi|0\rangle|^2=a^2$. 这种真空期待期不为零的场, 我们称之为希格斯场.
+
+\begin{figure}[!h]
+\begin{center}
+\includegraphics[width=5.0 cm]{pic/mexican.jpg}
+\caption{``墨西哥帽'' 势: 复标量场~$\phi^4$ 模型的自发对称破缺.}
+\label{Casimir}
+\end{center}
+\end{figure}
+
+实验上测到的各种粒子, 都是场在真空基础上的激发; 于是我们上述场的基态~$\phi=a$ 分离出来, 即命
+\begin{align}
+\phi=a+\frac{1}{\sqrt{2}}(h+i\rho).
+\end{align}
+也就是说, 此时~$h,~\rho$ 就是可以观测到的物理的场了. 将上述式子代入原始拉氏密度, 可得
+\begin{align}
+\mathcal{L}=\frac{1}{2}(\partial_\mu h)^2+\frac{1}{2}(\partial_\mu \rho)^2-\lambda v^2h^2-\lambda vh(h^2+\rho^2)-\frac{\lambda}{4}(h^2+\rho^2)^2;
+\end{align}
+其中~$v:=\sqrt{2}a$. 上述推导中, 应用了式~(\ref{va}), 并略去了常数项. 由上式显然可见, 场~$h$ 具有质量
+\begin{align}
+m_H=\sqrt{2\lambda}v;
+\end{align}
+希格斯场的这种粒子, 称为希格斯粒子. 另外, 还可以看出, 场~$\rho$ 无质量. 一般地, 一个连续对称性的自发破缺, 会导致无质量场/粒子的存在, 这称为~Goldstone 定理; 相应的场/粒子就称为~Goldstone 场/粒子. 注意此处只是~Goldstone 定理的一例简单体现, 具体证明我们将在稍后给出.
+
+虽然上述模型以~$m^2<0$ 为例得到了整体对称性的自发破缺, 但可以表明对于内部空间的矢量, 质量矩阵却必定是非负的. 现在设~$\phi$ 是某~$N$ 维内部空间的列矢, 其拉氏密度一般地写为~$\mathcal{L}=\partial_\mu\phi^\dag\partial_\mu\phi-V(\phi)$; 势能在~$\phi=\phi_0$ 处有极小值, 即~$\frac{\partial V}{\partial\phi_a}\Big|_{a}=0$. 那么, 考虑考在此真空附件的激发, 就有
+\begin{align}
+V(\phi)=&V(\phi_0)+\frac{1}{2}\frac{\partial^2V}{\partial_\mu\phi_a\partial\phi_b}\Big|_{\phi=\phi_0}\delta\phi_a\delta\phi_b+O(\delta\phi^3)\\
+:=&V(\phi_0)+\frac{1}{2}m_{ab}\delta\phi_a\delta\phi_b+O(\delta\phi^3).
+\end{align}
+只要对真空产生了哪怕任何一点偏离, 则势能变化都是正值, 于是由上式可见必有~$m_{ab}\geq0$. 现在, 我们来具体研究内部空间矢量场的~Goldstone 定理. 仍设~$\phi$ 是某~$N$ 维内部空间的列矢, 则它就有规范变换~$\phi'=e^{i\theta_a T^a}\phi$. 现在, 我们在真空处对此规范变换进行展开~(区别于之前的场对真空的左右偏离), 则有
+\begin{align}
+V(\phi_0)=V(\phi'_0)=V(\phi_0)+\frac{1}{2}m_{ab}\delta\phi_a\delta\phi_b+\cdots;
+\end{align}
+于是可得~$m_{ab}\delta\phi_a\delta\phi_b=0$. 这意味着, 若~$\delta\phi_a,~\delta\phi_b$ 皆不为零, 则必有~$m_{ab}=0$. 而~$\delta\phi_a$ 不为零, 意即两个不同的态皆为真空, 这说明真空发生简并, 对称性自发破缺. 从而我们确证, 对称性自发破缺, 必导致无质量粒子的存在. 此即~Goldstone 定理. 另外, 上述分析过程还表明, 质量矩阵为零的维数, 就是真空发生自发对称破缺的维度, 同时也就是~Goldstone 粒子的数目~$N_G$; 而有质量的粒子, 即希格斯子的数目,  一般地即~$N-N_G$.
+
+前文我们讨论的, 是整体规范对称性的自发破缺, 下面我们讨论定域规范对称性的自发破缺; 后者又或称为自发规范破缺. 先考虑阿贝尔规范场情况; 我们仍以复标量场为例. 引入规范场与~$\phi^4$ 自作用后的具有定域规范对称性的拉氏密度为
+\begin{align}
+&\mathcal{L}=D_\mu\phi^\dag D^\mu\phi-m^2\phi^\dag\phi-\lambda(\phi^\dag\phi)^2-\frac{1}{4}F_{\mu\nu}F^{\mu\nu}\nonumber\\
+=&\partial_\mu\phi^\dag\partial^\mu\phi-m^2\phi^\dag\phi-\lambda(\phi^\dag\phi)^2-iq\phi^\dag\overset{\leftrightarrow}{\partial}_\mu\phi A^\mu+q^2A^2\phi^\dag\phi-\frac{1}{4}F_{\mu\nu}F^{\mu\nu};
+\end{align}
+仍选择~$\phi=a+\frac{1}{\sqrt{2}}(h+i\rho)$, 则代入上式就可得
+\begin{align}
+\mathcal{L}=&\frac{1}{2}(\partial_\mu h)^2+\frac{1}{2}(\partial_\mu \rho)^2-\lambda v^2h^2-\frac{1}{4}F_{\mu\nu}F^{\mu\nu}+\frac{1}{2}q^2v^2A^2\nonumber\\
+&-\lambda vh(h^2+\rho^2)-\frac{\lambda}{4}(h^2+\rho^2)^2+qv\partial_\mu\rho A\nonumber\\
+&+qh\overset{\leftrightarrow}{\partial}_\mu\rho A^\mu+q^2vhA^2+\frac{1}{2}q^2(h^2+\rho^2)A^2.
+\end{align}
+由上式可读出, $h,~\rho$ 的情况与整体规范情形是一样的; 而好消息是, 规范场获得了质量~$qv$. 上述式子第二行最后一项, 表明~Goldstone 玻色子与光子有耦合. 事实上, 同作为无质量以光速运动的粒子, Goldstone 玻色子与光此时是不可分辨的; 或者说形象地说, Goldstone 玻色子将会被光子吃掉. 数学上, 我们直接以令其为零的方式将其消去, 即:
+\begin{align}
+\mathcal{L}=&\frac{1}{2}(\partial_\mu h)^2-\lambda v^2h^2-\frac{1}{4}F_{\mu\nu}F^{\mu\nu}+\frac{1}{2}q^2v^2A^2\nonumber\\
+&-\lambda vh^3-\frac{\lambda}{4}h^4+q^2vhA^2+\frac{1}{2}q^2h^2A^2.
+\end{align}
+由此, 我们称在自发规范破缺情况下, 规范粒子通过吃掉~Goldstone 玻色子/与希格斯玻色子耦合, 进而获得质量. 我们这种使规范粒子获得质量的机制, 叫安德森-希格斯机制. 事实上, 使~Goldstone 玻色子消去, 相当于选取了特定的规范; 我们称上述所选的情况, 叫物理规范或幺正规范. 另外一种消去~Goldstone 玻色子与规范场耦合项~$qv\partial_\mu\rho A$ 的做法, 称为~$R_\xi$ 规范, 或称为~'t Hooft 规范, 可重整化~$\xi$ 规范, 其条件为
+\begin{align}
+\Omega[A_\mu]=\partial_\mu A^\mu-\xi qv\rho;
+\end{align}
+因此可得
+\begin{align}
+-\frac{1}{2\xi}(\partial_\mu A^\mu-\xi qv\rho)^2+qv\partial_\mu\rho A=-\frac{1}{2\xi}(\partial_\mu A^\mu)^2+\frac{1}{2}\xi q^2 v^2\rho^2+qv\partial_\mu(\rho A).
+\end{align}
+上式最后一项是全散度项, 可以直接舍去. 此规范下, Goldstone 玻色子与规范场的耦合项消去了, 但前者仍在; 不过因为其质量~$\sqrt{\xi}qv$ 是非物理的, 所以最后可以消去. ~$R_\xi$ 规范的长处在于高能时的计算以及可重整化的证明.
+
+
+
+下面我们对分离真空说一说明, 以简化以后的运算. 以前述自发规范破缺为例, 计算一下不难确证, 消去~Goldstone 玻色子的幺正规范, 相当于在一开始就选定
+\begin{align}
+\phi=\frac{1}{\sqrt{2}}(v+h).
+\end{align}
+所有我们亦可以直接称上式为物理/幺正规范.
+
+现在, 我们来研究杨-Mills 规范场的情形. 我们考虑具有复二维内部空间~(即同位旋空间) 的复标量场~$\phi=(\phi^+,\phi^0)^T$. 当~$m^2<0$ 时, 此场真空条件是
+\begin{align}\label{va}
+|\phi|^2=\chi_1^2+\chi_2^2+\chi_3^2+\chi_4^2=-\frac{m^2}{2\lambda}=a^2;
+\end{align}
+上式自由参数有~3 个, 意味着本场的自发对称破缺出来的~Goldstone 玻色子有~3 个. 与前文相似, 选择
+\begin{align}
+\phi=\frac{1}{\sqrt{2}}\left[\begin{array}{c}0\\v+H\end{array}\right]
+\end{align}
+就可让这三个~Goldstone 玻色子被弱作用的三个规范场吃掉. 于是可得~$\phi$ 的引入规范场与~$\phi^4$ 自作用后的具有定域规范对称性的拉氏密度及其代化为
+\begin{align}
+&\mathcal{L}=D_\mu\phi^\dag D^\mu\phi-m^2\phi^\dag\phi-\lambda(\phi^\dag\phi)^2-\frac{1}{4}F^i_{\mu\nu}F_i^{\mu\nu}\nonumber\\
+=&\partial_\mu\phi^\dag\partial^\mu\phi-i\phi^\dag\overset{\leftrightarrow}{\partial}_\mu\phi A^\mu+q^2A^2\phi^\dag\phi-m^2\phi^\dag\phi-\lambda(\phi^\dag\phi)^2-\frac{1}{4}F^i_{\mu\nu}F_i^{\mu\nu}\nonumber\\
+=&\frac{1}{2}(\partial_\mu h)^2+\frac{1}{2}g^2(v+h)^2A^2-\frac{\lambda}{4}(h^4+4vh^3+4v^2h^2-v^4)-\frac{1}{4}F^i_{\mu\nu}F_i^{\mu\nu}\nonumber\\
+=&-\frac{1}{4}F^i_{\mu\nu}F_i^{\mu\nu}+\frac{1}{2}g^2v^2A^2+\frac{1}{2}(\partial_\mu h)^2-\lambda v^2h^2\nonumber\\
+&-\lambda vh^3-\frac{1}{4}\lambda h^4+g^2vhA^2+\frac{1}{2}g^2h^2A^2.
+\end{align}
+其中~$D_\mu=\partial_\mu+igT^iW_\mu^i:=\partial_\mu+igA_\mu$. --为了先览大概, 目前我们尚未考虑~U(1) 部分; 我们将在稍后完整考虑. --上述结果第一行是规范粒子与希格斯子, 第二行前两项是希格斯子的自耦合, 后两是它与规范场的耦合. 不须多言, 规范场显然获得了质量. 下面我们考察三个~Goldstone 玻色子的带电情况. 我们假设场具有弱超荷~$Y_W\phi=Y_H\phi$, 则应用~Gell-Mann-Nishijima 关系, 可得
+\begin{align}
+Q\phi=\left(T^3+\frac{Y_W}{2}\right)\phi=\left(T^3+\frac{Y_H}{2}\right)\phi=\frac{1}{2}\left[\begin{array}{c}(1+Y_H)\phi^+\\(-1+Y_H)\phi^0\end{array}\right]
+\end{align}
+真空不带电, 所以由上式可得~$Y_H=1$; 进一步可得~$\phi^+$ 有电荷~$+1$. 也就是说, 被弱作用中间玻色子吃掉的三个~Goldstone 玻色子, 有两个带正电, 一个不带电; 而剩下的最后一个粒子即希格斯玻色子, 是电中性的.
+
+现在, 我们写出~U(1)$\otimes$SU(2) 协变算符~$U=e^{i\beta Y_W/2+i\alpha^iT^i}$ 作用在场~$\phi=(\phi^+,\phi^0)^T$ 上的完整形式:
+\begin{align}
+D_\mu\phi=&\partial_\mu\phi+\frac{i}{2}\left[\begin{array}{cc}gW_\mu^0+g'Y_HB_\mu&\sqrt{2}gW^+_\mu\\\sqrt{2}gW^-_\mu&-gW_\mu^0+g'Y_HB_\mu\end{array}\right]
+\left[\begin{array}{c}\phi^+\\\phi^0\end{array}\right]\nonumber\\
+=&\partial_\mu\phi+\frac{i}{2}\left[\begin{array}{cc}gW_\mu^0+g'B_\mu&\sqrt{2}gW^+_\mu\\\sqrt{2}gW^-_\mu&-gW_\mu^0+g'B_\mu\end{array}\right]
+\left[\begin{array}{c}\phi^+\\\phi^0\end{array}\right]\nonumber\\
+=&\partial_\mu\phi+\frac{i}{2}\left[\begin{array}{cc}2eA_\mu-\frac{g'^2-g^2}{\sqrt{g^2+g'^2}}Z^0_\mu&\sqrt{2}gW^+_\mu\\\sqrt{2}gW^-_\mu&-\sqrt{g^2+g'^2}Z^0_\mu\end{array}\right]\left[\begin{array}{c}\phi^+\\\phi^0\end{array}\right]\nonumber\\
+:=&\partial_\mu\phi+\frac{i}{2}\mathscr{D}_\mu\phi;
+\end{align}
+且有~$\mathscr{D}_\mu^\dag=\mathscr{D}_\mu$. 于是我们可得
+\begin{align}
+(D_\mu\phi)^\dag D^\mu\phi=\partial_\mu\phi^\dag\partial^\mu\phi+\textrm{Im}(\phi^\dag\mathscr{D}_\mu\partial^\mu\phi)+\frac{1}{4}\phi^\dag\mathscr{D}_\mu\mathscr{D}^\mu\phi.
+\end{align}
+将前文选定的真空/Goldstone 玻色子分离式, 即同位旋空间的物理规范代入上式, 就可得出场的互相耦合以及规范场质量项的出现; 例如第一项是~$\partial_\mu\phi^\dag\partial^\mu\phi=\frac{1}{2}(\partial_\mu H)^2$ 即希格斯场的动能密度; 余者不表. 其中, 规范场质量项出现在上式最后一项的算符与~$(0,v/\sqrt{2})^T$ 的作用之中. 于是
+\begin{align}
+&\frac{1}{4}\left[\begin{array}{c}0\\\frac{v}{\sqrt{2}}\end{array}\right]^\dag\mathscr{D}^\mu\mathscr{D}_\mu\left[\begin{array}{c}0\\\frac{v}{\sqrt{2}}\end{array}\right]\nonumber\\
+=&\frac{1}{4}\frac{v}{\sqrt{2}}\left[\begin{array}{c}\sqrt{2}gW^{+^\mu}\\-\sqrt{g^2+g'^2}Z^{0\mu}\end{array}\right]^\dag
+\left[\begin{array}{c}\sqrt{2}gW^+_\mu\\-\sqrt{g^2+g'^2}Z^0_\mu\end{array}\right]\frac{v}{\sqrt{2}}\nonumber\\
+=&\frac{1}{4}g^2v^2W^{-\mu}W^+_\mu+\frac{1}{8}(g^2+g'^2)v^2Z^{0\mu}Z^0_\mu.
+\end{align}
+于是我们就得
+\begin{align}
+m_W=\frac{1}{2}gv,~m_Z=\frac{1}{2}\sqrt{g^2+g'^2}v=\frac{m_W}{\cos\theta_W}.
+\end{align}
+上述两个质量, 将由实验得出. 值得注意的是, 稍加计算不难发现, 在上述这样一个手续中, 光子没能产生质量项, 仍然保持静质量为零. 形象地可以说, 三个~Goldstone 玻色子分别分弱作用的三个规范粒子吃掉了; 光子没吃着, 所以没能获得质量. 总之, 该获得质量的获得了, 不该获得质量的没获得: 我们的理论的确是恰如其份的.% 通过理论, 解释世界;
+~如此结果, 何其美哉!
+
+
+
+%\begin{align}
+%\mathscr{D}_\mu\left[\begin{array}{c}0\\\frac{v}{\sqrt{2}}\end{array}\right]=&\left[\begin{array}{cc}2eA_\mu-\frac{g'^2-g^2}{\sqrt{g^2+g'^2}}Z^0_\mu&\sqrt{2}gW^+_\mu\\\sqrt{2}gW^-_\mu&-\sqrt{g^2+g'^2}Z^0_\mu\end{array}\right]
+%\left[\begin{array}{c}0\\\frac{v}{\sqrt{2}}\end{array}\right]\nonumber\\
+%=&\left[\begin{array}{c}\sqrt{2}gW^+_\mu\\-\sqrt{g^2+g'^2}Z^0_\mu\end{array}\right]\frac{v}{\sqrt{2}}
+%\end{align}
+
+本节最后, 我们来赋予轻子质量. 而途径, 仍是让它去吃~Goldstone 玻色子, 或即与希格斯场发生耦合. 假设轻子与希格斯场之间有汤川耦合, 则可写出
+\begin{align}
+\mathcal{L}_{lH}=-\sum_{e,\mu,\tau} g_e(\bar{L}_e\phi R_e+\bar{R}_e\phi^\dag L_e);
+\end{align}
+显然前后两项互为厄米共轭. 将物理规范代入上式, 就得
+\begin{align}
+\mathcal{L}_{lH}=&-\sum_{e,\mu,\tau} g_e\bar{e}e\phi^0:=-\sum_{e,\mu,\tau}\left(m_e\bar{e}e+\frac{m_e}{v}\bar{e}eH\right);
+%=-\frac{1}{\sqrt{2}}\sum g_e\left[\bar{L}_e(v+H)R_e+\bar{R}_e(v+H)L_e\right]\nonumber\\
+\end{align}
+由此式亦可见, 中微子未被赋予质量, 也未与希格斯场有耦合. 而带电轻子获得了质量, 为
+\begin{align}
+m_e=\frac{g_ev}{\sqrt{2}}.
+\end{align}
+
+
+
+
+
+%注意: R_e 有时候是八维的, 有时候又是四维的, 哈哈哈哈~~~~~~~~~~~~~~~~`其实R_e 应是八维, e_R 才是四维. 这样定下来比较好. 但有的时候又不是这样. 因为三个场都是算符, 所以有一个必是四维.
+
+
+
+%先指明相互作用的一些基本特点.
+%选规范, 就是选相位. 选定在哪个地方看光.
+\subsection{夸克的弱作用, CKM 矩阵}
+
+~~~~
+与三代轻子~$(\nu_e,e),~(\nu_\mu,\mu),~(\nu_\tau,\tau)$ 类似地, 夸克也分为三代~$(u,d),~(c,s),~(t,b)$. 夸克构成的弱同位旋双重态与单态如下
+\begin{gather}
+L_u=\left[\begin{array}{c}u_L\\d_L\end{array}\right],~L_c=\left[\begin{array}{c}c_L\\s_L\end{array}\right],~L_t=\left[\begin{array}{c}t_L\\b_L\end{array}\right];\\
+R_u=u_R,~R_c=c_R,~R_t=t_R,\\
+R_d=d_R,~R_s=s_R,~R_b=b_R.
+\end{gather}
+另外, $u,~c,~t$ 夸克具有电荷~$2/3$; $d,~s,~b$ 夸克具有电荷~$-1/3$. 所以, 据~Gell-Mann-Nishijima 公式, 我们就知
+\begin{align}
+QL_u=\left(T^3+\frac{Y_W}{2}\right)\left[\begin{array}{c}u_L\\d_L\end{array}\right]=\left[\begin{array}{c}
+\left(\frac{1}{2}+\frac{Y_W}{2}\right)u_L\\\left(-\frac{1}{2}+\frac{Y_W}{2}\right)d_L\end{array}\right],
+\end{align}
+也就是说夸克弱同位旋二重态具有弱超荷~$Y_{uL}=\frac{1}{3}$. 相似地, $QR_u=\frac{Y_W}{2}R_u=\frac{2}{3},~QR_d=\frac{Y_W}{2}R_d=-\frac{1}{3}$, 即~$u,~c,~t$ 单态具有弱超荷~$Y_{uR}=\frac{4}{3}$, 而~$d,~s,~b$ 单态具有弱超荷~$Y_{dR}=-\frac{2}{3}$.
+
+目前为止, 我们假设夸克是尚无质量的. 下面, 我们让夸克与希格斯场耦合, 以使之获得质量. 夸克与希格斯场的汤川耦合可写为
+\begin{align}
+\mathcal{L}_{qH}=-\sum_{ud,cs,tb}(g_d\bar{L}_u\phi R_d+g_u\bar{L}_u\phi_CR_u+h.c.)
+\end{align}
+其中, $\phi_C=i\sigma^2\left[\begin{array}{c}\phi^+\\\phi^0\end{array}\right]=\left[\begin{array}{c}\phi^0\\-\phi^-\end{array}\right]$ 为~$\phi$ 的电荷共轭态~(运用~Gell-Mann-Nishijima 公式不难发现~$\phi_C$ 有弱超荷~$-1$). 容易发现, 在轻子情形, 之所以没有上述第二项, 是因为那样不满足电荷守恒. 下面, 我们选择物理规范, 以让夸克吃掉~Goldstone 玻色子. 注意~$\phi$ 的物理规范仍如前文; 而~$\phi_C$ 的规范为~$\phi_C=\frac{1}{\sqrt{2}}\left[\begin{array}{c}v+H\\0\end{array}\right]$. 在物理规范下, 我们有
+\begin{align}
+\mathcal{L}_{qH}=&-\sum_{ud,cs,tb} (g_d\bar{d}_L\phi^0 d_R+g_u\bar{u}_L\phi^0u_R+h.c.)\nonumber\\
+=&-\sum_qg_q\bar{q}q\phi^0:=-\sum_q\left(m_q\bar{q}{q}+\frac{m_q}{v}\bar{q}qH\right);
+%=-\sum_q\left(\frac{g_qv}{\sqrt{2}}\bar{q}{q}+\frac{g_qH}{\sqrt{2}}\bar{q}q\right)\nonumber\\
+\end{align}
+上述结果第一项是夸克的质量项, 第二项是夸克与希格斯场的耦合. 由此见, 夸克获得了质量
+\begin{align}
+m_q=\frac{g_qv}{\sqrt{2}}.
+\end{align}
+
+
+如同真正参与弱作用的, 是由~$B_\mu,~W^0_\mu$ 经温伯格转动叠加而成的~$A_\mu,~Z^0_\mu$ 一样, 夸克亦未必是以质量本征态, 而是以其叠加态的身份参与到弱相互作用中去的. 这意味着在弱作用过程中, 夸克可能会有味变~(具体地, 稍后我们将确证, 使夸克发生味变即产生混合的, 是其与~$W^\pm_\mu$ 带电玻色子的相互作用). 于是我们可令
+\begin{align}
+\left[\begin{array}{c}u_{1L/R}\\u_{2L/R}\\u_{3L/R}\end{array}\right]=U_{L/R}\left[\begin{array}{c}u_{L/R}\\c_{L/R}\\t_{L/R}\end{array}\right],~
+\left[\begin{array}{c}d_{1L/R}\\d_{2L/R}\\d_{3L/R}\end{array}\right]=D_{L/R}\left[\begin{array}{c}d_{L/R}\\s_{L/R}\\b_{L/R}\end{array}\right];
+\end{align}
+其中~$U,~D$ 是~$3\times3$ 的酉矩阵. 我们分别称~$u_i,~d_i$ 叫~$u$ 类夸克与~$d$ 类夸克. 与此同时, 由其构成的弱同位旋二重态与单态就是
+\begin{gather}
+L_i=\left[\begin{array}{c}u_{iL}\\d_{iL}\end{array}\right],~R_{ui}=u_{iR},~R_{di}=d_{iR}.
+\end{gather}
+不难发现, 变换后的态与之前的具有同样的电荷, 弱超荷与弱同位旋. 可以直接看出
+\begin{gather}
+\mathcal{L}_q=\sum_qi\bar{q}\gamma^\mu\partial_\mu q=\sum_{ud,cs,tb}\left(i\bar{L}_u\gamma^\mu\partial_\mu L_u+i\bar{R}_u\gamma^\mu\partial_\mu R_u+i\bar{R}_d\gamma^\mu\partial_\mu R_d\right).
+\end{gather}
+%注意第一项, 可以成~6 夸克左旋量的形式.
+%其中~$R_u$ 亦可看成三个排成一个列矢. 当然, 此是伽玛矩阵要么是一个非矩阵化可自由移动的符号, 要么是狄拉克下的形式附上三维单位阵.
+有了以上所命的类夸克, 我们又可进一步将上式表为
+\begin{gather}
+\mathcal{L}_q=\sum_i\left(i\bar{L}_i\gamma^\mu\partial_\mu L_i+i\bar{R}_{ui}\gamma^\mu\partial_\mu R_{ui}+i\bar{R}_{di}\gamma^\mu\partial_\mu R_{di}\right);
+\end{gather}
+其中用到了~$U,~D$ 是酉矩阵这一性质. 能执行出这一步推演, 表明参与强相互作用的就是夸克的质量本征态, 强作用中夸克无味变. 事实上, 显然, 只要左右分量没有耦合, 则我们总能求出如~$\sum_ii\bar{R}_{ui}\gamma^\mu\partial_\mu R_{ui}=\sum_{ud,cs,tb}i\bar{R}_u\gamma^\mu\partial_\mu R_u$ 这般的结果; 也就是说夸克就总以质量本征态出现, 即夸克就无味变. 下述将研究的夸克的电磁作用及夸克与~$Z^0_\mu$ 玻色子的作用, 就都属这种情况. 而若有耦合的话, 显然我们将出来一个矩阵, 此即~CKM~(Cabibbo–Kobayashi–Maskawa, 卡比博-小林-益川) 矩阵; 这将在夸克与~$W^\pm_\mu$ 互作用时出现. 下面, 我们就来分别研究.
+
+
+将偏微分改成电弱作用的协变微商~$D_\mu=\partial_\mu+igT^iW_\mu^i+i\frac{1}{2}g'Y_WB_\mu$, 我们就得到了夸克参与电弱相互作用的模型:
+\begin{align}
+\mathcal{L}_{q+qWZ}=&i\bar{L}_i\gamma^\mu D_\mu L_i+i\bar{R}_{ui}\gamma^\mu D_\mu R_{ui}+i\bar{R}_{di}\gamma^\mu D_\mu R_{di}\nonumber\\
+=&\mathcal{L}_q+\mathcal{L}_{qA}+\mathcal{L}_{qZ^0}+\mathcal{L}_{qW^\pm}.
+\end{align}
+由一般式~(\ref{weinberg}) 结合夸克单态与二重态的弱超荷, 不难得到
+\begin{align}
+D_\mu R_{ui}&=\left(\partial_\mu+i\frac{2}{3}g'B_\mu\right)R_{ui}\nonumber\\
+&=\left(\partial_\mu+i\frac{2}{3}g'(A_\mu\cos\theta_W-Z^0_\mu\sin\theta_W)\right)R_{ui},\\
+D_\mu R_{di}&=\left(\partial_\mu-i\frac{1}{3}g'B_\mu\right)R_{di}\nonumber\\
+&=\left(\partial_\mu-i\frac{1}{3}g'(A_\mu\cos\theta_W-Z^0_\mu\sin\theta_W)\right)R_{di},\\
+D_\mu L_i&=\partial_\mu L_i+\frac{i}{2}\left[\begin{array}{cc}gW_\mu^0+\frac{1}{3}g'B_\mu&\sqrt{2}gW^+_\mu\\\sqrt{2}gW^-_\mu&-gW_\mu^0+\frac{1}{3}g'B_\mu\end{array}\right]L_i;
+\end{align}
+因为写不下了, 所以我们把上述最后一式中矩阵内对角项的温伯格转动解列在下面:
+\begin{align}
+&g\sin\theta_W A_\mu+gZ^0_\mu\cos\theta_W+\frac{1}{3}g'A_\mu\cos\theta_W-\frac{1}{3}g'Z^0_\mu\sin\theta_W,\\
+-&g\sin\theta_W A_\mu-gZ^0_\mu\cos\theta_W+\frac{1}{3}g'A_\mu\cos\theta_W-\frac{1}{3}g'Z^0_\mu\sin\theta_W.
+\end{align}
+现在, 我们就可直接拿出各相互作用项了. 如夸克的电磁相互作用项为
+\begin{align}
+\mathcal{L}_{qA}=&-\frac{1}{2}(\bar{u}_{iL},\bar{d}_{iL})\left[\begin{array}{cc}eA_\mu+\frac{1}{3}eA_\mu&0\\0&-eA_\mu+\frac{1}{3}eA_\mu\end{array}\right]
+\left[\begin{array}{c}u_{iL}\\d_{iL}\end{array}\right]\nonumber\\
+&-\frac{2}{3}e\bar{u}_{iR}\gamma^\mu u_{iR}A_\mu+\frac{1}{3}e\bar{d}_{iR}\gamma^\mu d_{iR}A_\mu\nonumber\\
+=&-\frac{2}{3}e\bar{u}_{iL}\gamma^\mu u_{iL}A_\mu+\frac{1}{3}e\bar{d}_{iL}\gamma^\mu d_{iL}A_\mu-\frac{2}{3}e\bar{u}_{iR}\gamma^\mu u_{iR}A_\mu+\frac{1}{3}e\bar{d}_{iR}\gamma^\mu d_{iR}A_\mu\nonumber\\
+=&\sum_i\left(-\frac{2}{3}e\bar{u}_{i}\gamma^\mu u_{i}A_\mu+\frac{1}{3}e\bar{d}_{i}\gamma^\mu d_{i}A_\mu\right)\nonumber\\
+=&\sum_{ud,cs,tb}\left(-\frac{2}{3}e\bar{u}\gamma^\mu uA_\mu+\frac{1}{3}e\bar{d}\gamma^\mu dA_\mu\right)=\sum_q e\bar{q}\gamma^\mu Q qA_\mu.
+\end{align}
+其中~$Q$ 为夸克的电荷算符. 这正是~QED 中的一般形式. 下面考察夸克与~$Z^0_\mu$ 玻色子的耦合.%上述从倒数第三式到倒数第二式, 对夸克混合态的求和化为对夸克味的求和; 其双线性形式表明参与电磁相互作用的, 仍可归到夸克的质量本征态.
+\begin{align}
+\mathcal{L}_{qZ^0}=&\left(\frac{2}{3}\bar{u}_{iR}\gamma^\mu u_{iR}-\frac{1}{3}\bar{d}_{iR}\gamma^\mu d_{iR}\right)g'\sin\theta_WZ^0_\mu\nonumber\\
+&-\left(\frac{1}{2}g\cos\theta_W-\frac{1}{6}g'\sin\theta_W\right)\bar{u}_{iL}\gamma^\mu u_{iL}Z^0_\mu\nonumber\\
+&-\left(-\frac{1}{2}g\cos\theta_W-\frac{1}{6}g'\sin\theta_W\right)\bar{d}_{iL}\gamma^\mu d_{iL}Z^0_\mu\nonumber\\
+=&\bar{q}_{R}\gamma^\mu Qq_{R}g'\sin\theta_WZ^0_\mu\nonumber\\
+&-\frac{g}{\cos\theta_W}\left(\frac{1}{2}-\frac{2}{3}\sin^2\theta_W\right)\bar{u}_{L}\gamma^\mu u_{L}Z^0_\mu\nonumber\\
+&-\frac{g}{\cos\theta_W}\left(-\frac{1}{2}+\frac{1}{3}\sin\theta^2_W\right)\bar{d}_{L}\gamma^\mu d_{L}Z^0_\mu\nonumber\\
+=&-\frac{g}{\cos\theta_W} \left[\bar{q}_{L}\gamma^\mu\left(T^3-Q\sin\theta^2_W\right) q_{L}-\bar{q}_{R}\gamma^\mu Q\sin^2\theta_W q_{R} \right] Z^0_\mu\nonumber\\
+=&-\frac{g}{\cos\theta_W} \left[\bar{q}_{L}\gamma^\mu T^3q_{L}-\bar{q}\gamma^\mu Q\sin^2\theta_W q \right] Z^0_\mu
+\end{align}
+此形式与轻子-$Z^0_\mu$ 的耦合式是相似的; 中括号中是夸克弱同位旋的中性流. 夸克与~$W^\pm_\mu$ 的耦合是很好拿出的:
+\begin{align}
+\mathcal{L}_{qW^\pm}=&-\frac{g}{\sqrt{2}}\left(\bar{u}_{iL}\gamma^\mu d_{iL}W^+_\mu+\bar{d}_{iL}\gamma^\mu u_{iL}W^-_\mu\right)\nonumber\\
+=&-\frac{g}{\sqrt{2}}\left(\bar{u}_{L}\gamma^\mu V_{ud}d_{L}W^+_\mu+\bar{d}_{L}\gamma^\mu V^*_{du} u_{L}W^-_\mu\right);
+\end{align}
+其中三维酉矩阵
+\begin{align}
+V=U_L^\dag D_L
+\end{align}
+称为~CKM 矩阵; 它描述夸克不同味间的混合, 是需要由实验来测定的. 其最新测值可见相关资料; 近似的, 它约为
+\begin{align}
+V=\left[\begin{array}{ccc}
+\cos\theta_c&\sin\theta_c&0\\
+-\sin\theta_c&\cos\theta_c&0\\
+0&0&1
+\end{array}
+\right];
+\end{align}
+其中~$\theta_c$ 称为~Cabibbo 角. 也就是说~CKM 矩阵可类比于一个三维空间的正当转动.
+
+
+
+
+
+%CKM 矩阵: 味振荡.
+
+
+
+\subsection{粒子物理的标准模型}
+
+
+~~~~总结起来, 描述电弱统一的~Glashow-Weinberg-Salam 理论的拉氏密度就是
+\begin{align}
+\mathcal{L}_{\textrm{GWS}}=&\mathcal{L}_{\textrm{gauge field}}+\mathcal{L}_{\textrm{lepton+G~bosons}}+\mathcal{L}_{\textrm{quark+G~Bosons}}\nonumber\\
+&+\mathcal{L}_{\textrm{Higgs+$\phi^4$}}+\mathcal{L}_{\textrm{lepton+Higgs}}+\mathcal{L}_{\textrm{quark+Higgs}}\nonumber\\
+=&-\frac{1}{4}B_{\mu\nu}B^{\mu\nu}-\frac{1}{4}W^i_{\mu\nu}W_i^{\mu\nu}\nonumber\\
+&+\left(i\bar{L}_e\gamma^\mu D_\mu L_e+i\bar{R}_e\gamma^\mu D_\mu R_e\right)\nonumber\\
+&+\left(i\bar{L}_i\gamma^\mu\partial_\mu L_i+i\bar{R}_{ui}\gamma^\mu\partial_\mu R_{ui}+i\bar{R}_{di}\gamma^\mu\partial_\mu R_{di}\right)\nonumber\\
+&+D_\mu\phi^\dag D^\mu\phi-m^2\phi^\dag\phi-\lambda(\phi^\dag\phi)^2\nonumber\\
+&-g_e(\bar{L}_e\phi R_e+\bar{R}_e\phi^\dag L_e)\nonumber\\
+&-(g_d\bar{L}_u\phi R_d+g_u\bar{L}_u\phi_CR_u+h.c.);
+\end{align}
+而~$D_\mu=\partial_\mu+igT^iW_\mu^i+i\frac{1}{2}g'Y_WB_\mu$, 即电弱作用, 或曰~SU(2)$\otimes$U(1) 对称性下的协变导数. 若再加上胶子场的拉氏量~$\mathcal{L}_{\textrm{gluon}}=-\frac{1}{4}F^a_{\mu\nu}F_a^{\mu\nu}$, 并把~SU(3) 下的协变导数加进来, 即
+\begin{align}
+D_\mu=\partial_\mu+igT^iW_\mu^i+i\frac{1}{2}g'Y_WB_\mu+ig_3T^aA^\mu_a,
+\end{align}
+则我们就得到了同时描述强, 弱与电磁三种作用力的理论拉氏量. 上述总协变导数与总拉氏密度及其所蕴含的一系列思想原理与演算方案, 称为粒子物理的标准模型.
+
+
+
+
+
+
+
+
+
+
+
+%电磁力由电荷承担, 再算, 还可知由电流承担; 同样, 弱力, 由三个弱流承担
+%类比于电荷, 弱作用中, 是弱同位旋.!!!!!!!!所谓弱流, 就是同位旋流.
+%因为酉一, 不算反粒子, 电子只有一种, 是我们能感受到的. 那么弱作用中, 因为酉二, 我们能感受到两个带电弱流, 一个中性流. 这与弱中间玻色子是一一耦合的.
+%同位旋, 以两个带电矢流为例, 使中微子与轻子产生耦合. 如我们能感受到的话, 那将是很奇妙的.
+
+%触了电, 不是触了电子, 是触了电磁场, 即光子规范子!!!!!!!!!!哈哈哈!!!!!! 就是突然发生大规范有规律的电磁相互作用, 使即电子流动. 触了弱作用, 就是触了
+%弱作用中间玻色子, 从而我们身体里的带电轻子与中微子发生耦合运动.
+%同样, 发电也不是发电子, 而是产生电磁场, 即光子. 通常的家用或工业用电, 就是存在电线里的电磁场/光子规范粒子.
+
+%注意有的时候, \gamma 矩阵事实上是八维的. 但是, 如此一来, 我们又直接把它看成一个数, 却又避免了维数问题.
+
+%头上加一横, 就是狄拉克旋量, 即有四个分量.
+

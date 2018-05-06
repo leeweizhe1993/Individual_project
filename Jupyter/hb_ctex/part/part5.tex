@@ -1,0 +1,263 @@
+
+
+\section{实矢量场: 1-自旋无荷无质量, 光子}
+
+~~~~电磁场由麦克斯韦方程描述, 电磁场的量子, 即光子. 由麦克斯韦方程~(即实验的总结) 看出, 电磁场或光子, 是没有静质量的.
+
+另外, 由麦克斯韦方程形式还可看出, 电磁场是矢量场. 由前文群论中的分析, 我们知道矢量场的自旋为~1; 将电磁场量子化后, 我们更可确认这一点.
+
+最后, 从与荷场的耦合, 我们也可获知电磁场必须是矢量场, 且是无质量的. 事实上, 规范场--或曰中间玻色子, 都是矢量场. 我们可以提前指出, 弱作用的中间玻色子是有质量的; 这将由无质量中间玻色子经过对称性破缺得以实现.
+
+本章我们重点讲电磁场的量子化.
+
+%电磁场, 相当于自动完成了一次量子化的场; 这对比于其它实物粒子, 如薛定谔场, K-G 场, 或狄拉克场, 就可发现!
+
+
+\subsection{电磁场的量子化}
+
+~~~~我们已知自由电磁场的方程为
+\begin{gather}
+\partial_\mu F^{\mu\nu}=0,\\
+\partial_\mu F_{\nu\rho}+\partial_\nu F_{\rho\mu}+\partial_\rho F_{\mu\nu}=0;
+\end{gather}
+其中第一式是独立的, 第二式是~Bianchi 恒式等. 由以下述洛伦兹标量
+\begin{align}%注意!!!!!!!L 中, 一直都是相同项在乘, 然后相加.!!!!!!!!!!!!!!!!!!!!!!!!!!111
+\mathcal{L}=&-\frac{1}{4}F_{\mu\nu}F^{\mu\nu}=-\frac{1}{4}(\partial_\mu A_\nu-\partial_\nu A_\mu)(\partial^\mu A^\nu-\partial^\nu A^\mu)\nonumber\\
+=&-\frac{1}{2}(\partial_\mu A_\nu\partial^\mu A^\nu-\partial_\mu A_\nu\partial^\nu A^\mu)=-\frac{1}{2}\partial_\mu A_\nu F^{\mu\nu}.\label{laofma}
+\end{align}
+对~$A_\nu$ 运用欧拉方程, 即可得~$\frac{\partial\mathcal{L}}{\partial A_\nu}-\partial_\mu\frac{\partial\mathcal{L}}{\partial\partial_\mu A_\nu}=0+\partial_\mu(\partial^\mu A^\nu-\partial^\nu A^\mu)=\partial_\mu F^{\mu\nu}=0$.
+是故~(\ref{laofma}) 式即能导致麦克斯韦方程的电磁场的拉氏密度. --将张量~$F_{\mu\nu}$ 具体写开后我们还可发现~$\mathcal{L}=\frac{1}{2}(\frac{\bm{E}^2}{c^2}-\bm{B}^2)$. -- 场~$A_\mu$ 的正则动量就是
+\begin{align}
+\pi^\mu=\frac{\partial\mathcal{L}}{\partial\dot{A}_\mu}=F^{\mu 0}=\partial^\mu A^0-\partial^0 A^\mu;
+\end{align}
+即~$\pi^0=0,~\pi^i=E^i$. 可以看出, 共轭于场的时间分量~$A_0$ 的正则动量为零. 进一步可得场的哈密顿密度就是
+\begin{align}
+\mathcal{H}=&\pi^\mu \dot{A}_\mu-\mathcal{L}=\pi^i \dot{A}_i-\mathcal{L}=-\bm{E}\cdot\frac{\partial\bm{A}}{\partial t}-\mathcal{L}=\bm{E}\cdot(\bm{E}+\nabla\varphi)-\mathcal{L}\nonumber\\
+=&\frac{1}{2}(\bm{E}^2+\bm{B}^2)+\bm{E}\cdot\nabla\varphi=\frac{1}{2}(\bm{E}^2+\bm{B}^2)-\varphi\nabla\cdot\bm{E};
+\end{align}
+其中已采用自然单位. 上述最后一步的运算结果中去掉了一个全散度项.
+
+\subsubsection{辐射规范量子化, 对易关系的修改, 无散~$\delta$ 函数}
+%解, 对易关系, 最重要的两件事.
+
+~~~~电磁场/势的规范冗余, 意味着我们可以给它加上限制条件, 称为规范条件. 库仑规范是~$\nabla\cdot\bm{A}=0$, --这相当于排除了电磁场三个空间分量--称为类空分量--中的纵向分量, 认定电磁场是横场. 对于自由场, $\rho=0$ , 于是就得另外一条件, 即~$\nabla\cdot\bm{E}=0$ 或等价的~$\varphi=A^0=0$; 后者可名为为电磁场的类时分量/标量光子. 此条件与库伦规范条件合称为辐射规范.
+
+
+从实践中我们早已知道, 电磁场只有横向的两个自由度, 纵向分量为零. 辐射规范两个条件, 恰将电磁场自由度限制为与运动方向垂直的两个方向; 即与事实是一致的. 不过, 显然辐射规范下我们将不再保有理论的洛伦兹协变性. 无论如何, 我们先在此规范下进行体系的量子化.
+
+对应于电磁场的两个横向由度, 即两个横向偏振方向, 我们取相应的两个单位矢量, 称为单位极化矢量~$\bm{\epsilon}_r(\bm{p}),~r=1,2$。 它们首先当然满足~$\bm{\epsilon}_r(\bm{p})\cdot\bm{p}=0$; 另外, 它们的正交归一化关系及完备性关系分别为
+\begin{gather}
+\bm{\epsilon}_r(\bm{p})\cdot\bm{\epsilon}_s(\bm{p})=\delta_{ij}\epsilon^i_r(\bm{p})\epsilon^j_s(\bm{p})=\delta_{rs},\\
+\sum_{r=1}^2\epsilon^i_r(\bm{p})\epsilon^j_r(\bm{p})=\delta_{ij}-\frac{p_ip_j}{\bm{p}^2}.
+\end{gather}
+其中~$i,j$ 为极化矢量的两个分量指标. 完备性关系的修改项的原因, 在接下来将会看到.
+
+辐射规范下的场方程为~$\partial_\mu F^{\mu\nu}=\partial_\mu(\partial^\mu A^\nu-\partial^\nu A^\mu)=\partial_\mu\partial^\mu A^\nu-\partial_\mu\partial^\nu A^\mu=\partial^2\bm{A}=0$, 故可取得本方程的解及正则动量为
+\begin{align}
+&\bm{A}(x)=\int\frac{d^3\bm{p}}{(2\pi)^3\sqrt{2E_{\bm{p}}}}\sum_{r=1}^2\bm{\epsilon}_r(\bm{p})\left(a^r_{\bm{p}}e^{-ipx}+a^{r\dag}_{\bm{p}}e^{ipx}\right),\\
+&\bm{E}(x)=\int\frac{d^3\bm{p}}{(2\pi)^3}(-i)\sqrt{\frac{E_{\bm{p}}}{2}}\sum_{r=1}^2\bm{\epsilon}_r(\bm{p})\left(a^r_{\bm{p}}e^{-ipx}-a^{r\dag}_{\bm{p}}e^{ipx}\right).
+\end{align}
+
+
+一般地, 我们已知场的类时分量的共轭共则动量为零; 而辐射规范下, 我们恰有场的类时分量亦为零. 于是, 辐射规范下我们只用考虑空间部分--$A^i,~\pi^i=-\partial_0 A^i$--的对易关系. 与以往一样, 因为因果律, 我们赋予作为自旋为~1 的矢量场的本场以如下等时对易关系, 是恰当的:
+\begin{align}
+[A_i(\bm{x}),A_j(\bm{y})]=0,~[\pi^i(\bm{x}),\pi^j(\bm{y})]=0.
+\end{align}
+但是~$[A_i(\bm{x}),\pi^j(\bm{y})]=ig^j_i\delta^3(\bm{x}-\bm{y})$ 却是不能满足要求的, 因为此式被作散度过后, 左边~$\partial_i[A^i(\bm{x}),\pi_j(\bm{y})]=[\partial_iA^i(\bm{x}),\pi_j(\bm{y})]=0$, 而右边~$\partial_i ig^j_i\delta^3(\bm{x}-\bm{y})=\partial_iig^j_i\int\frac{d^3\bm{p}}{(2\pi)^3}e^{i\bm{p}\cdot(\bm{x}-\bm{y})}=-\int\frac{d^3\bm{p}}{(2\pi)^3}p_je^{i\bm{p}\cdot(\bm{x}-\bm{y})}\neq0$.
+病因既明, 医方即出. 若取
+\begin{align}
+[A_i(\bm{x}),\pi^j(\bm{y})]=&i\int\frac{d^3\bm{p}}{(2\pi)^3}\left(g^j_i-\frac{p_ip^j}{p_k p^k}\right)e^{i\bm{p}\cdot(\bm{x}-\bm{y})}\nonumber\\
+=&i\left(g^j_i-\frac{\partial_i\partial^j}{\nabla^2}\right)\delta^3(\bm{x}-\bm{y}):=i\bar{\delta}^3(\bm{x}-\bm{y}),
+\end{align}
+则就能满足两边散度同时为零的要求了. 我们有时又把~$\bar{\delta}^3(\bm{x}-\bm{y})$ 称为无散~$\delta$ 函数. 通过场的解, 不难获知以上实空间的对易关系与以下动量空间中的对易关系
+\begin{align}
+[a^r_{\bm{p}},a^{s\dag}_{\bm{p}'}]=(2\pi)^3\delta^{rs}\delta^3(\bm{p}-\bm{p}'),~[a^r_{\bm{p}},a^s_{\bm{p}'}]=[a^{r\dag}_{\bm{p}},a^{s\dag}_{\bm{p}'}]=0;
+\end{align}
+是互致的. 与实标量场时的情况相同, 动量空间场量用实空间场量表达即
+\begin{align}
+a_{\bm{p}}^r&=(2\pi)^3\int d^3\bm{x}\varphi^*_{\bm{p}}(x)i\overset{\leftrightarrow}{\partial}_0\big[\bm{\epsilon}_r(\bm{p})\cdot\bm{A}(x)\big],\\
+a^{r\dag}_{\bm{p}}&=-(2\pi)^3\int d^3\bm{x}\varphi_{\bm{p}}(x)i\overset{\leftrightarrow}{\partial}_0\big[\bm{\epsilon}_r(\bm{p})\cdot\bm{A}(x)\big].
+\end{align}
+
+现在, 我们即可得到本场的量子化的力学量, 如能量为\footnote{
+我们对~$\int d^3\bm{x}(\nabla\times\bm{A})^2=-\int d^3\bm{x}\bm{A}\cdot\nabla^2\bm{A}$ 的计算作一展示:
+\begin{align}
+&(\nabla\times\bm{A})^2=\sum_{j,k=1,2,3;even}(\partial_jA_k-\partial_kA_j)(\partial_jA_k-\partial_kA_j)\nonumber\\
+=&\sum_{j,k=1,2,3;any}(\partial_jA_k)(\partial_jA_k-\partial_kA_j):=\partial_jA_k\partial_jA_k-\partial_jA_k\partial_kA_j\nonumber\\
+=&\sum_{k=1,2,3}\sum_{j=1,2,3}\bigg\{\Big[\partial_j(A_k\partial_jA_k)-A_k\partial_j\partial_jA_k\Big]-\Big[\partial_j(A_k\partial_kA_j)-A_k\partial_j\partial_kA_j\Big]\bigg\}\nonumber\\
+=&\sum_{j,k=1,2,3}\bigg\{\Big[\partial_j(A_k\partial_jA_k)-A_k\nabla^2A_k\Big]-\Big[\partial_j(A_k\partial_kA_j)-A_k\partial_k\nabla\cdot\bm{A}\Big]\bigg\}
+\end{align}
+全散度的积分为零, 于是积分后上述结果中两个中括号内的第一项皆消失; 而辐射规范下我们有~$\nabla\cdot\bm{A}=0$, 于是最终得~$\int d^3\bm{x}(\nabla\times\bm{A})^2=-\int d^3\bm{x}\bm{A}\cdot\nabla^2\bm{A}$.
+}
+\begin{align}
+H=&\int d^3\bm{x}\frac{1}{2}(\bm{E}^2+\bm{B}^2)=\int d^3\bm{x}\frac{1}{2}\left[\dot{\bm{A}}^2+(\nabla\times\bm{A})^2\right]\nonumber\\
+=&\int d^3\bm{x}\frac{1}{2}\left[\dot{\bm{A}}^2-\bm{A}\cdot\nabla^2\bm{A}\right]=\int d^3\bm{x}\frac{1}{2}\left[\dot{\bm{A}}^2-\bm{A}\cdot\partial^2_0\bm{A}\right]\nonumber\\
+=&\frac{1}{2}\int d^3\bm{x}i\bm{A}\cdot i\overset{\leftrightarrow}{\partial}_0\partial_0\bm{A}=\int\frac{d^3\bm{p}}{(2\pi)^3}E_{\bm{p}}\sum_{r=1}^2a^{r\dag}_{\bm{p}}a^r_{\bm{p}}.
+\end{align}
+其中我们舍弃了全微分项以及应用了场满足的方程~$\partial^2\bm{A}=0$; 最后用到了~$\bm{\epsilon}_r(\bm{p})\cdot\bm{\epsilon}_s(\bm{p})=\delta_{rs}$. 同样, 我们亦可求出动量的相应的表达, 并写出其与能量的合成
+\begin{align}
+P^i&=\frac{1}{2}\int d^3\bm{x}i\bm{A}\cdot i\overset{\leftrightarrow}{\partial}_0\partial^i\bm{A},\\
+P^\mu&=\frac{1}{2}\int d^3\bm{x}i\bm{A}\cdot i\overset{\leftrightarrow}{\partial}_0\partial^\mu\bm{A}.
+\end{align}
+
+
+
+下面, 我们再来展示一下自旋的获得. 首先, $\mathcal{S}^k=\varepsilon_{ijk}A^i\pi^j=-A^i\partial_0A^j\varepsilon_{ijk}=-A^i\partial_0A^j\varepsilon_{ijk}+A^j\partial_0 A^i\varepsilon_{ijk}-A^j\partial_0 A^i\varepsilon_{ijk}=A^j\overset{\leftrightarrow}{\partial}_0 A^i\varepsilon_{ijk}-\mathcal{S}^k$, 故有
+\begin{align}
+S^k=&\int d^3\bm{x}\frac{1}{2}iA^i i\overset{\leftrightarrow}{\partial}_0 A^j\varepsilon_{ijk}\nonumber\\
+=&\frac{i}{2}\int \frac{d^3\bm{p}}{(2\pi)^3}\epsilon_r^i(\bm{p})\epsilon_s^j(\bm{p})\varepsilon_{ijk}\left(a_{\bm{p}}^sa_{\bm{p}}^{r\dag}-a_{\bm{p}}^{s\dag}a_{\bm{p}}^r\right)\nonumber\\
+=&\frac{i}{2}\int \frac{d^3\bm{p}}{(2\pi)^3}\left[(a_{\bm{p}}^{i\dag}a_{\bm{p}}^j+a_{\bm{p}}^ja_{\bm{p}}^{i\dag})-(a_{\bm{p}}^ia_{\bm{p}}^{j\dag}+a_{\bm{p}}^{j\dag}a_{\bm{p}}^i)\right]\nonumber\\
+=&\frac{1}{2}\int \frac{d^3\bm{p}}{(2\pi)^3}\left[(a_{\bm{p}}^{+\dag}a_{\bm{p}}^+ +a_{\bm{p}}^+a_{\bm{p}}^{+\dag})-(a_{\bm{p}}^- a_{\bm{p}}^{-\dag}+a_{\bm{p}}^{-\dag}a_{\bm{p}}^-)\right];
+\end{align}
+其中
+\begin{align}
+a_{\bm{p}}^\pm:=\frac{1}{\sqrt{2}}(a_{\bm{p}}^i\pm i a_{\bm{p}}^j),~a_{\bm{p}}^{\pm\dag}:=\frac{1}{\sqrt{2}}(a^{i\dag}_{\bm{p}}\mp i a_{\bm{p}}^{j\dag}),
+\end{align}
+分别描述右旋与左旋粒子的消灭与产生. 由前述结果知, 右旋光子具有自粒~1, 左旋光子具有自旋~$-1$.
+
+
+
+%传播过程过中, 偏振方向不会变, 故有此.
+
+场在本规范下的协变对易关系为
+\begin{align}
+[A_i(x),A_j(y)]=&\int\frac{d^3\bm{p}}{(2\pi)^32E_{\bm{p}}} \sum_{r=1}^2\epsilon^i_r(\bm{p})\epsilon^j_r(\bm{p}) \left[e^{-ip(x-y)}-e^{-ip(y-x)}\right]\nonumber\\
+=&\int\frac{d^3\bm{p}}{(2\pi)^32E_{\bm{p}}}\left(\delta_{ij}-\frac{p_ip_j}{\bm{p}^2}\right)\left[e^{-ip(x-y)}-e^{-ip(y-x)}\right]\nonumber\\
+=&\left(\delta_{ij}+\frac{\partial_i\partial_j}{\nabla^2}\right)\int\frac{d^3\bm{p}}{(2\pi)^32E_{\bm{p}}}\left[e^{-ip(x-y)}-e^{-ip(y-x)}\right]\nonumber\\
+=&\left(\delta_{ij}+\frac{\partial_i\partial_j}{\nabla^2}\right)[\phi(x),\phi(y)];
+\end{align}
+于是场在本规范下的费曼传播子为
+\begin{align}
+D_{ij}(x-y)=\langle0|TA_i(x)A_j(y)|0\rangle=\int\frac{d^4p}{(2\pi)^4}\frac{i}{p^2+i\epsilon}\left(\delta_{ij}-\frac{p_ip_j}{\bm{p}^2}\right)e^{-ip(x-y)}.
+\end{align}
+
+
+
+
+
+
+
+\subsubsection{协变~(洛伦茨规范) 量子化, 拉氏密度的修改, 费曼规范, Gupta-Bleuler 条件, 标量光子与纵向量子相消, 鬼态}
+
+~~~~不像辐射规范, 在洛伦茨规范~$\partial_\mu A^\mu=0$ 中, 理论将保有洛伦兹协变性. 此规范下, 我们得到的自由场的运动方程是~$\partial_\mu\partial^\mu A^\nu-\partial_\mu\partial^\nu A^\mu=0\rightarrow\partial_\mu\partial^\mu A^\nu-\partial^\nu\partial_\mu A^\mu=0\xrightarrow{\partial_\mu A^\mu=0}\partial^2 A^\mu=0$. 现在, 我们略作改变; 我们通过修改拉氏密度的办法, 来直接得到这个方程. --当然这也就意味着此办法是与洛伦茨规范条件等价的, 或曰此办法下我们已不用要求洛伦兹条件~$\partial_\mu A^\mu=0$. --由以下拉氏密度
+\begin{align}
+\mathcal{L}=-\frac{1}{4}F_{\mu\nu}F^{\mu\nu}-\frac{1}{2}(\partial_\mu A^\mu)^2=-\frac{1}{4}F_{\mu\nu}F^{\mu\nu}-\frac{1}{2}(g^{\nu\mu}\partial_\mu A_\nu)^2
+\end{align}
+对~$A_\nu$ 运用欧拉方程, 就得~$\partial_\mu\partial^\mu A^\nu-\partial_\mu\partial^\nu A^\mu+\partial_\mu g^{\mu\nu}\partial_\rho A^\rho=\partial_\mu\partial^\mu A^\nu=0$. 由此可确知上述拉氏密度的确是与洛伦茨规范条件等价的表述.
+
+另外, 我们往往还会做得更一般化一些, 即把拉氏密度写作
+\begin{align}
+\mathcal{L}=-\frac{1}{4}F_{\mu\nu}F^{\mu\nu}-\frac{1}{2\xi}(\partial_\mu A^\mu)^2;
+\end{align}
+后加入的一项~$-\frac{1}{2\xi}(\partial_\mu A^\mu)^2$ 称作规范固定项; $\xi$ 称为规范固定参数; $\xi=1$ 的情况称作费曼规范, $\xi=0$ 的情况称为朗道规范. 由上式得到的场的运动方程就是
+\begin{align}
+\partial_\mu F^{\mu\nu}+\frac{1}{\xi}\partial^\nu\partial_\rho A^\rho=\partial_\mu\partial^\mu A^\nu-(1-\frac{1}{\xi})\partial^\nu\partial_\rho A^\rho=0.
+\end{align}
+显然, 当取费曼规范时, 我们回到洛伦茨规范下的场方程.
+
+由于拉氏密度出现在积分中, 而当求场的总力学量时, 共轭动量也将被积分, 故我们把拉氏密度中的四维散度项去掉, 是可以的. 这样以后的拉氏密度可进一步写为
+\begin{align}
+\mathcal{L}=&-\frac{1}{4}F_{\mu\nu}F^{\mu\nu}-\frac{1}{2}(\partial_\mu A^\mu)^2\nonumber\\%=-\frac{1}{2}(\partial_\mu A_\nu\partial^\mu A^\nu-\partial_\mu A_\nu\partial^\nu A^\mu)-\frac{1}{2}(\partial_\mu A^\mu)^2\nonumber\\
+%=&-\frac{1}{2}\partial_\mu A_\nu\partial^\mu A^\nu+\frac{1}{2}\partial_\mu (A_\nu\partial^\nu A^\mu)-\frac{1}{2}A_\nu\partial_\mu\partial^\nu A^\mu-\frac{1}{2}\partial_\mu(A^\mu\partial_\nu A^\nu)+\frac{1}{2}A^\mu\partial_\mu\partial_\nu A^\nu\nonumber\\
+=&-\frac{1}{2}\partial_\mu A_\nu\partial^\mu A^\nu.
+\end{align}
+不难验证由上式的确是可以拿出洛伦茨规范下的场方程的.
+
+由此, 我们可以写出在费曼规范下, 与场共轭的正则动量场为
+\begin{align}
+\pi^0=&\frac{\partial\mathcal{L}}{\partial\dot{A}_0}=F^{00}-\partial_\mu A^\mu=-\partial_\mu A^\mu=\partial^iA^i-\partial^0A^0,\\
+\pi^i=&\frac{\partial\mathcal{L}}{\partial\dot{A}_i}=F^{i0}-0=\partial^i A^0-\partial^0 A^i=E^i;
+\end{align}
+而当在拉氏密度中去掉四维散度项后, 场的正则动量就是
+\begin{align}
+\pi^\mu=\frac{\partial\mathcal{L}}{\partial\dot{A}_\mu}=-\dot{A}^\mu.
+\end{align}
+比较上式与由未去掉四维散度项的拉氏密度得出的动量可得, 在拉氏密度中去掉四维散度项, 相当于在共轭动量中去掉空间三维散度项.
+
+因为现在场量~$A^\mu$ 有~4 个分量, 故我们需要引入~4 个独立的四维极化矢量~$\epsilon^\lambda_\mu(\bm{p}),~\lambda=0,1,2,3$. 它们满足的正交归一化关系和完备关系如下
+\begin{gather}
+g^{\mu\nu}\epsilon^\lambda_\nu(\bm{p})\epsilon^{\lambda'}_\mu(\bm{p})=g^{\lambda\lambda'},\\
+g_{\lambda\lambda'}\epsilon^\lambda_\mu(\bm{p})\epsilon^{\lambda'}_\nu(\bm{p})=g_{\mu\nu}.
+\end{gather}
+我们取波矢沿第三轴时, $p^\mu=k^\mu=(\omega,0,0,k)$; 而为反映电磁波有两个横向分量这个事实, 我们应有~$g^{\mu\nu}p_\mu\epsilon^1_\nu=0,~g^{\mu\nu}p_\mu\epsilon^2_\nu=0$; 于是此时~4 个四维极化矢即选为如下~$\epsilon^0=(1,0,0,0)^T,~\epsilon^1=(0,1,0,0)^T,~\epsilon^2=(0,0,1,0)^T,~\epsilon^3=(0,0,0,1)^T$.
+
+现在我们写出本场的解
+\begin{align}
+&A_\mu(x)=\int\frac{d^3\bm{p}}{(2\pi)^3\sqrt{2E_{\bm{p}}}}\sum_{\lambda=0}^3\epsilon^\lambda_\mu(\bm{p})\left(a^\lambda_{\bm{p}}e^{-ipx}+a^{\lambda\dag}_{\bm{p}}e^{ipx}\right),\\
+&\pi^\mu(x)=\int\frac{d^3\bm{p}}{(2\pi)^3}i\sqrt{\frac{E_{\bm{p}}}{2}}\sum_{\lambda=0}^3(\epsilon^\mu)^\lambda(\bm{p})\left(a^\lambda_{\bm{p}}e^{-ipx}-a^{\lambda\dag}_{\bm{p}}e^{ipx}\right).
+\end{align}
+本场被赋予以下等时对易关系是恰当的:
+\begin{gather}
+[A_\mu(\bm{x}),A_\nu(\bm{y})]=[\pi^\mu(\bm{x}),\pi^\nu(\bm{y})]=0,\\
+[A_\mu(\bm{x}),\pi_\nu(\bm{y})]=ig_{\mu\nu}\delta^3(\bm{x}-\bm{y});
+\end{gather}
+相应的动量空间中的对易关系就是:
+\begin{gather}
+[a_{\bm{p}}^\lambda,a_{\bm{p}'}^{\lambda'}]=[a_{\bm{p}}^{\lambda\dag},a_{\bm{p}'}^{\lambda'\dag}]=0,\\
+[a_{\bm{p}}^\lambda,a_{\bm{p}'}^{\lambda'\dag}]=-g_{\lambda\lambda'}(2\pi)^3\delta^3(\bm{p}-\bm{p}').
+\end{gather}
+由上述最后一式不难看出, 标量光子的归一化是负的: $\langle0|a^{0\dag}_{\bm{p}}a^0_{\bm{p}'}|0\rangle=-(2\pi)^3\delta^3(\bm{p}-\bm{p}')$, 是鬼态. --具有负归一化的态, 是非物理的, 我们称为鬼态.
+
+现在就可拿出场的各种力学量了; 不过在此之前, 我们来对原先的洛伦兹条件作一分析, 并进而解决鬼态的问题
+
+
+
+我们已经说过, 在费曼规范中, 我们已不用要求洛伦兹条件~$\partial_\mu A^\mu$. 的确, 我们也可以看出, 这个条件与上述实空间中场与其共轭动量的对易关系是矛盾的. 但若我们一定要问, 原来的洛伦兹条件, 在此时, 扮演的却又是何种角色呢? 由稍后的分析不难确证, 此时我们有
+\begin{align}
+\langle\psi|\partial_\mu A^\mu|\psi\rangle=0.
+\end{align}
+上式称为弱洛伦兹条件, 或称为~Gupta-Bleuler 条件. 进一步地, 此条件还可写为~$\partial^\mu A^+_\mu(x)|\phi\rangle=0$. 不难解出, 前式在动量空间中即
+\begin{align}
+\left(a_{\bm{p}}^3-a_{\bm{p}}^0\right)|\phi\rangle=0;
+\end{align}
+此即动量空间中的~Gupta-Bleuler 条件. 上式鲜明展示出, 在任何情况下, 标量光子与纵光子同时存在, 且互相抵消. 例如, 对于粒子数, 上式就给出~$\langle\psi|a^{3\dag}_{\bm{p}}a^3_{\bm{p}'}-a^{0\dag}_{\bm{p}}a^0_{\bm{p}'}|\psi\rangle=0$.
+
+
+本场的总力学量, 如能量, 可求出为
+\begin{align}
+H=&\int d^3\bm{x}\left(-\dot{A}^\mu \dot{A}_\mu+\frac{1}{2}\partial_\mu A_\nu\partial^\mu A^\nu\right)=\frac{1}{2}\int d^3\bm{x}\left(A_\mu\partial_0\partial^0A^\mu-\dot{A}^\mu \dot{A}_\mu\right)\nonumber\\
+=&-\frac{1}{2}\int d^3\bm{x}iA_\nu i\overset{\leftrightarrow}{\partial}_0\partial^0A^\nu=\int\frac{d^3\bm{p}}{(2\pi)^3}E_{\bm{p}}\left(-g_{\lambda\lambda'}\right)a^{\lambda'\dag}_{\bm{p}}a^{\lambda}_{\bm{p}}\nonumber\\
+=&\int\frac{d^3\bm{p}}{(2\pi)^3}E_{\bm{p}}(a^{i\dag}_{\bm{p}}a^i_{\bm{p}}-a^{0\dag}_{\bm{p}}a^0_{\bm{p}'})=\int\frac{d^3\bm{p}}{(2\pi)^3}E_{\bm{p}}\sum_{i=1}^2a^{i\dag}_{\bm{p}}a^i_{\bm{p}}.
+\end{align}
+当然, 我们亦有~$P^\mu=-\frac{1}{2}\int d^3\bm{x} iA_\nu i\overset{\leftrightarrow}{\partial}_0\partial^\mu A^\nu$. 显然可见, 在本协变量子化中, 得益于~Gupta-Bleuler 条件, 我们依然使理论获得了真实解.
+
+
+
+
+场在本规范下的协变对易关系为
+\begin{align}
+[A_\mu(x),A_\nu(y)]=-g_{\mu\nu}[\phi(x),\phi(y)];
+\end{align}
+场在本规范下的费曼传播子为
+\begin{align}
+D_{F\mu\nu}(x-y)=\langle0|TA_\mu(x)A_\nu(y)|0\rangle=\int\frac{d^4p}{(2\pi)^4}\frac{-ig_{\mu\nu}}{p^2+i\epsilon}e^{-ip(x-y)}.
+\end{align}
+对于前文中具有任意~$\xi$ 值的拉氏密度, 相应的场的费曼传播子就是
+\begin{align}
+D_{F\mu\nu}(x-y)=\int\frac{d^4p}{(2\pi)^4}\frac{-i}{p^2+i\epsilon}\left(g_{\mu\nu}+(\xi-1)\frac{p_\mu p_\nu}{p^2}\right)e^{-ip(x-y)}.
+\end{align}
+
+
+
+
+
+
+\subsection{有质量矢量场, 质量破坏规范变换}
+
+
+
+~~~~在自由电磁场的拉氏量中加入一质量项:
+\begin{align}
+\mathcal{L}=-\frac{1}{4}F_{\mu\nu}F^{\mu\nu}+\frac{1}{2}m^2A_\mu A^\mu,
+\end{align}
+我们就得到了描述有质量的矢量场的拉氏密度. 上式导致的运动方程即
+\begin{align}
+\partial_\mu F^{\mu\nu}+m^2A^\nu=0.
+\end{align}
+对上式两边取散度, 可得~$m^2\partial_\nu A^\nu=0$; 进而知~$\partial_\nu A^\nu=0$~(此条件亦使上述方程化为~$(\partial^2+m^2)A^\mu=0$). 此结果是对场的必然限制, 表明有质量的矢量场不再可以被施行规范变换了.
+
+我们曾经说过, 调和中间玻色子的质量与规范变换这两件事, 将导致自发对称破缺与希格斯机制的出场. 静待后详, 兹不赘述.
+
+
+
+

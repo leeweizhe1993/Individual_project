@@ -1,0 +1,402 @@
+
+
+
+\section{量子场论的泛函表述: 路径积分量子化}
+
+~~~~行文至此, 一般地, 就可以直接进入相互作用理论了. 但是, 鉴于无论在自由场论还是在相互作用场论中, 路径积分都有其重要且或更简洁的一面, 所以在进入相互作用理论之前, 我们先研究作为量子场论/力学的泛函方法的路径积分理论.
+
+
+%经典粒子的最小作用量原理, 给出的其运动的牛顿方程, 在量子下不再有太大意义; 场的最小作用量原理, 给出场的运动方程, 亦即粒子一次量子化后的~(概率) 方程, 在量子下仍有重要地位!
+
+%或曰, 单粒子作用量最小给出牛顿方程, 量子下无重大地位; 多粒子~(场势, 场位形) 作用量最小, 给出场方程, 量子下仍有意义!!!!!!为什么呢? 原因是, 天然就这样, 这就是场的观点与分析力学观点相交牛顿力学的优胜之处! 也许, 人们会想, 单粒子场应该退化到牛顿情况, 但单粒子情况下, 我们仍得到场方程! 这有问题嘛?没有! 因为场论方法中, 我们带上了场量\phi, 它出现, 就是有意义的!
+
+%量子力学的路径积分, 在经典时, 其它相位相消, 作用量最小那一条保留, 便是经典路径.
+
+
+之前讲述的场的粒子结果--即量子化, 是以先拿出场的运动方程与解, 进而赋予实空间或动量空间中的场量以恰当的对易关系而进行的. 这种量子化的方法, 叫正则~(若关系是对易的) 或~Jordan-Wigner (若关系是反对易的) 量子化. 路径积分的表述形式, 将包含正则量子化, 但在某些方面比后者更为有效. 本章我们就研究之.
+
+\subsection{泛函微积分基础, 量子场论中心等式, 格拉斯曼数}
+\subsubsection{高斯积分, 高斯重积分, 高斯矩}
+~~~~
+通过平方转换到极坐标系再开方, 可得基本高斯积分~$\int dx e^{-\frac{1}{2}x^2}=\sqrt{2\pi}$; 进一步可得出如下标度高斯积分
+\begin{align}
+\int_{-\infty}^{+\infty} dx e^{-\frac{1}{2}ax^2}=\sqrt{\frac{2\pi}{a}}.
+\end{align}
+由上式, 我们还可得下述积分
+\begin{align}
+\int_{-\infty}^{+\infty} dx e^{-\frac{1}{2}ax^2\pm Jx}=\sqrt{\frac{2\pi}{a}}e^{J^2/2a},
+\end{align}
+称为有源高斯积分; 其中~$a,~J$ 可取复数.
+
+若我们设~$\det S$ 是从~$\bm{x}:=(x^1,x^2,\cdots,x^n)^T$ 到~$\bm{y}=S\bm{x}$ 的雅可比行列式, 使~$\bm{x}^TK\bm{x}=\bm{y}^T\bm{y}$; 从而我们得到~$K=S^TS$ 是对称矩阵, 有~$\det S=\sqrt{\det K}$. 于是, 我们可求得实空间~$n$ 维高斯重积分如下
+\begin{align}
+&\int_{-\infty}^{+\infty} d^n x e^{-\frac{1}{2}\bm{x}^TK\bm{x}}=\int_{-\infty}^{+\infty} \frac{d^n y}{\det S} e^{-\frac{1}{2}\bm{y}^T\bm{y}}\nonumber\\
+=&\frac{1}{\sqrt{\det K}}\prod_{i=1}^n\int_{-\infty}^{+\infty}dy_ie^{-\frac{1}{2}y^2_i}=\sqrt{\frac{(2\pi)^n}{\det K}}.
+\end{align}
+同样, 有源高斯重积分就是
+\begin{align}
+\int_{-\infty}^{+\infty} d^n x e^{-\frac{1}{2}\bm{x}^TK\bm{x}+\bm{J}^T\bm{x}}:=\sqrt{\frac{(2\pi)^n}{\det K}}e^{-\frac{1}{2}JK^{-1}J}.
+\end{align}
+
+另外, 对标度高斯积分中的~$a$ 进行~$n$ 次求导, 我们还可得
+\begin{align}
+\int_{-\infty}^{+\infty} dx x^{2n}e^{-\frac{1}{2}ax^2}=\sqrt{\frac{2\pi}{a}}\frac{1}{a^n}(2n-1)(2n-3)\cdots5\cdot3\cdot1=\sqrt{\frac{2\pi}{a}}\frac{1}{a^n}(2n-1)!!,
+\end{align}
+称为高斯矩. 从而, 我们可得如下平均
+\begin{align}
+\langle x^{2n}\rangle=\frac{\int_{-\infty}^{+\infty} dx x^{2n}e^{-\frac{1}{2}ax^2}}{\int_{-\infty}^{+\infty} dx e^{-\frac{1}{2}ax^2}}=\frac{1}{a^n}(2n-1)!!.
+\end{align}
+
+
+
+\subsubsection{泛函积分, 高斯泛函积分}
+
+
+~~~~我们把泛函积分定义为如下无限维重积分:
+\begin{align}
+\int\mathcal{D}\xi F[\xi]:=\lim_{\Delta x\rightarrow0}\int\left(\prod_x\frac{d\xi_x}{C}\right)F(\xi_x);
+\end{align}
+由此定义可看出, 泛函积分具有如下平移不变性:
+\begin{align}
+\int\mathcal{D}\xi F[\xi]=\int\mathcal{D}\xi F[\xi+\eta].
+\end{align}
+由上述定义, 我们可求得泛函高斯积分为
+\begin{align}
+\int\mathcal{D}\xi e^{-\frac{1}{2}\xi^2}:=\int\mathcal{D}\xi e^{-\frac{1}{2}\int dx\xi^2(x)}=1;
+\end{align}
+最后的结果是我们选择相应的常数~$C$ 所致; 且我们采用了简记~$\xi:=\int dx\xi$. 于是我们进一步可得
+\begin{gather}
+\int\mathcal{D}\xi e^{-\frac{1}{2}\xi^2\pm J\xi}=e^{\frac{1}{2}J^2},\\
+\int\mathcal{D}\xi e^{-\frac{1}{2}\xi K\xi+J\xi}=\frac{1}{\sqrt{\det K}}e^{\frac{1}{2}JK^{-1}J},\label{fanhan}\\
+\int\mathcal{D}\xi^*\mathcal{D}\xi e^{-\xi^* K\xi+J^*\xi+J\xi^*}=\frac{1}{\det K}e^{J^*K^{-1}J}.
+\end{gather}
+其中亦采用了简记~$\xi^*K\xi:=\int dxdy\xi^*(x)K(x,y)\xi(y)$ 等.
+
+
+\subsubsection{泛函微商, 量子场论中心等式}
+
+~~~~
+设函数~$\xi(x)$ 在~$y$ 点有改变~$\varepsilon\delta(x-y)$, 则可定义泛函有如下微商:
+\begin{align}
+\frac{\delta F[\xi(x)]}{\delta\xi(y)}:=\lim_{\varepsilon\rightarrow0}\frac{F[\xi(x)+\varepsilon\delta(x-y)]-F[\xi(x)]}{\varepsilon}.
+\end{align}
+由此发现~$\frac{\delta}{\delta \xi(y)}\xi(x)=\delta(x-y)$. 于是不难求得我们有如下泛函微商~(注意其中开始采用简记):
+\begin{gather}
+\frac{\delta}{\delta \xi(x)}\xi=\frac{\delta}{\delta \xi(x)}\int dy \xi(y)=\int dy\delta(x-y)=1,~\frac{\delta}{\delta\xi(x)}\xi G\eta=G\eta,\\
+\frac{\delta}{\delta \xi(x)}e^{-\frac{1}{2}\xi^2}=-\xi e^{-\frac{1}{2}\xi^2},~\frac{\delta}{\delta \xi(x)}e^{-\xi\eta}=-\eta e^{-\xi\eta}.
+\end{gather}
+据此, 我们可以演算出下述积分
+\begin{align}
+\int\mathcal{D}\xi F(\xi)e^{-\frac{1}{2}\xi K\xi+J\xi}=&\int\mathcal{D}\xi\sum_nf_n\xi^n e^{-\frac{1}{2}\xi K\xi+J\xi}=F(\delta/\delta J)e^{\frac{1}{2}JK^{-1}J};
+\end{align}
+其中已略去因子~$1/\sqrt{\det K}$. 由此我们立得下式
+\begin{align}\label{center}
+\int\mathcal{D}\xi e^{-\frac{1}{2}\xi K\xi-V(\xi)+J\xi}=e^{-V(\delta/\delta J)}e^{\frac{1}{2}JK^{-1}J},
+\end{align}
+称为量子场论的中心等式.
+
+
+\subsubsection{格拉斯曼数~(外代数) 及其微积分}
+~~~~在费米子或超对称等理论中, 我们需要用到格拉斯曼数, 或外代数. 一个~$n$ 维格拉斯曼代数有~$n$ 个生成元~$\xi_i,~i=1,2,\cdots,n$, 满足~$\{\xi_i,\xi_j\}=0$. 从而我们立知, 对任何格拉斯曼数都有
+\begin{align}
+\xi^2=0.
+\end{align}
+亦因此, 格拉斯曼函数展开式只包括有限项, 如~$f(\xi)=p+q\xi,~g(\xi,\eta)=p+q\xi+r\eta+s\xi\eta$ 等; 其中~$p,q,r,s$ 为~$c$ 数. 另外, 格拉斯曼数在复共轭运算下有~$(\xi^*)^*=\xi,~(\xi\eta)^*=-\eta^*\xi^*$.
+
+我们要求格拉斯曼数的函数积分仍然满足平移不变性, 即~$\int d\xi f(\xi+\eta)=\int d\xi f(\xi)$; 将~$f(\xi)=p+q\xi$ 代入, 就得到~$\int d\xi q\eta=0$. 要求上式对任何~$c$ 数~$q$ 都成立, 就必然得出
+\begin{align}
+\int d\xi=0.
+\end{align}
+注意微分~$d\xi_i$ 也是一个格拉斯曼变量, 即亦有~$\{\xi_i,d\xi_j\}=0,~\{d\xi_i,d\xi_j\}=0$. 另外, 作为一个~$c$ 数, 我们定义
+\begin{align}
+\int d\xi\xi=1.
+\end{align}
+以上两条是格拉斯曼数的基本积分性质, 由它们我们就可以进行具体运算了. 例如~$\int d\xi f(\xi)=q,~\int d\xi g(\xi,\eta)=q+s\eta,~\int d\eta g(\xi,\eta)=r-s\xi$.
+
+我们现在考虑多维情况, 即~$\xi:=(\xi_1,\xi_2,\cdots,\xi_n)$. 在积分元变换即~$\xi=S\eta$ 下, 我们有
+\begin{align}
+d^n\xi=\frac{1}{\det S}d^n\eta;
+\end{align}
+显然这与~$c$ 数的情况是恰好相反的.
+
+下面我们研究格拉斯曼数的微商性质. 微商运算包含用因子~$\frac{1}{\Delta \xi_i}$ 相乘的运算, 所以结果与次序有关; 我们定义作用在左边. 于是可得
+\begin{align}
+\frac{\partial}{\partial\xi}g(\xi,\eta)=q+s\eta,~\frac{\partial}{\partial\eta}g(\xi,\eta)=r-s\xi.
+\end{align}
+由此可见, 格拉斯曼数的微商与积分给出相同的结果. 另外, 我们容易证明
+\begin{align}
+\left\{\xi_i,\frac{\partial}{\partial\xi_j}\right\}=\delta_{ij},~\left\{\frac{\partial}{\partial\xi_i},\frac{\partial}{\partial\xi_j}\right\}=0.
+\end{align}
+
+
+最后, 我们来考虑格拉斯曼数的高斯积分. 对于两个独立的格拉斯曼变量, 显然可知~$e^{-\bar{\xi}\xi}=1-\bar{\xi}\xi$; 于是我们可得
+\begin{align}
+\int d\bar{\xi}d\xi e^{-\bar{\xi}\xi}=1,~\int d\bar{\xi}d\xi e^{-\bar{\xi}a\xi}=a=e^{\ln a}.
+\end{align}
+推广到多维情况, 我们亦可算出
+\begin{align}
+\int d^n\bar{\xi}d^n\xi e^{-\bar{\xi}\cdot\xi}=1.
+\end{align}
+在如下换元~$\eta=S\xi,~\bar{\eta}=\bar{S}\bar{\xi}$ 的情况下, 我们可算得
+\begin{align}
+\int d^n\bar{\eta}d^n\eta e^{-\bar{\eta}\cdot\eta}=\frac{1}{\det(\bar{S}^{(T)}S)}\int d^n\bar{\xi}d^n\xi e^{-\bar{\xi}^T\bar{S}^TS\xi}=1,
+\end{align}
+所以有
+\begin{align}
+\int d^n\bar{\xi}d^n\xi e^{-\bar{\xi} K\xi}=\det K;
+\end{align}
+其中~$K:=\bar{S}^TS$. 同样, 我们可得如下泛函积分:
+\begin{align}
+\int \mathcal{D}\bar{\xi}\mathcal{D}\xi e^{-\bar{\xi} K\xi}=\det K;
+\end{align}
+其中有简记~$\bar{\xi}K\xi:=\int dxdy\bar{\xi}(x)K(x,y)\xi(y)$; 因子~$\det K$ 可被吸入积分测度中.
+
+
+\subsection{量子力学的路径积分表述, 算符编时积, 生成泛函, Bethe-Salpeter 方程}
+%\subsection{量子力学的路径积分形式: 薛定谔方程传播子的对各经典路径~(而未必经典~$S=0$ 的那条) 的泛函积分式构造; Bethe-Salpeter 方程}
+%不用搞薛氏方程, 进而力学量对易啦, 被我包啦
+~~~~对~$K(q_n,t;q_0,t_0)=\langle q|U(t,t_0)|q_0\rangle=\langle q|e^{-iH(t-t_0)}|q_0\rangle=\langle q_n,t|q_0,t_0\rangle$, 即薛定谔方程/场的传播子/跃迁振幅, 我们可以进行如下运算~(其中我们将~$e^{-iH(t-t_0)/n}$ 用~$e^{A+B}=e^Ae^Be^{-[A,B]/2}$ 作分解, 并忽略了高阶项, 然后又进行了合并):
+\begin{align}
+&K(q_n,t;q_0,t_0)=\langle q_n|e^{-iH(t-t_0)}|q_0\rangle\nonumber\\
+=&\prod_{i=0}^{n-1}\int dq_i\langle q_{i+1}|e^{-iH(t-t_0)/n}|q_i\rangle=\prod_{i=0}^{n-1}\int dq_i  dp_i  \langle q_{i+1}|p_i\rangle\langle p_i|e^{-iH(t-t_0)/n}|q_i\rangle\nonumber\\
+=&\prod_{i=0}^{n-1}\int \frac{dq_i  dp_i}{2\pi} e^{ip_i(q_{i+1}-q_i)}e^{-iH(t-t_0)/n}=\prod_{i=0}^{n-1}\int \frac{dq_i  dp_i}{2\pi} e^{ip\dot{q}dt}e^{-iHdt}\nonumber\\
+=&\prod_{i=0}^{n-1}\int \frac{dq_i  dp_i}{2\pi} e^{i(p\dot{q}-H)dt}:=\int\mathcal{D}q\mathcal{D}pe^{i\int dt(p\dot{q}-H)};
+\end{align}%体系仍有动量与势能, 但不一定要满足势能梯递的负值等于质量倍的加速度!!!!!!!!!!!
+注意从上述第三行开始, $H$ 已不是算符. 另外, 因为在某个具体计算过程中, 我们都会考虑归一化, 所以上述以及下述泛函积分中, 我们都省略了一个常数因子. 若哈密顿量具有~$H(p,q)=\frac{p^2}{2m}+V(q)$ 的形式, 则我们进一步可得
+\begin{align}
+K=&\int\mathcal{D}qe^{-i\int dt V(q)}\int \mathcal{D}pe^{\int dt(-\frac{i}{2m}p^2+i\dot{q}p)}
+=\int\mathcal{D}qe^{-i\int dt V(q)}e^{i\int dt\frac{i}{2}m\dot{q}^2}\nonumber\\
+=&\int\mathcal{D}q e^{i\int dt\left[\frac{1}{2}m\dot{q}^2-V(q)\right]}=\int\mathcal{D}q e^{i\int dtL}=\int\mathcal{D}q e^{iS};
+\end{align}
+其中用到了泛函积分式~(\ref{fanhan}).
+
+将传播子用把作用量对所有可能的经典路径~(即不限于~$S=0$ 的那条) 进行泛函积分的方式表示出来, 称为量子力学的路径积分形式; 此泛函方法构成了我们描述或计算量子力学的平行于薛定谔方程~(或曰量子力学的正则形式) 的又一方法. 前述, 传播子路径积分~$K=\int\mathcal{D}q e^{iS}$ 是作为薛定谔方程的自然推论出现的; 当然, 我们也可把此结果本身就当成是一个原理~(自然, 以之为基础亦是可以导出薛定谔方程的), 称为量子作用量原理.
+
+路径积分, 从物理图像上讲, 亦是相当清晰直观的. 我们已经知道, 对比于经典力学中, 粒子满足的力学规律使其下粒子按具有最小作用量的方式进行运动, 显然, 在微观世界中, 粒子的满足薛定谔方程的路径, 是具有各种经典作用量值的路径的叠加; 这由传播子满足的~(经插入完备关系而可见的) 惠更斯原理就亦可看出. 那么把这件事情/思想本身当成一个原理~(而不作为薛定谔方程的推论), 也就是非常自然的了. %于是, 我们就可以以按具有各种作用量的路径来进行泛函积分的办法来构造传播子. 此办法作为量子作用量原理的具体数学实现, 就称为路径积分. 显然, 路径积分方法与薛定谔方程是等价的. 而在场论中, 我们亦有路径积分可以平行于各正则化了的场方程而给出费曼传播子. 下面我们就具体研究之.
+
+
+在路径积分量子力学中, 空间坐标~$q(t)$ 的编时积显然就是
+%算符--记为~$q(t)$--的编时积就可表为
+\begin{align}
+\langle q,t|Tq(t_1)\cdots q(t_n)|q_0,t_0\rangle=\int\mathcal{D}qq(t_1)\cdots q(t_n)e^{i\int dtL(q,\dot{q})};
+\end{align}
+体系引入外源~$L\rightarrow L+Jq$ 后的跃迁振幅就可表为
+\begin{align}
+\langle q,t|q_0,t_0\rangle_J=\int\mathcal{D}q e^{i\int dt Jq}e^{i\int dtL(q,\dot{q})}=\langle q,t|Te^{i\int dt Jq}|q_0,t_0\rangle.
+\end{align}
+在外源作用下体系的从初基态到末基态的跃迁振幅
+\begin{align}
+Z[J]:=\langle 0,\infty|0,-\infty\rangle_J=\langle 0,\infty|Te^{i\int dt Jq}|0,-\infty\rangle%=N\int\mathcal{D}qe^{i\int^{\infty}_{-\infty}dt\left[L+Jq+\frac{1}{2}i\varepsilon q^2\right]}
+\end{align}
+称为生成泛函; 于是我们可知坐标编时积的基态平均与生成泛函的微商之间有如下关系:
+\begin{align}
+\langle 0,\infty|Tq(t_1)\cdots q(t_n)|0,-\infty\rangle=\frac{\delta^nZ[J]}{i^n\delta J(t_1)\cdots\delta J(t_n)}\Big|_{J=0}.
+\end{align}
+事实上, 以上诸式子在量子场论中更具意义.
+
+%注意这些中间放的都是算符, 所以转到量子场论中, 中间放上场算符就亦是可以的.
+
+
+
+
+
+%量子力学中的中的路径积分, 是各种经典作用量路径被取; 量子场论中的路径积分, 是各种量子作量子量场路被取!
+%量子力学到场论, 正则的是二次量子化, 路径积分亦有二次路径积分化. 哈哈, 一笑.
+
+
+
+%量子力学路径积分: take 经典路径 to 薛定谔方程路径/经典多路径
+%量子场论路径积分: take 场的路径 to 大薛定谔方程径/场的多路径
+
+
+若拉氏量可分解为两项, 其中一项~$L_0$ 使传播子有严格解, 另一项~$-V$ 是微扰, 则我们可得
+\begin{align}
+&K(q,t;q_0,t_0)=\int\mathcal{D}qe^{i\int dt(L_0-V)}=\int\mathcal{D}qe^{i\int dtL_0}e^{-i\int dtV}\nonumber\\
+=&\int\mathcal{D}qe^{i\int dtL_0}\sum_{n=0}^{\infty}\frac{1}{n!}\left(-i\int dtV\right)^n=K_0+\int\mathcal{D}qe^{i\int dtL_0}\sum_{n=1}^\infty\frac{1}{n!}\left(-i\int dtV\right)^n\nonumber\\
+:=&K_0+\sum_{n=1}^{\infty}(-i)^nK_n:=K_0+K_0(-iV)K_0+K_0(-iV)K_0(-iV)K_0+\cdots\nonumber\\
+=&K_0-iK_0VK=K_0-iKVK_0;
+\end{align}
+注意上述相关步骤中采取了积分的简写; 而简写结果事实上也即动量空间中的公式. 上式称为~Bethe-Salpeter 方程; 亦可进一步变换为~$K=\frac{K_0}{1+iVK_0}$.
+
+
+
+
+
+
+
+\subsection{量子场论的路径积分形式}
+%不用搞场方程, 进而场量对易啦, 又被我包啦
+
+%也可以定义一个薛定谔场的路径积分, 注意思考它与薛定谔方程的路径积分的区别与联系.
+%量子力学是单粒子, 所以其路径积分中, 出现在指数上的拉氏量亦是单粒子的, 出现在时间演化算符上的能量亦是单粒子的; 量子场论中, 我们考虑的是多粒子的, 所以指数上的, 都是全体粒子, 即体系的总的拉氏量与能量, 也就是自然之事了. 问题是, 要对路径径分前中的$\langle\phi|$ 作一思考, 以及对场论中时间演化算符, 除了作用在场算符上有明确意义外, 作用在类似于量子力学中的波函数态矢的, 是什么东西. 这两个事实上是同一个; 也就是说, 它们是什么东西??????
+
+
+\subsubsection{量子场论中的路径积分及其与量子力学中的区别与联系, 场位形及其~``超薛定谔方程'', 生成泛函, 格林函数}
+%\subsubsection{量子场论中的路径积分与量子力学中的区别与联系: 未必要求量子~$S=0$, 但仍关心粒子的而非场位形的传播子; 相互作用场论中的生成泛函, 格林函数}
+~~~~类比于量子力学中的公式, 量子场论中的路径积分公式我们先直接取定为
+%如果严格类比量子力学, 这便是场1到场2 (中间满足多个K-G方程) 的传播子; 但, 我们还是把下式用为, 特定的场, 粒子从一地到另一地的传播; 所以, 下述式子整体值不再是我们要求的传播子~(因为它是场一到场二的), 而相位的才是!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!剩下的, 就是具体的办法罗织的问题啦!!!!!!!!!!!!!
+%不难发现, 场位形将代规路径; 对场位形\phi 进行~D\phi, 就相当于考虑所有粒子的~Dq
+\begin{align}
+&K(\phi,t;\phi_0,t_0)={}_S\langle\phi,t|\phi_0,t_0\rangle_S={}_S\langle\phi|e^{-iH(t-t_0)}|\phi_0\rangle_S={}_I\langle\phi|e^{-iH^I_{\textrm{int}}(t-t_0)}|\phi_0\rangle_I\nonumber\\
+=&\int\mathcal{D}\phi e^{i\int dx\mathcal{L}(\phi,\partial_\mu\phi)}=\int\mathcal{D}\phi e^{i\int dt L(\phi,\partial_\mu\phi)};
+\end{align}%在自由理论中, 采用海森堡绘景, 基矢不变, 上述值为零; 相互作用绘景中, 基矢演化由相互作用的哈密度顿量产生.
+%薛定谔方程, 拥有不同的经典作用量, 但拥有一个最小的量子作用量.
+其中~$H=\int d^3\bm{x}\mathcal{H}$ 为场/体系的总哈密顿量, 而~$|\phi\rangle:=|n_1,\cdots n_i\rangle$ 是场位形. %场算符的作用空间的多粒子态, 或曰一种场位形.
+%中间所有~(具有各种总作用量的) 场位形, 都有贡献!
+%势能梯度的负值, 就是我们感受到的所谓的力!
+
+%在自由场论中, 我们在海森堡绘景下工作, 这时场位形不显含时间, 于是这时~$\langle\phi|e^{-iH(t-t_0)}|\phi_0\rangle=0$; 这与最小作用量原理~$\delta S=0$
+
+%重要分析: 不含相互作用时, 粒子数基不含时, 觉得路径积分结果应为零; 但从指数上看, 指数上是体系的总拉氏量, 那么积分结果应不为零才对.
+
+%在单粒子量子力学, 如薛定谔方程中, 场位形的演化方程, 即单粒子概率幅的方程, 与场算符方程, 是一样的; 在多粒子量子场论中,
+
+类比于在量子力学中, 薛定谔方程或量子力学路径积分把粒子运动的经典路径非惟一化~(但~``量子路径'' 是惟一的), 上述式子把量子路径~(场方程; 如麦氏方程或~K-G 方程等) 也非惟一化了. 也就是说, 上式意味着场算符未必要满足前文的那些拥有最小量子作用量的量子场方程; 如同量子力学中指出的经典粒子未必要满足拥有最小经典作用量的那条路径一样.
+%注意~$\phi$ 代表满足某方程, 如~$K-G$ 方程的那个场, 而~$|\phi,t\rangle$ 代表场取
+%注意其中明写出的~$t$ 的意义与~$\phi(x)$ 内所含的时间的意义的不同, 以及注意~$|\phi,t\rangle$ 的意义与量子力学中~$|\psi(t)\rangle$ 的意义的不同. --
+
+%从而, 也就是说, $K(\phi,t;\phi_0,t_0)$ 意味着场从拥有某种量子场方程作为规律的位形, 到拥有另一种量子场方程作用规律的位形的传播.
+从而, 也就是说, $K(\phi,t;\phi_0,t_0)$ 意味着场从某个位形到另一个位形的传播概率幅. 但是, 这却并不是我们相要的传播子; 我们想要的, 还是前文提到过的描述单粒子传播的费曼传播子. 我们很快将发现, 这个要求, 不仅是不奇怪的, 而且与路径积分量子力学中的相关公式恰是相一致的.
+
+
+
+%描述满足同一个量子场方程的场, 其中粒子从一点到另一点的传播.
+
+%最后, 同样类比于量子力学, 我们可以得出非惟一化了的场算符量子路径, 满足惟一运动方程--我们不妨称之为超薛定谔方程--为
+%\begin{align}
+%|\phi,t\rangle=e^{-iH(t-t_0)}|\phi_0,t_0\rangle;
+%\end{align}
+%$\phi$ 描述具有特定位形的一个场, $|\phi,t\rangle$ 描述场取不同位形~(方程) 的概率幅, 上述方程即描述此概率幅的惟一规律.
+
+
+%是不过份的, 下面我们就将看到它的实现.
+
+
+
+%我们将发现, 对比于量子力学中, 路径积分同时包含了薛定谔方程与力学量的对易化, 在量子场论中, (其路径积分形式亦同时包含了场方程与场量的对易化, 括号中这一句, 场量的对易化还是没看出来的). 不仅于此, 由上式还可看出, 对比于量子力学的路径积分形式中, 粒子的经典轨道被非唯一化, 但波函数满足的薛定谔方程是唯一的, 在量子场论中, 场函数满足的正则运动方程也被非唯一化了. 伴随着这种变化, 我们稍后将发现, 量子场论中的传播子不是~$K(\phi,\phi_0)$, 而以别的身份出现.
+
+
+
+
+量子场论中, 无相互作用情况下, 体系的生成泛函即
+\begin{align}
+Z_0[J]:=\langle 0,\infty|0,-\infty\rangle_J=\int\mathcal{D}\phi e^{i\int^{\infty}_{-\infty}dx\left(\mathcal{L}_0+J\phi+\frac{1}{2}i\varepsilon \phi^2\right)}=\langle 0|Te^{i\int dx J\phi}|0\rangle;
+\end{align}
+我们定义下述量为体系的~$n$ 点关联函数或格林函数
+\begin{align}
+G(x_1,\cdots,x_n):=&\langle0|T\phi(x_1)\cdots \phi(x_n)|0\rangle=\int\mathcal{D}\phi \phi(x_1)\cdots \phi(x_n) e^{i\int dx\mathcal{L}_0}\nonumber\\
+=&\frac{\delta^nZ_0[J]}{i^n\delta J(x_1)\cdots\delta J(x_n)}\Big|_{J=0}.
+\end{align}
+对于有相互作用的情况, 生成泛函即为
+\begin{align}
+Z[J]:=&\int\mathcal{D}\phi e^{i\int^{\infty}_{-\infty}dx\left(\mathcal{L}_0+\mathcal{L}_{\textrm{int}}+J\phi+\frac{1}{2}i\varepsilon \phi^2\right)}\nonumber\\
+=&e^{i\mathcal{L}_{\textrm{int}}\left(\delta/i\delta J\right)}Z_0[J];
+\end{align}
+其中第二步我们假设了~$\mathcal{L}_{\textrm{int}}=\mathcal{L}_{\textrm{int}}(\phi)$, 并用到了泛函积分式~(\ref{center}). 场的~$n$ 点关联函数就是
+\begin{align}
+G(x_1,\cdots,x_n):=&\langle\Omega|T\phi_{H}(x_1)\cdots \phi_{H}(x_n)|\Omega\rangle=\int\mathcal{D}\phi \phi_H(x_1)\cdots \phi_H(x_n) e^{i\int dx\mathcal{L}}\nonumber\\
+=&\frac{\delta^nZ[J]}{i^n\delta J(x_1)\cdots\delta J(x_n)}\Big|_{J=0}.
+\end{align}
+另外, 因为我们将在下一章证明的式子~(\ref{omega}), 我们亦有
+\begin{align}
+\langle\Omega|T\phi_{H}(x_1)\cdots \phi_{H}(x_n)|\Omega\rangle=\frac{\int\mathcal{D}\phi \phi_I(x_1)\cdots \phi_I(x_n) e^{i\int dx\mathcal{L}}}{\int\mathcal{D}\phi e^{i\int dx\mathcal{L}}}.
+\end{align}
+
+
+
+
+
+
+
+\subsubsection{自由标量场/旋量场与矢量场的传播子, 生成泛函与两点关联函数}
+%注意此方法是严格平行于正则量子化的; 就是说, 此时我们可以假装完全不知道K-G 方程及其量子化等任何内容!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+\paragraph{自由标量场}
+~
+
+考虑到可以相差任意四维散度项, 自由标量场的拉氏密度可以写为~$\mathcal{L}_0=\frac{1}{2}(\partial_\mu\phi\partial^\mu\phi-m^2\phi^2)=-\frac{1}{2}\phi(\partial^2+m^2)\phi$; 再引入外源与小的负虚数项, 我们就可得到
+\begin{align}
+\mathcal{L}&=\mathcal{L}_0+J\phi+\frac{1}{2}i\varepsilon \phi^2=-\frac{1}{2}\phi(\partial^2+m^2-i\varepsilon)\phi+J\phi\nonumber\\
+:&=\frac{i}{2}\phi D_F^{-1}\phi+J\phi;
+\end{align}
+其中~$D_F:=-i(\partial^2+m^2-i\varepsilon)^{-1}$. 对比正则形式的场论知识, 我们知道此即本场的费曼传播子. 也就是说, 在二次型的拉氏密度中, 两场量之间所夹算符就之逆, 就是自由场的传播子. 这个结论是具有一般性的. 自由标量场的生成泛函为
+\begin{align}
+Z_0[J]=&\int\mathcal{D}\phi e^{-i\int dx\left[\frac{1}{2}\phi(\partial^2+m^2-i\varepsilon)\phi-J\phi\right]}\nonumber\\
+=&e^{-\frac{1}{2}J\left[i(\partial^2+m^2-i\varepsilon)\right]^{-1}J}\nonumber\\
+:=&e^{-\frac{1}{2}JD_FJ}.
+\end{align}
+注意上述过程中, 我们采取了简记, 如~$e^{-\frac{1}{2}JD_FJ}:=e^{-\frac{1}{2}\int dxdyJ(x)D_F(x-y)J(y)}$.
+
+通过格林函数与生成泛函的关系式, 我们不难求出场的单点格林函数为
+\begin{align}
+G(x)=\langle0|\phi(x)|0\rangle=\frac{\delta}{i\delta J(x)}e^{-\frac{1}{2}JD_FJ}=(iD_{Fxy}J_y)e^{-\frac{1}{2}JD_FJ}\Big|_{J=0}=0;
+\end{align}
+相似地, 我们可求得场的两点格林函数为
+\begin{align}
+G(x,y)=\langle0|T\phi(x)\phi(y)|0\rangle=D_F(x-y);
+\end{align}
+即场的费曼传播子. 一般地, 我们不难算出, 自由场中奇数点格林函数为~0, 偶数点格林函数等所场量的所有缩并, 即所有两点格林函数乘积之和.
+
+\paragraph{自由旋量场}
+~
+
+对自由旋量场的拉氏密度~$\mathcal{L}_0=\bar{\psi}(i\gamma^\mu\partial_\mu-m)\psi$ 中的两个场量分别引进外源, 再引入一个小的负虚数项, 就得
+\begin{align}
+\mathcal{L}=&\bar{\psi}(i\gamma^\mu\partial_\mu-m)\psi+\bar{\eta}\psi+\bar{\psi}\eta+i\varepsilon\bar{\psi}\psi\nonumber\\
+:=&-i\bar{\psi}S_F^{-1}\psi+\bar{\eta}\psi+\bar{\psi}\eta;
+\end{align}
+其中我们亦知~$S_F:=i(i\gamma^\mu\partial_\mu-m+i\varepsilon)^{-1}$ 即本场的费曼传播子. 于是, 我们可算得本场的生成泛函为
+\begin{align}
+Z_0[\bar{\eta},\eta]=&\int\mathcal{D}\bar{\psi}\mathcal{D}\psi e^{i\int dx (-i\bar{\psi}S_F^{-1}\psi+\bar{\eta}\psi+\bar{\psi}\eta)}\nonumber\\
+=&\int\mathcal{D}\bar{\psi}\mathcal{D}\psi e^{i\int dx \left[-i(\bar{\psi}-i\bar{\eta}S_F)S_F^{-1}(\psi-iS_F\eta)+i\bar{\eta}S_F\eta    \right]}\nonumber\\
+=&e^{-\bar{\eta}S_F\eta}.
+\end{align}
+由此可得本场的两点格林函数为
+\begin{align}
+G(x,y)=\langle0|T\psi(x)\bar{\psi}(y)|0\rangle=-\frac{\delta}{i^2\delta\bar{\eta}(x)\delta\eta(y)}\Big|_{\bar{\eta}=\eta=0}=S_F.
+\end{align}
+
+
+
+\paragraph{自由矢量场}
+~
+
+前述, 我们已一般地知道, 在二次型的拉氏密度中, 两场量之间所夹算符就之逆, 就是自由场的传播子. 现在我们把电磁场的拉氏量化成二次型, 以拿到其传播子.
+\begin{align}
+\mathcal{L}=&-\frac{1}{4}F_{\mu\nu}F^{\mu\nu}=-\frac12\partial_\mu A_\nu F^{\mu\nu}=\frac{1}{2}A_\nu\partial_\mu F^{\mu\nu}=\frac{1}{2}A_\nu\partial_\mu(\partial^\mu A^\nu-\partial^\nu A^\mu)\nonumber\\
+=&\frac12 A_\nu(\partial^2g^{\mu\nu}-\partial^\mu\partial^\nu)A_\mu.
+\end{align}
+但是, $i(\partial^2g^{\mu\nu}-\partial^\mu\partial^\nu)^{-1}$ 在任何情况下趋于无穷大, 并不能作为本场的传播子. 原因是显然的: 我没尚未考虑规范条件. 我们取洛伦茨规范, 于是此时~$\mathcal{L}=\frac12 A_\nu\partial^2g^{\mu\nu}A_\mu$, 显然
+\begin{align}
+D_{F\mu\nu}:=\frac{i}{g^{\mu\nu}\partial^2}=\frac{ig^{\mu\nu}}{\partial^2-i\varepsilon}
+\end{align}
+就的确是本场的传播子了.
+
+
+在矢量场的正则量子化中, 我们曾把本场拉氏密度写成了更一般的形式; 我们可同样求出此一般形式下的传播子.
+\begin{align}
+\mathcal{L}=&-\frac{1}{4}F_{\mu\nu}F^{\mu\nu}-\frac{1}{2\xi}\partial_\mu A^\mu\partial_\nu A^\nu\nonumber\\
+=&\frac12 A_\nu(\partial^2g^{\mu\nu}-\partial^\mu\partial^\nu)A_\mu+\frac{1}{2\xi}A_\nu\partial^\nu\partial^\mu A_\mu\nonumber\\
+=&\frac12 A_\nu\left[\partial^2g^{\mu\nu}-(1-\frac{1}{\xi})\partial^\mu\partial^\nu\right] A_\mu;
+\end{align}
+由此可得此时的场的传播子即
+\begin{align}
+D_{F\mu\nu}=\frac{-i}{p^2+i\varepsilon}\left[g^{\mu\nu}-(1-\xi)\frac{p_\mu p_\nu}{p^2}\right].
+\end{align}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

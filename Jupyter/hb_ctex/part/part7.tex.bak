@@ -1,0 +1,546 @@
+
+
+
+%量子场论, 就是粒子数基的理论, 就是二次量子化, 或无穷维谐振子. 那就什么说是场呢? 强调场, 是因为, 粒子数基上的升降算符, 在洛伦兹转动下, 是其相应的标/矢/旋量场. 哈哈哈, ! 赞!我爱瑾瑾大宝宝!!
+
+\section{相互作用场论~(散射振幅/截面的计算): 以~$\phi^4$ 模型, Yukawa~理论与~QED 等为例}
+\subsection{QED 等基本相互作用, $\phi^4$ 模型, Yukawa~理论}
+%~~~~前面自由场论的章节我们已鲜明体会到, 量子场论用产生湮灭算符的办法来描述粒子或场, 如电子与电磁场等. 不像牛顿力学中的瞬时超距~(或曰无中间场) 相互作用, 电动力学中, 例如说, 把两个电子间的相互作用, 看成是电子分别地与自身近邻的由另外一个电子激发的场之间的相互作用. 进一步地, 在量子场论中, 这就表现为描述彼两个粒子的两种场的耦合. 我们已经知道, 定域规范不变性, 是这种耦合必须满足的原理; 或曰是我们引入耦合的依据, 就是定域规范不变性. 由此原理, 前文我们已引入量子电动力学的拉氏量:
+~~~~在前文分析力学一章中我们已经明晰, 量子场论中, 我们系统地通过规范原理来引入相互作用; 如
+\begin{align}
+\mathcal{L}_{\textrm{scalar~QED}}=&D_\mu\phi^\dag D^\mu\phi-m^2\phi^\dag\phi\nonumber\\
+=&\mathcal{L}_{\textrm{free}}+iqA^\mu\phi\partial_\mu\phi^\dag-iqA_\mu\phi^\dag\partial^\mu\phi+q^2A^2\phi^\dag\phi\nonumber\\
+=&\mathcal{L}_{\textrm{free}}-A_\mu j^\mu_{(q)}+q^2A^2\phi^\dag\phi,\\
+\mathcal{L}_{\textrm{spinor~QED,~total}}=&\bar{\psi}(i\gamma^\mu D_\mu-m)\psi-\frac{1}{4}F_{\mu\nu}F^{\mu\nu}\nonumber\\
+=&\bar{\psi}(i\gamma^\mu \partial_\mu-m)\psi-q\bar{\psi}\gamma^\mu\psi A_\mu-\frac{1}{4}F_{\mu\nu}F^{\mu\nu}\nonumber\\
+=&\bar{\psi}(i\gamma^\mu \partial_\mu-m)\psi-A_\mu j^\mu_{(q)}-\frac{1}{4}F_{\mu\nu}F^{\mu\nu}
+\end{align}
+即分别是标量~QED 以及旋量~QED 的拉氏量.
+
+
+
+
+%下面我们再提两点. 第一, 因为因果律, 我们要求这种粒子间的相互作用, 也就是场的耦合, 是在相同时空点进行的. 我们之前提到的量子电动力学或量子色动力学, 作为描述自然界中其中两种基本相互作用的相互作用场论, 显然是符合此特征的. 第二, 一般地, 我们取相互作用项只是场量的函数, 而不含场量的导数项~(当然我们已见到标量~QED 中是含导数项的).
+
+除了~QED 或~QCD 等基本相互作用, 物理学中我们还经常用到其它的一些相互作用模型. 考虑到因果性与能量正定性, 最简单的, 我们有~$\phi^4$ 自相互作用模型等. 具体地, 标量场的~$\phi^4$ 自相互作用模型即
+\begin{align}
+\mathcal{L}=\frac{1}{2}(\partial_\mu\phi)^2-\frac{1}{2}m^2\phi^2-\frac{\lambda}{4!}\phi^4;
+\end{align}
+其中~$\mathcal{L}_{\textrm{int}}=-\mathcal{H}_{\textrm{int}}=-\frac{\lambda}{4!}\phi^4$. 在标准模型的电弱理论中, 希格斯场的自相互作用就由此模型描述. 另外, 在凝聚态物理的相关问题中, 我们也将遇到此模型.
+
+
+
+核子之间的相互作用, 根本原因是夸克之间交换胶子的强相互作用, 即应由~QCD 描述. 但在低能时, 我们可以唯象地认为是核子间交换~$\pi^0$ 介子的相互作用:
+\begin{gather}
+\mathcal{L}_{\textrm{Yukawa}}=i\bar{\psi}(i\gamma^\mu\partial_\mu-m)\psi+\frac{1}{2}(\partial_\mu\phi)^2-\frac{1}{2}m'^2\phi^2-g\bar{\psi}\psi\phi,
+\end{gather}
+上述理论称为旋量~Yukawa 理论. 标准模型中, 夸克或轻子与希格斯场耦合进而获得质量的相互作用, 亦由此模型描述. 当然, 我们亦可以有标量~Yukawa 理论:
+\begin{gather}
+~~~~~~\mathcal{L}_{\textrm{Yukawa}}=\partial_\mu\psi^\dag\partial^\mu\psi-m^2\psi^\dag\psi+\frac{1}{2}(\partial_\mu\phi)^2-\frac{1}{2}m'^2\phi^2-g\psi^\dag\psi\phi.
+\end{gather}
+
+
+
+%相互作用理论中, 能为实验所直接观测的, 就是衰变宽度或散射截面等. 而为了从理论上计算此量值, 最基础的, 是要求解作为动力学量的相互作用情况下场的散射振幅或关联函数等.
+
+在此进一步指出, 在量子场论中, 我们一般只考虑弱耦合, 这使我们能把相互作用当成微扰, 从而用级数展开的方式研究相互作用.
+
+
+
+%最后, 我们来对本小节中场算符的绘景作一说明:
+本小节中的场算符, 是以海森堡绘景下的场算符为例的. 例如此绘景下, 标量~$\phi^4$ 理论的场方程为~$(\partial^2+m^2)\phi=-\frac{\lambda}{3!}\phi^3$. 在以后的理论中, 我们一般在相互作用表象中进行, 例如那时用到的~$\phi^4$ 理论相互作用其实就是~$\mathcal{L}^I_{\textrm{int}}=-\mathcal{H}^I_{\textrm{int}}=-\frac{\lambda}{4!}\phi_I^4$. 此时场方程场~(算符运动) 方程为~$(\partial^2+m^2)\phi_I=0$, 当然与自由场情形是具有相同的形式的.
+
+
+
+%下面我们就着手解决之, 然后逐渐建立起相互作用理论的整个大厦.
+
+\subsection{相互作用场论的基本理论工具}
+%凝聚态中的零温格~(纯态) 林函数理论, 即量子场论中的本部分理论; 而凝聚态中的松原格林函数理论, 或温度格林理论理论, 即混合系综下的格林函数理论.
+\subsubsection{三种绘景, 相互作用绘景下的时间演化算符, $S$ 矩阵, 散射振幅; 关联函数, 维克定理}
+
+%如果我们说微扰含时的话, 一般不是薛景中含时, 而是指因转入到相互作用绘景中而导致的含时. 当然, 前种情况亦是存在的.
+\paragraph{三种绘景}
+~
+
+在弱耦合情况下, 我们一般把体系的相关量--稍后可见即时间演化算符, 散射算符或关联函数--按微扰相互作用进行级数展开. 薛定谔绘景下, 我们有~$i\hbar\frac{\partial}{\partial t}U_S=HU_S$, 从而~$U_S=e^{-iH(t-t')/\hbar}$; 这在有微扰相互作用的情况即~$H=H_0+H'$ 时, 亦是成立的. 但是, 若我们想用级数展开的方法来考察~$H'$, 式子~$U_S=e^{-iH(t-t')/\hbar}$ 却并不可以; 因为从后者进行的展开, 把~$H_0$ 的作用也展开了. 要想实现我们用级数展开的方法来考察~$H'$ 的这个目的, 需要用到相互作用绘景中的时间演化算符. 下面我们先介绍三种绘景.
+
+我们有薛定谔绘景如下:
+\begin{align}
+i\hbar\frac{\partial}{\partial t}|\psi(t)\rangle=H|\psi(t)\rangle,~\frac{\partial}{\partial t}F=0;
+\end{align}
+注意薛定谔绘景~(以及以下诸绘景) 不仅对薛定谔方程适用, 对任意场的方程及力学量都是适用的. 海森堡绘景如下:
+\begin{align}
+\frac{\partial}{\partial t}|\psi(t)\rangle_H=0,~i\hbar\frac{\partial}{\partial t}F_H=[F_H,H].
+\end{align}
+对于有相互作用的情况, $H=H_0+H'$, 我们有相互作用绘景如下:
+\begin{align}
+i\hbar\frac{\partial}{\partial t}|\psi(t)\rangle_I=H'_I|\psi(t)\rangle_I,~i\hbar\frac{\partial}{\partial t}F_I=[F_I,H_0].
+\end{align}
+海森堡绘景与相互作用绘景中算符满足的方程称为海森堡方程. 海森堡绘景与薛定谔绘景关系如下:
+\begin{align}
+|\psi(t)\rangle_H=e^{iHt}|\psi(t)\rangle,~F_H=e^{iHt}Fe^{-iHt};
+\end{align}
+可见在海森堡绘景中我们有~$H_H=H,~U_H=U_S$. 显然需要注意, 作为描述量子态随时演化的算符, $U$ 算符在不同绘间之间的变换规律与一般算符是不同的. 相互作用绘景与薛定谔绘景关系如下:
+\begin{align}
+|\psi(t)\rangle_I=e^{iH_0t}|\psi(t)\rangle,~F_I=e^{iH_0t}Fe^{-iH_0t};
+\end{align}
+也就是说在相互作用绘景下我们有~$H_{0I}=H_0,~H'_I=e^{iH_0t}H'e^{-iH_0t}$. 另外, 我们还可以算出海森堡绘景与相互作用绘景下的算符, 有如下关系:
+\begin{align}
+F_H=e^{iHt}e^{-iH_0t}F_Ie^{iH_0t}e^{-iHt}.
+\end{align}
+相互作用绘景下有~$i\hbar\frac{\partial}{\partial t}U_I=H'_IU_I$, 再结合薛定谔绘景下~$U$ 算符的方程以及两种绘景基矢之间的关系, 可得~$U_I=e^{iH_0t}U_Se^{-iH_0t_0}=e^{iH_0t}e^{-iH(t-t_0)}e^{-iH_0t_0}$.% 故可知上式中有~$e^{iH_0t}e^{-iHt}=U_I(t,0)$.
+~从前文的相关地方我们已经知道, 上述关于绘景的理不仅在量子力学中, 在量子场论中亦是成立的; 所以下文的相关分析, 亦是如此.
+
+
+
+\paragraph{相互作用绘景下的时间演化算符, $S$ 矩阵, 散射振幅}
+~
+
+尽管相互作用绘景下有~$i\hbar\frac{\partial}{\partial t}U_I=H'_IU_I$, 但此时~$H'_I=e^{iH_0t}H'e^{-iH_0t}$ 含时, 故我们不能再像薛定谔绘景中拿出~$U_S$ 那样, 直接拿出~$U_I=e^{-i\int_{t_0}^tdt'H'_I(t')/\hbar}$ 了; 虽然此式与我们接下来即将获得的正确结果很有联系. 我们这样做:
+\begin{align}
+U_I=&1-i\int_{t_0}^tdt_1H'(t_1)U_I(t_1,t_0)\nonumber\\
+=&1-i\int_{t_0}^tdt_1H'(t_1)+(-i)^2\int_{t_0}^tdt_1\int_{t_0}^{t_1}dt_2H'_I(t_2)+\cdots\nonumber\\
+=&\sum_{n=0}^\infty\frac{(-i)^n}{n!}\int_{t_0}^tdt_1\int_{t_0}^{t}dt_2\cdots\int_{t_0}^{t}dt_nTH'_I(t_1)H'_I(t_2)\cdots H'_I(t_n)\nonumber\\
+=&T\exp\left[\frac{-i}{\hbar}\int_{t_0}^tdt'H'_I(t')\right];\label{time}
+\end{align}
+其中须注意到
+\begin{align}
+&\int_{t_0}^tdt_1dt_2TH(t_1)H(t_2)\nonumber\\
+=&\int_{t_0}^tdt_1dt_2\Big[H(t_1)H(t_2)\theta(t_1-t_2)+H(t_2)H(t_1)\theta(t_2-t_1)\Big]\nonumber\\
+=&\int_{t_0}^tdt_1\int_{t_0}^{t_1}dt_2H(t_1)H(t_2)+\int_{t_0}^tdt_2\int_{t_0}^{t_2}dt_1H(t_2)H(t_1)\nonumber\\
+=&2!\int_{t_0}^tdt_1\int_{t_0}^{t_1}dt_2H(t_1)H(t_2).
+\end{align}
+式~(\ref{time}) 就是我们想要的相互作用绘景下的时间演化算符, 又称为戴逊级数.
+
+我们定义
+\begin{align}
+S:=U_I(+\infty,-\infty)=T\exp\left[-\frac{i}{\hbar}\int_{-\infty}^{+\infty}dt'H'_I(t')\right],
+\end{align}
+称为散射算符; 而
+\begin{align}
+S_{fi}={}_I\langle f|S|i\rangle_I
+\end{align}
+称为散射矩阵~(元). 稍后我们将看到, 作为动力学量的~$S_{fi}$, 将直接与可观测量即衰变宽度或散射截面等相联系; 我们这里提前展示出其具有下述一般形式:
+\begin{align}
+S_{fi}=\delta_{fi}+i(2\pi)^4\delta^4(p_F-p_I)\mathcal{M}_{fi};
+\end{align}
+其中洛伦兹不变的~$\mathcal{M}_{fi}$ 又常被称为散射振幅或不变振幅等.
+
+
+相互作用绘景中, 场量~$\phi_I$ 仍满足自由场论中的~$\phi$ 所满足的方程; 也就是说, 相互作用表象不仅可使我们正确而方便地对微扰做展开, 更使我们能充分利用自由理论中的物理量, 如自由场中的费曼传播子等. 相互作用绘景的这些优势, 正是我们在相互作用场论中广泛采用它的原因.
+
+至此, 再结合更多的一点技术~(维克定理), 我们就足可以做量子场论中相互作用情况下散射矩阵元/振幅的计算了; 不过为了工具的完备性, 接下来我们继续来讲场论中另一个重要的量: 关联函数, 然后再介绍维克定理.
+
+
+
+%haag 定理, 妈的.
+
+\paragraph{关联函数, 维克定理}
+~
+
+对于一个一般的--即可有相互作用的--体系, 我们定义
+\begin{align}
+G:=\langle\Omega|T\phi_H(x)\phi_H(y)|\Omega\rangle
+\end{align}
+为其两点关联函数/格林函数. --由此可见, 自由理论的两点关联函数就是其传播子. --在采用绝热近似的情况下, 我们有~$|\Omega\rangle=U_I(0,-\infty)|0\rangle,~U_I(\infty,0)|\Omega\rangle=S|0\rangle:=|0\rangle e^{i\alpha}$; 于是我们可以求出
+\begin{align}\label{omega}
+\langle\Omega|T\phi_H(x)\phi_H(y)|\Omega\rangle=&\langle0|T\left[\phi_I(x)\phi_I(y)S\right]|0\rangle e^{-i\alpha}=\frac{\langle0|T\left[\phi_I(x)\phi_I(y)S\right]|0\rangle}{\langle0|S|0\rangle}\nonumber\\
+=&\frac{\langle0|T\left\{\phi_I(x)\phi_I(y)\exp\left[-i\int_{-\infty}^{+\infty}dt'H'_I(t')\right]\right\}|0\rangle}
+{\langle0|T\exp\left[-i\int_{-\infty}^{+\infty}dt'H'_I(t')\right]|0\rangle};
+\end{align}
+也就是说, 海森堡算符对有相互作用时的基态~(海森堡基态) 的编时积, 等于相互作用绘景下的算符对自由理论基态的平均值. 注意在相互作用绘景下, 上述过程中的~$\phi_I$ 满足的方程~(以及其传播), 即前文自由场论中的形式. 这是我们稍早已经知道的; 不致混淆时, 以后我们将略去脚标不表. 另, 对于多点情况, 上述式子当然亦中成立的.
+%在量子场论中, 这个式子就是对算符而言的, 所以此时仍严格成立!
+
+
+%目前为止, 以上讲的, 都是针对量子力学而言的. 在
+
+
+
+%满足的海林堡绘景中的具体方程, 是不同的.
+%另外, 量子场论中, 场量作为算符出现, 满足海森堡方程. 也就是说, 此种情况下, 我们已不太能自信地写出~$i\hbar\frac{\partial}{\partial t}|\psi(t)\rangle_I=H'_I|\psi(t)\rangle_I$ 这样的式子; 但我们仍有~$i\hbar\frac{\partial}{\partial t}U_I=H'_IU_I$
+
+
+
+既然相互作用体系的格林函数, --以及前面的散射矩阵, --都可归结于场算符对自由理论的基态平均, 那么找出后者的一些规律, 从而将其计算进行一下简化, 就是一件值得期待的事了. 事实上这样的便宜的确是存在的, 即维克定理. 下面, 以自由实标量场为例, 我们对其进行展示. 容易计算出
+\begin{align}
+T\phi(x)\phi(y)=:\phi(x)\phi(y):+D_F(x-y):=:\phi(x)\phi(y):+\contraction[0.6ex]{}{\phi}{(x)}{\phi}\phi(x)\phi(y).
+\end{align}
+其中~$\contraction[0.6ex]{}{A}{}{B}AB$ 称为两个算符的收缩. 进一步, 我们有
+\begin{align}
+T\phi(x_1)\phi(x_2)\cdots\phi(x_n)=:\phi(x_1)\phi(x_2)\cdots\phi(x_n):+:\textrm{all~possible~contractions}:,
+\end{align}
+称为维克定理. 由此我们知, 只有完全收缩项, 其基态平均才不为零. 作为例子, 我们可以算出自由实标量场的四点关联函数如下:
+\begin{align}
+\langle0|T\phi_1\phi_2\phi_3\phi_4|0\rangle=&D_{F}(x_1-x_2)D_{F}(x_3-x_4)+D_{F}(x_1-x_3)D_{F}(x_2-x_4)\nonumber\\
+&+D_{F}(x_1-x_4)D_{F}(x_2-x_3)\nonumber\\
+=&\begin{aligned}\includegraphics[width=5 cm]{pic/feof4.jpg}\end{aligned};\label{green}
+\end{align}
+最后一步我们采用了图形表示, 即费曼图方法. 另外, 在具有应用维克定理里须要注意, 对于费米子算符, 场算符每交换一次要出来一个负号.
+
+\subsubsection{以~$\phi^4$ 理论的关联函数为例: 连通图, 全连通图; 有效散射图: 全联通+截断; 相互作用下的传播子: 1PI 图, 自能; LSZ 约化公式}
+~~~~
+现在, 以实标量场的~$\phi^4$ 理论
+\begin{align}
+H_I=\int d^3\bm{x}\mathcal{H}=\int d^3\bm{x}\frac{\lambda}{4!}\phi^4
+\end{align}
+为例, 我们来看看有相互作用情况下的关联函数到底长什么样子, 并由之得到一些一般性的重要概念. 零级近似, 就是两点连一线的自由费曼传播子. 一级近似下, 可得其分子为
+\begin{align}
+&\langle\Omega|T\phi_H(x)\phi_H(y)|\Omega\rangle^{(1)}_{\textrm{numerator}}\nonumber\\
+=&\langle0|T\phi_{(I)}(x)\phi(y)(-i)\int dt\int d^3\bm{z}\frac{\lambda}{4!}\phi(z)\phi(z)\phi(z)\phi(z)|0\rangle\nonumber\\
+=&3\cdot\frac{-i\lambda}{4!}D_F(x-y)\int d^4zD_F(z-z)D_F(z-z)\nonumber\\
+&+12\cdot\frac{-i\lambda}{4!}\int d^4zD_F(x-z)D_F(y-z)D_F(z-z)\nonumber\\
+=&3\begin{aligned}\includegraphics[width=2 cm]{pic/c1.jpg}\end{aligned}+12\begin{aligned}\includegraphics[width=1.8 cm]{pic/c2.jpg}\end{aligned};
+\end{align}
+上述过程最后我们把解析式画成了费曼图, 其费曼规则~(具体称为~$\phi^4$ 理论的位置空间的费曼规则), 是不言自明的.
+
+我们称所有点都连到外线的图为连通图; 有点未连到外线的图为非连通图; 闭合成圈而没有外线的图, 叫真空图. 以上图为例, 第一图即为一非联通图, 它由一条传播子与一个真空图构成; 上述第二图即为一连通图, 此处又叫蝌蚪图. 逐级展开分析不难看出, 关联函数分子上的非连通部分, 恰与分子上的真空图完全相消. --事实上一般地, 真空图与非连通图对传播过程没有贡献. --于是, 以上述两点关联函数为例, 即有
+\begin{align}
+\langle\Omega|T\phi_H(x)\phi_H(y)|\Omega\rangle:=&\begin{aligned}\includegraphics[width=1.3 cm]{pic/pop.jpg}\end{aligned}
+=\begin{aligned}\includegraphics[width=1.3 cm]{pic/pp.jpg}\end{aligned}+12\begin{aligned}\includegraphics[width=1.6 cm]{pic/c2.jpg}\end{aligned}+\cdots\nonumber\\
+=&\textrm{all connected diagrams with two external points}.
+\end{align}
+相似地, $n$ 点格林函数就是具有~$n$ 个外点的所有连通图; 注意需要考虑到对称系数. 当然, 对于本~$\phi^4$ 耦合, 奇数点格林函数是为零的.
+
+另外, 尽管只要是连通图就对传播过程有贡献, 但是, 例如对于四格林函数, 形如~(\ref{green}) 那样的连通图, 却是散射过程的零阶近似~(或哪怕不是零阶近似, 而只要在拓扑上是分离的), 即意味着粒子无作用通过, 因而对射散过程~(具体地是散射振幅; 稍后我们将研究) 是没有贡献的. 因此, 我们再作定义, 称那些在拓扑上完全相连的图, 叫全连通图. 只有全联通图, 对散射过程才有贡献. 还有, 在多于二点格林函数的情况下, 在外线上有修正的图, 亦对过散射过程无贡献~(这我们亦将在稍后呈示): 我们将此事称作我们只考虑截断图. 言而总之, 对于散射过程~(的散射振幅), 只有全联通图与截断图才有贡献. 例如, ~$\phi^4$ 理论的四点格林函数, 其一阶近似中有贡献的项即
+\begin{align}\label{four green}
+4!\cdot\frac{-i\lambda}{4!}\int d^4zD_F(x_1-z)D_F(x_2-z)D_F(x_3-z)D_F(x_4-z)=\begin{aligned}\includegraphics[width=1.2 cm]{pic/phi44.jpg}\end{aligned}.
+\end{align}
+上述出来的对称因子~$4!$ 正如与理论中的常数~$1/4!$ 抵消, 其实这正是我们将后者作如是选择的原因所在.
+
+最后, 应用路径积分方法可以方便地证明, $n$ 点连通格林函数的分立部分, 等于能由较低阶全连通格函数乘积形成的所有~$n$ 点格林函数之和. 我们构造~$Z[J]=e^{iW[J]}$, 即亦~$iW[J]=\ln Z[J]$; 稍后将确证~$iW[J]$ 即全连通格林函数的生成泛函:
+\begin{align}
+G_c(x_1,\cdots,x_n)=\frac{i\delta^nW[J]}{i^n\delta J(x_1)\cdots\delta J(x_n)}\Big|_{J=0}.
+\end{align}
+例如, 以四点格林函数为例, 计算一下即有~$G_c=G(1234)-G(12)G(34)-G(13)G(24)-G(14)G(23)$.
+
+
+
+
+
+
+
+由前段中关于外线上有修正的图的分析, 我们可体味到两点格林函数似乎有某种特殊性; 事实上, 我们下面即将看到, 在有相互作用情况下, 与自由理论中的情形相比, 两点格林函数之差别只不过是粒子~(的静质量) 多穿了一件衣裳而已~(这将引出自能的概念). 下面我们就来研究此事.
+%
+%下面我们继续分析一般相互作用下, 关联函数的内在性质; 我们分析之前提到的两点格林函数的穿衣问题.
+%
+~设切掉任何一个线都无法变成两部分的图, 叫单粒子不可约~(1PI) 图, 用~\includegraphics[width=1.1 cm]{pic/1p.jpg} 表示; 其中的空心圈代表的相互作用能称为自能, 用~$-i\Sigma$ 表示. 由此可知
+\begin{align}
+G=&~\begin{aligned}\includegraphics[width=1.3 cm]{pic/pop.jpg}\end{aligned}=\begin{aligned}\includegraphics[width=1.3 cm]{pic/pp.jpg}\end{aligned}+\begin{aligned}\includegraphics[width=1.3 cm]{pic/1pi.jpg}\end{aligned}
++\begin{aligned}\includegraphics[width=1.3 cm]{pic/1pii.jpg}\end{aligned}+\cdots\nonumber\\
+=&G_0+G_0(-i\Sigma)G_0+G_0(-i\Sigma)G_0(-i\Sigma)G_0+\cdots\nonumber\\
+=&G_0-iG_0\Sigma G=G_0-iG\Sigma G_0\nonumber\\
+=&\frac{G_0}{1+i\Sigma G_0}=(G^{-1}_0+i\Sigma)^{-1}.
+\end{align}
+例如对于标量场, 我们有~$G_0=\frac{i}{p^2-m^2+i\epsilon}$, 故在~$\phi^4$ 相互作用情况下上式给出
+\begin{align}
+G(p)=\frac{i}{p^2-[m^2+\Sigma(p)]+i\epsilon}:=\frac{i}{p^2-m_c^2+i\epsilon}.
+\end{align}
+也就是说, $\Sigma(p)$ 体现了相互作用对粒子能量的修正; 这正是我们将其称为自能的原因. 具体地, 这是的自能, 可称为标量场在~$\phi^4$ 自耦合下的自能; 以后我们还将研究电子在与光子耦合下, 即在~QED 中的自能. 另外, 前文的蝌蚪图, 可谓是标量场自耦合自能的一阶自能. 显然在自耦合下标量场只有一阶自能; 类比于以后将发现的电子可具有高阶自能.
+
+
+
+
+
+
+本小节最后, 我们来研究~LSZ 约化公式. 仍以标量场为例, 在第一章中我们已得到, 我们有相对论不变的~$a_L^\dag:=\sqrt{2E_{\bm{p}}}a^\dag_{\bm{p}}=-\int d^3\bm{x}e^{-ipx}i\overset{\leftrightarrow}{\partial}_0\phi(x)$~(注意其中~$e^{-ipx}=\langle x|p\rangle$ 即相对论不变的单粒子态); 于是我们可得
+\begin{align}
+a_L^\dag(+\infty)-a_L^\dag(-\infty)=&\int_{-\infty}^{+\infty}dt \partial_0a_L^\dag\nonumber\\
+=&-\int d^4x e^{-ipx}i(\partial^2+m^2)\phi(x).
+\end{align}
+我们知道, 散射矩阵可以表为~$\langle0|\cdots a_L(+\infty)\cdots a^\dag_L(-\infty)\cdots|0\rangle$, 由此我们即可得到
+\begin{align}
+\langle f|S|i\rangle=&\prod_{i,j=1}^{n,n'}\int dx_idx'_je^{-ip_ix_i}e^{ip'_jx'_j}i(\partial^2_i+m)i(\partial^2_j+m)\nonumber\\
+&~~~~~~~~~~~~~~~~~~~~~~~~~~\cdot \langle\Omega|T\phi_{(I)}(x'_1)\cdots \phi(x'_{n'})\phi(x_1)\cdots\phi(x_n)|\Omega\rangle;
+\end{align}
+上述描述的显然是一个初末态各有~$n,~n'$ 个粒子的散射过程, 其散射矩阵与~$(n+n')$ 点格林函数之间的关系, 称为~LSZ 约化公式. 直观形象地, 对于一个相互作用过程的费曼图而言, 系在作用核上的, 若是线段传播子, 则图象就给出格林函数; 若是外线料子, 就给出散射矩阵. 上式右边, 正意味着将系在作用核上的自由传播子, 换成粒子态. 事实上, 在量子场论的路径积分方法中, 上式就是计算散射矩阵的基本公式; 那时用泛函方法找~$S$ 矩阵, 首先找到的就是这个式子. 此种推导方法, 我们就暂不叙述了.
+%LSZ 逐阶成立.
+
+\subsubsection{$\phi^4$ 理论的散射矩阵及其费曼图}
+~~~~
+下面, 以~$\phi^4$ 自耦合为例, 我们来展示一下散射振幅的费曼图及其与格林函数图的区别, 顺便展示一下~LSZ 定理. 前文中, 我们已得到此耦合下的四点格林函数, 下面, 我们要计算出从初~(相对论不变) 态二粒子~$|i\rangle=|p_1p_2\rangle=\sqrt{4E_{\bm{p}_1}E_{\bm{p}_2}}a_1^\dag a_2^\dag |0\rangle$ 到末二粒子~$|f\rangle=|p_3p_4\rangle=\sqrt{4E_{\bm{p}_3}E_{\bm{p}_4}}{a}_3^\dag {a}_4^\dag |0\rangle$ 的散射振幅. 其零阶近似即
+\begin{align}
+S_{fi}^{(0)}=&\langle p_3p_4|p_1p_2\rangle=\langle p_3|p_1\rangle\langle p_4|p_2\rangle+\langle p_3|p_2\rangle\langle p_4|p_1\rangle\nonumber\\
+=&(2\pi)^8\delta^4(p_3-p_1)\delta^4(p_4-p_2)+(2\pi)^8\delta^4(p_3-p_2)\delta^4(p_4-p_1)\nonumber\\
+%=&4\sqrt{E_{\bm{p}_1}E_{\bm{p}_2}E_{\bm{p}_3}E_{\bm{p}_4}}\langle0|a_3a_4a^\dag_1a^\dag_2   |0\rangle\nonumber\\
+%=&4E_{\bm{p}_1}E_{\bm{p}_2}(2\pi)^6\delta^3(\bm{p}_1-\bm{p}_3)\delta^3(\bm{p}_2-\bm{p}_4)+\delta^3(\bm{p}_2-\bm{p}_3)\delta^3(\bm{p}_1-\bm{p}_4)\nonumber\\
+=&\begin{aligned}\includegraphics[width=1.1 cm]{pic/a1.jpg}\end{aligned}+\begin{aligned}\includegraphics[width=1.7 cm]{pic/a2.jpg}\end{aligned}.
+\end{align}
+值得注意: 格林函数费曼图中粒子线, 表示粒子从位置空间某点到另一点的传播~(当然顶点要附上对位置的四维积分); 散射振幅费曼图中的粒子线, 表示动量之间的传播. 本散射过程的一阶近似是
+\begin{align}
+&-i\frac{\lambda}{4!}\langle p_3p_4|\int dx^4T\phi^4(x)|p_1p_2\rangle\nonumber\\
+=&-i\frac{\lambda}{4!}\langle p_3p_4|\int dx^4\left(:\phi\phi\phi\phi:+6\contraction[0.6ex]{}{\phi}{}{\phi}\phi\phi :\phi\phi:+3\contraction[0.6ex]{}{\phi}{}{\phi}\phi\phi\contraction[0.6ex]{}{\phi}{}{\phi}\phi\phi \right)|p_1p_2\rangle
+\end{align}
+其中第三项是前文的两条传播线乘上真空气泡, 即~$\begin{aligned}\includegraphics[width=0.4 cm]{pic/loop.jpg}\end{aligned}\times \left(\begin{aligned}\includegraphics[width=1.1 cm]{pic/a1.jpg}\end{aligned}+\begin{aligned}\includegraphics[width=1.3 cm]{pic/a2.jpg}\end{aligned}\right)$, 粒子未发生碰撞, 故对一阶项贡献为零. 第二项为一条自由传播线乘上一个蝌蚪图, 即~$\begin{aligned}\includegraphics[width=1.1 cm]{pic/kedou.jpg}\end{aligned}$; 此项~(同拓扑项共有~$6\times4=24$ 个) 中蝌蚪部分的值为
+\begin{align}
+-i\lambda\int d^4x e^{ip_3x}\int\frac{d^4p}{(2\pi)^4}\frac{i}{p^2-m^2}e^{-ip_1x}=-i\lambda\delta^4(p_3-p_1)\int\frac{d^4p}{(2\pi)^4}\frac{i}{p^2-m^2}.
+\end{align}
+可见上述表达式中, 顶点的动量守恒使其初末态相同. 由此可见, 这种类型的项对散射亦是没有贡献的; 前文的相关说明此处得证. 在上述推导中, 我们用到了
+\begin{align}
+\phi|p\rangle=\phi^+|p\rangle=\int\frac{d^3\bm{p}'}{(2\pi)^3\sqrt{2E_{\bm{p}'}}}a_{\bm{p}'}e^{-ip'x}\sqrt{2E_{\bm{p}}}a_{\bm{p}}^\dag|0\rangle=
+e^{-ipx}|0\rangle.
+\end{align}
+最后, 前述一阶近似的第一项给出
+\begin{align}
+4!\cdot\frac{-i\lambda}{4!}\int d^4xe^{-i(p_1+p_2-p_3-p_4)x}=&-i\lambda(2\pi)^4\delta^4(p_1+p_2-p_3-p_4)\nonumber\\
+=&\begin{aligned}\includegraphics[width=1.7 cm]{pic/aaa.jpg}\end{aligned},
+\end{align}
+此即~$\phi^4$ 理论中对散射振幅有贡献的一阶项. 末了, 因为最外端的自由粒子动量经过~$\delta$ 函数进入内线进而导致的无穷大, 我们也很容易发现单条外线上有修正的项, 即~$\begin{aligned}\includegraphics[width=1.1 cm]{pic/leg.jpg}\end{aligned}$ 等, 对散射振幅是无贡献的. 前文已有提及, 此处得证.
+
+
+对比于前文四点关联函数式~(\ref{four green}), 具体地即
+\begin{align}
+G(34,12)=-i\lambda\int d^4zD_F(x_3-z)D_F(x_4-z)D_F(z-x_1)D_F(z-x_2),
+\end{align}
+可以见到, $\phi^4$ 理论中的四点格林函数, 与其中的相应的四粒子散射振幅, 恰以~LSZ 公式联系起来. 推导中注意用到式~(\ref{green f}).
+
+$\phi^4$ 耦合下二粒子散射的一阶近似, 至此分析完全. 对比前文散射矩阵元的形式, 我得拿出时过程的散射振幅为~$\mathcal{M}=-\lambda$. 再由后文即将呈现的散射截面的表达式, 我们可以得出此过程的分微截面为
+\begin{align}
+\left(\frac{d\sigma}{d\Omega}\right)_{\textrm{CM}}=\frac{\lambda^2}{64\pi^2E^2_{\textrm{cm}}},
+\end{align}
+故有总截面~$\sigma=\frac{\lambda^2}{32\pi E_{\textrm{cm}}}$. 实验上, 测出了此总散射截面, 即可得出本理论的耦合强度~$\lambda$.
+
+本小节的知识中, 其基本结构与结论, 对任意相互作用形式都是成立的; 以后在不同的场及其相应耦合下, 我们还会继续看到具体形式. 最后提一下, 本节中, 我们都是先写出解析式, 再画出费曼图的. 以后, 我们将逐渐体会到一个过程的某阶近似~(例如说两粒子撞成两粒子的散射的二阶近似), 其费曼图将比解析式更具直观规律性. 那时, 一般地, 我们都将先画出费曼图, 再用相应的费曼规则写出其解析式. 这已成了现今场论计算中的主流手续之一.
+
+
+
+
+\subsubsection{衰变宽度, 散射截面}
+
+
+~~~~我们知到, 高能粒子实验中, 能为我们所直接观测的, 一般就是衰变宽度或散射截面等; 而理论上我们最关心的或最频繁计算的动力学量, 是散射振幅. 那么, 射散振幅与衰变宽度或散射截面是怎么连联起来的呢? 本节我们就来解决这个后顾之忧.
+
+\paragraph{衰变宽度}
+~
+
+衰变宽度~$\Gamma$~(粒子寿命的倒数) 正比于一段时间~$T$ 内的跃迁概率~$P$, 或即~$\Gamma\propto\frac{P}{T}$. 假设初态只有一个粒子, 而末态可以有多个粒子, 则从初态到末态的跃概率就是~$P=\frac{|S_{fi}|^2}{\langle i|i\rangle\langle f|f\rangle}$. 而初末态的归一化为~$\langle i|i\rangle=(2\pi)^32E_{\bm{p}_I}\delta^3(0):=2E_{\bm{p}_I}V,~\langle f|f\rangle=\prod_f2E_{\bm{p}_f}V$. 若我们再设初始粒子处于静止状态, 即~$E_{\bm{p}_I}=m$, 于是我们可得
+\begin{align}
+P=\frac{|\mathcal{M}_{fi}|^2}{2mV}(2\pi)^4\delta^4(p_I-p_F)VT\prod_f\frac{1}{2E_{\bm{p}_f}V};
+\end{align}
+其中我们已取~$(2\pi)^4\delta^4(0)=VT$. 于是有
+\begin{gather}
+d\Gamma:=\frac{P}{T}=\frac{|\mathcal{M}_{fi}|^2}{2m}(2\pi)^4\delta^4(p_I-p_F)\prod_f\frac{d^3\bm{p}_f}{(2\pi)^3}\frac{1}{2E_{\bm{p}_f}}:=\frac{|\mathcal{M}_{fi}|^2}{2m}d\Pi,\\
+\Gamma=\sum_f\int\frac{|\mathcal{M}_{fi}|^2}{2m}d\Pi;
+\end{gather}
+%其中~$d\Pi$ 为相对论不变多体相空间微元.
+其中
+\begin{gather}
+\int d\Pi=\int(2\pi)^4\delta^4(p_I-p_F)\prod_f\frac{d^3\bm{p}_f}{(2\pi)^3}\frac{1}{2E_{\bm{p}_f}}
+\end{gather}
+为相对论不变多体相空间.
+
+\paragraph{散射截面}
+~
+
+以上即衰变宽度与散射振幅之间的关系; 下面, 找们找出散射截面~$\sigma$ 与散射振幅之间的关系. 为此, 最重要的是要找到碰撞概率~$(d\Gamma)_{\textrm{two~initial~states}}$ 与散射截面之间的关系.
+
+设粒子在总面积为~$A$ 的目标区域内平均而大量地射击. 该区域内有~$N_T$ 个靶, 每个靶的有效面积--此即散射截面--为~$\sigma$, 那么, 单个入射粒子的~(被) 散射概率, 亦即发生一次碰撞事件的概率就是
+\begin{align}
+probability=\frac{N_T\sigma}{A}=\frac{events}{N_B};
+\end{align}
+其中~$events$ 为碰撞事件数, $N_B$ 为入射粒子总数. 由此我们可以计算出
+\begin{align}
+\sigma=\frac{events}{N_BN_T}A=\frac{events}{(\rho vtA)N_T}A=\frac{events/(N_T t)}{\rho v}:=\frac{events/(N_T t)}{j}
+\end{align}
+实验上, 控制好入射流~$j$ 后, 侦测~$n_T:=events/(N_T t)$ 即可定下散射截面. 在理论上, 则有
+\begin{align}
+d\sigma=&\frac{(d\Gamma)_{\textrm{two~initial~states}}}{j}=\frac{(d\Gamma)_{\textrm{two~initial~states}}}{\rho|\bm{v}_1-\bm{v}_2|}\nonumber\\
+=&\frac{1}{4E_1E_2V}|\mathcal{M}_{fi}|^2d\Pi\cdot\frac{V}{|\bm{v}_1-\bm{v}_2|}\nonumber\\
+=&\frac{1}{4E_1E_2}\frac{1}{|\bm{v}_1-\bm{v}_2|}|\mathcal{M}_{fi}|^2d\Pi=\frac{1}{4|\bm{p}_1E_2-\bm{p}_2E_1|}|\mathcal{M}_{fi}|^2d\Pi\nonumber\\
+=&\frac{1}{4\sqrt{(p_1p_2)^2-m_1^2m_2^2}}|\mathcal{M}_{fi}|^2d\Pi
+\end{align}
+其中用到了~$\bm{p}=E\bm{v}$. 当求总积分时, 注意对极化或自旋初态平均末态求和, 以及避免重复计算.
+
+下面, 对于末态有两个粒子的情况, 我们将上述一般结果作一化简. 设末态的两个粒子标记为~$a,~b$, 采用质心坐标系, 我们有
+\begin{align}
+&\int d\Pi_2=\int\frac{d\Omega |\bm{p}_a|^2d|\bm{p}_a|}{(2\pi)^34E_aE_b}(2\pi)\delta(E_{\textrm{cm}}-E_a-E_b)\nonumber\\
+=&\int d\Omega\frac{|\bm{p}_a|^2}{16\pi^2E_aE_b}\left(\frac{|\bm{p}_a|}{E_a}+\frac{|\bm{p}_a|}{E_b}\right)^{-1}=\int d\Omega\frac{|\bm{p}_a|}{16\pi^2E_{\textrm{cm}}},
+\end{align}
+其中用到了~$\int dx\delta(g(x))=\sum_i\frac{1}{|g'(x_i)|}$; 于是可得
+\begin{align}
+\left(\frac{d\sigma}{d\Omega}\right)_{\textrm{CM}}=\frac{1}{4|\bm{p}_1E_2-\bm{p}_2E_1|}\frac{|\bm{p}_a|}{16\pi^2E_{\textrm{cm}}}|\mathcal{M}_{fi}|^2.
+\end{align}
+若初末态~4 个粒子质量相同, 则我们还可进一步得到
+\begin{align}
+\left(\frac{d\sigma}{d\Omega}\right)_{\textrm{CM}}=\frac{|\mathcal{M}|^2}{64\pi^2E^2_{\textrm{cm}}}.
+\end{align}
+
+\subsection{Yukawa~理论}
+%注意, 相对论不变的态就是之前讲过的~$|p^\mu>$, 哈哈
+\subsubsection{以几个过程为例: 散射振幅及其费曼图与费曼规则, 树图~(及其中性虚粒子), 圈图~(与光子自能)}
+\paragraph{一个介子到两个核子衰变: $\pi-NN$ }
+~
+
+为简洁而更具说明性起见, 在本节及以后的各个例子中, 我们都先不计算核子自旋进行运算, 然后再进行一遍计入自旋的演示; 即先考虑标量~Yukawa 理论, 再考虑旋量~Yukawa 理论.
+
+考虑一个介子到两个核子的衰变~$\pi-NN$. 设此介子三维动量为~$\bm{p}$, 则其相对论不变的量子态即~$|p\rangle=\sqrt{2E_{\bm{p}}}|\bm{p}\rangle=\sqrt{2E_{\bm{p}}}a^\dag_{\bm{p}}|0\rangle$; 此即初态~$|i\rangle$. 两个出射核子动量分别为~$\bm{p}'_1,~\bm{p}'_2$, 于是末态即~$|f\rangle=\sqrt{4E_{\bm{p}'_2}E_{\bm{p}'_2}}b^\dag_{\bm{p}'_1}c^\dag_{\bm{p}'_2}|0\rangle$. 于是,  Yukawa~耦合下, 此过程散射矩阵元一阶近似就是
+\begin{align}
+\langle f|S|i\rangle^{(1)}=&-ig\langle f|T\int d^4x\psi^\dag(x)\psi(x)\phi(x)|i\rangle\nonumber\\
+=&-ig(2\pi)^4\delta^4(p'_1+p'_2-p)\nonumber\\
+=&\begin{aligned}\includegraphics[width=2.4 cm]{pic/meson.jpg}\end{aligned};
+\end{align}
+于是我们得到此过程的散射振幅是~$\mathcal{M}=-g$. 上述过程中, 我们仍是先进行解析计算, 解后画出了过程的~(动量空间的) 费曼图; 其规则~(具体地, 此处即~Yukawa 理论动量空间的费曼规则), 亦是可以想见的, 例如顶点要附上四维动量守恒~(包含能量守恒与三维动量守恒) 因子等等. 值得注意的是, 外线上的箭头, 并非粒子的运动方向, 而是代表电荷的正反. 一般地, 顶点处亦是要满足电荷守恒的. 下面我们把两出射粒子的自旋考虑进来, --这亦将使我们获得费米子的费曼图/费曼规则. 不难计算出
+\begin{align}
+\psi|p,s\rangle=&\psi^+|p,s\rangle=\int\frac{d^3\bm{p}'}{(2\pi)^3\sqrt{2E_{\bm{p}'}}}a^{s'}_{\bm{p}'}u^{s'}(p')e^{-ip'x}\sqrt{2E_{\bm{p}}}a_{\bm{p}}^{s\dag}|0\rangle\nonumber\\
+=&u^s(p)e^{-ipx}|0\rangle,
+\end{align}
+由此我们可得本过程有
+\begin{align}
+\langle f|S|i\rangle^{(1)}=&-ig\bar{u}^{s}(p'_1)v^{r}(p'_2)(2\pi)^4\delta^4(p'_1+p'_2-p)\nonumber\\
+=&\begin{aligned}\includegraphics[width=2.4 cm]{pic/meson2.jpg}\end{aligned}.
+\end{align}
+从上述结果可以读出, 须要分别再附上~$\bar{u}^{s'}(q_1)$ 与~$v^{r'}(q_2)$, 这便是出线费米子的费曼规则.
+
+
+\paragraph{两个核子的散射: $NN-NN$}
+~
+
+下面我们考虑两个核子的散射~$NN-NN$. 可以看出, 此过程的散射矩阵元一阶近似零, 最低是二阶的. 经过一番计算, 我们得
+\begin{align}
+S^{(2)}_{fi}&=i(-ig)^2\left[\frac{1}{(p_1-p'_1)^2-m^2}+\frac{1}{(p_1-p'_2)^2-m^2}\right](2\pi)^4\delta^4(p_1+p_2-p'_1-p'_2)\nonumber\\
+&=\begin{aligned}\includegraphics[width=1.7 cm]{pic/nn-nn.jpg}\end{aligned}+\begin{aligned}\includegraphics[width=1.7 cm]{pic/nn-nn2.jpg}\end{aligned}.\label{two n}
+\end{align}
+上式中新引进的费曼规则是不难体会到的: 内线相应于一个传播子. 当然, 需要注意此传播子不满足质壳条件, 是离壳的; 这样的内线/传播子对应的是不可探测的虚过程.
+
+上式所示的这种图形, 称为树图; 考虑更高阶微扰, 我们将得到带圈的图, 称为圈图. 上一节我们已说过, 散射问题中有意义的只是全连通图与截断图; 也就是说圈在外线上的图则不作考虑, 在内线上的, 如~$\begin{aligned}\includegraphics[width=1.2 cm]{pic/vp.jpg}\end{aligned}$ 才有贡献~(若内线是光子, 则此内线上的圈修正代表真空极化/光子自能, 类比于前文电子的自能). 另外, 上述两个图是相加的, 即体系对于末态二粒子交换并不出来负号; 这正是玻色体系的特征~(当然这也就是我们注意到, 以后费米子的散射振幅计算中, 对末态二粒子交换要出来一个负号).
+
+另外, 上式中第一图称为~$t$-channel; 第二图, 在费米子情况我们让出线交叉~(见下一图式), 称为~$u$-channel.
+
+
+当然, 由费曼图, 我们亦可不必经过先读出散射矩阵元再拿到散射振幅, 而可以直接从图读出散射振幅~$\mathcal{M}$. 当然, 从图对应到散射振幅, 这就亦有相应的费曼规则; 读出之是非常容易的.
+
+下面, 我们就来考虑计入自旋的情况, 并弃去动量守恒等部分, 直接拿出散射振幅. 此时可计算得
+\begin{align}
+\mathcal{M}^{(2)}_{fi}&=(-ig)^2\left[\frac{\bar{u}^{s'}(p'_1)u^s(p_1)\bar{u}^{r'}(p'_2)u^r(p_2)}{(p_1-p'_1)^2-m^2}
+-\frac{\bar{u}^{r'}(p'_2)u^s(p_1)\bar{u}^{s'}(p'_1)u^r(p_2)}{(p_1-p'_2)^2-m^2}\right]\nonumber\\
+&=\begin{aligned}\includegraphics[width=1.9 cm]{pic/nn-nna.jpg}\end{aligned}+\begin{aligned}\includegraphics[width=2.0 cm]{pic/nn-nnb.jpg}\end{aligned}.\label{two n}
+\end{align}
+上述图-式之间的费曼规则, 亦是不言自明的; 例如末线交叉意指费米子须出来一个负号, 等等.
+
+总之, 以上两例的计算, 我们使自己充分确信了, 费曼图与解析计算的确是等价的. 所以, 正像我们在前一节说过的, 以后我们一般不再进行散射矩阵/振幅的由原始位置空间场算形式符到动量空间结果的计算, 而直接从正确画出的费曼图读出结果.
+
+
+
+%当然, 内线粒子是虚的, 但, 例如说, 光子不一定是虚的. 光子在处面与电子撞, 就是真的; 光子作为二电子碰撞的中线, 就是虚的.
+
+%在量子态上的收缩, 何意? 散射不像格林函数, 后者中是基态, 内中算符必须全收缩; 散射, 留奇数个不收缩也没事, 为什么, 它与初末态作用了呀, 这便是算符与态的收缩, bingo!
+%格林函数情况, 相互作用算符自己的全收缩, 织出无用的真空; 散射问题中, 也是这样.
+
+\paragraph{两个正反核子的散射: $N\bar{N}-N\bar{N}$}
+~
+
+下面我们考虑核子-反核子的散射~$N\bar{N}-N\bar{N}$; 我们直接从图写出散射振幅的解析式:
+\begin{align}
+i\mathcal{M}^{(2)}=&\begin{aligned}\includegraphics[width=1.8 cm]{pic/nn-1.jpg}\end{aligned}+\begin{aligned}\includegraphics[width=2.6 cm]{pic/nn-2.jpg}\end{aligned}\nonumber\\
+=&i(-ig)^2\left[\frac{1}{(p_1-p'_1)^2-m^2}+\frac{1}{(p_1+p_2)^2-m^2+i\epsilon}\right].
+\end{align}
+由此可见, 因为电荷的原因, 我们出现了一种新的图样, 即被称为~$s$-channel 的上述第二图. 在质心系中, 此图的分母可写出为~$4(M^2+\bm{p}^2)-m^2$; 由此显然可知, s channel 中的中线粒子, 未必是总是离壳的, 也可以是在壳粒子; 在壳时散射振幅将出现一个共振峰值. 事实上, 例如~$Z^0_\mu$ 玻色子等, 我们就是这样发现的.
+
+计入自旋后, 本散射二阶过程就为
+\begin{align}
+i\mathcal{M}^{(2)}=&\begin{aligned}\includegraphics[width=1.8 cm]{pic/nn-a.jpg}\end{aligned}+\begin{aligned}\includegraphics[width=2.6 cm]{pic/nn-b.jpg}\end{aligned}\nonumber\\
+=&i(-ig)^2\left[\frac{\bar{u}^{s'}(p'_1)u^s(p_1)v^{r'}(p'_2)\bar{v}^r(p_2)}{(p_1-p'_1)^2-m^2}+\frac{\bar{v}^r(p_2)u^s(p_1)\bar{u}^{s'}(p'_1)v^{r'}(p'_2)}{(p_1+p_2)^2-m^2+i\epsilon}\right].
+\end{align}
+
+
+
+
+
+
+\subsubsection{交叉对称性, $s/t/u$-channel, Mandelstam 变量}
+~~~~
+第二式的获得, 可以看成是在第一式中作代换
+\begin{align}
+p'_2\rightarrow-p_2,~p_2\rightarrow-p'_2
+\end{align}
+的结果. 也就是说, 一端包含一个特定动量的粒子的过程的振幅, 等于另一端包含一个具有相反动量的反粒子的过程的振幅. 这, 称为交叉对称性.
+
+
+
+
+上一小节中我们已见费曼图中~$s/t/u$-channel 之分别. 对于这三个~channel, 我们分别记其常用动量组合为
+\begin{align}
+s=(p_1+p_2)^2=(p'_1+p'_2)^2,\\
+t=(p_1-p'_1)^2=(p_2-p'_2)^2,\\
+u=(p_1-p'_2)^2=(p_2-p'_1)^2;
+\end{align}
+称为~Mandelstam 变量. 当然上述四个动量是守恒的, 即~$p_1+p_2=p'_1+p'_2$; 这也就是说上述三个~Mandelstam 变量是不独立的. 下面我们研究此事. 设~$\theta$ 是入射线与出射线的夹角; 而~$E_{\textrm{CM}}$ 是质心系下二粒子总能~(四维动量守恒此时即归结于它的守恒), 这里为简明我们取二粒子质量相等, 即~$E_{\textrm{CM}}=2E$); 于是, 在质心坐标系下, 我们就有~$p_1=(E,0,0,\bm{p}),~p_2=(E,0,0,-\bm{p}),~p'_1=(E,0,\bm{p}\sin\theta,\bm{p}\cos\theta),~p'_2=(E,0,-\bm{p}\sin\theta,-\bm{p}\cos\theta)$; 进一步可得~$s=4E^2=E_{\textrm{CM}}^2,~t=-2\bm{p}^2(1-\cos\theta),~u=-2\bm{p}^2(1+\cos\theta)$~(由此可知~$\theta=0$ 时~$t$ 过程不存在振幅全归于~$u$ 过程; $\theta=\pi$ 时~$u$ 过程不存在, 振幅全归于~$t$ 过程; 当然一般情况下, 振幅是这两个过程的和). 最终, 我们就得到~$s+t+u=4E^2-4\bm{p}^2=4m^2$. 这是四个粒子质量都相等的情况; 当粒子质量不等时, 就是
+\begin{align}
+s+t+u=\sum_i m_i^2
+\end{align}
+
+%量子场论与量子力学的差别, 不仅在一维或多维谐振子, 从而等价的升降算符诠释上, 更重要的, 还是对待所谓势能, 亦即力的看法的不同上.
+
+
+\subsubsection{Yukawa~势}
+~~~~
+在经典力学或量子力学的语言中, 二粒子间透过中间粒子的相互作用, 表现为二粒子间有所谓相互作用势; 这是在低能下的有效语言. 下面, 我们就来导出~Yukawa 耦合在低能下的有效势, 即~Yukawa 势. 我们以~$NN-NN$ 散射为例, 在质心坐标系下, 此过程的散射振幅~(\ref{two n}) 可以写为
+\begin{align}
+i\mathcal{M}^{(2)}=+ig^2\left[\frac{1}{(\bm{p}-\bm{p}')^2+m^2}+\frac{1}{(\bm{p}+\bm{p}')^2+m^2}\right];
+\end{align}
+前后两项分别描述二粒子从量子态~$|\bm{p}\rangle$ 到~$|\bm{p}'\rangle$ 与~$|-\bm{p}'\rangle$ 的跃迁. 我们考虑第一项, 即二粒子从~$|\bm{p}\rangle$ 到~$|\bm{p}'\rangle$ 的过程. 在低能/量子力学语言中, 我们把其中一个粒子的存在看成一种势场~$U(\bm{r})$; 上述高能下的一般粒子散射振幅, 在低能近似后, 即成为另一个粒子在此势之中的散射振幅. 现在, 我们用量子力学语言直接算出对应于上述高能振幅的低能结果~(此时前文得到的散射矩阵元式仍是有效的): 精确到最低有效阶, 就有~$-i\langle\bm{p}'|U(\bm{r})|\bm{p}\rangle=-i\int d^3\bm{r}U(\bm{r})e^{-i(\bm{p}-\bm{p}')\cdot\bm{r}}$; 命与式与上式中第一项相等, 就得到
+\begin{align}
+\int d^3\bm{r}U(\bm{r})e^{-i(\bm{p}-\bm{p}')\cdot\bm{r}}=\frac{-(\lambda:=g/2M)^2}{(\bm{p}-\bm{p}')^2+m^2};
+\end{align}
+从上式即可解出
+\begin{align}
+U(\bm{r})=&-\lambda^2\int \frac{d^3\bm{p}}{(2\pi)^3}\frac{e^{i\bm{p}\cdot\bm{r}}}{\bm{p}^2+m^2}\nonumber\\
+=&-\frac{\lambda^2}{(2\pi)^2}\int_0^{+\infty}\frac{dpp^2}{p^2+m^2} \frac{e^{ipr}-e^{-ipr}}{ipr}\nonumber\\
+=&-\frac{\lambda^2}{2\pi r}\int_{-\infty}^{+\infty}\frac{dp}{2\pi i} \frac{pe^{ipr}}{p^2+m^2}\nonumber\\
+=&-\frac{\lambda^2}{4\pi r}e^{-mr}.
+\end{align}
+此即~Yukawa 耦合在低能下的~Yukawa 势. 上式中的负号表明等效~Yukawa 力~(核子之间通过介子的相互作用) 是吸引的. 另外, 上式中~$m$ 是高能观点下两粒子所交换的中间粒子的质量; 可见中间粒子质量与经典力程大小呈反比例关系. 当然, 库仑力亦可由电磁耦合的低能近似得到; 这我们将在电动力学中呈现. 注意高能观点下电子交换的中间玻色子光子无质量, 这对应于电磁力是长程力这一事实.
+
+
+
+
+\subsection{量子电动力学: 电磁散射过程振幅的二阶~(树图) 近似}
+
+~~~~描述电子~(或一般地带电荷粒子) 与光子的相互作用的量子理论, 称为量子电动力学. 以电子与光子为例, 一般地, 我们可以有以下一些电磁散射过程:
+\begin{itemize}
+\item 康普顿散射/正电子康普顿散射~$e^-+\gamma=e^-+\gamma,~e^++\gamma=e^++\gamma$;
+\item 电子对产生/湮灭~$\gamma+\gamma=e^-+e^+,~e^-+e^+=\gamma+\gamma$;
+\item 穆勒散射~$e^-+e^-=e^-+e^-$;
+\item 巴巴散射~$e^-+e^+=e^-+e^+$;
+\item 正电子散射~$e^++e^+=e^++e^+$;
+\item 轫致辐射~$e^-+N=e^-+N+\gamma$,
+\end{itemize}
+等等.%这些式子, 不代表树图, 是包含所有修正圈图的精确示意表达.
+
+
+
+与前述~Yukawa 理论相似的, 我们可先解析计算出某个散射过程的~(如二阶) 散振振幅, 再通过赋予费曼规则而得到相应过程的图形化表示~(二阶时即树图); 然后, 更一般地, 我们可先画出费曼图, 再通过费曼规则而写下相应过程散射振幅的解析表达式. 这里, 我们不再赘述, 而直接给出量子电动力学的费曼规则. 首先, 我们已知某种粒子内线对应相应的传播子, 这在内线是光子时当然仍然适用; 第二, 外线规则我们也业已明析, 对于外线是光子的情形, 附上一个相应的极化矢量即可; 第三, 也是我们新遇到的, 即电磁作用顶点, 为~$-ie\gamma^\mu$.
+
+由此, 我们就可由特定的树图, 写出相应电磁散射过程散射振幅的二阶近似结果了. 对于穆勒散射, 此即
+\begin{align}
+&i\mathcal{M}^{(2)}=\begin{aligned}\includegraphics[width=1.7 cm]{pic/ee-ee.jpg}\end{aligned}+\begin{aligned}\includegraphics[width=2.1 cm]{pic/ee-ee2.jpg}\end{aligned}\nonumber\\
+=&-i(-ie)^2\left[\frac{\bar{u}^{s'}(p')\gamma^\mu u^s(p)\bar{u}^{r'}(q')\gamma_\mu u^r(q)}{(p-p')^2}-\frac{\bar{u}^{r'}(q')\gamma^\mu u^s(p)\bar{u}^{s'}(p')\gamma_\mu u^r(q)}{(p-q')^2}\right].
+\end{align}
+对于巴巴散射, 我们可得
+\begin{align}
+&i\mathcal{M}^{(2)}=\begin{aligned}\includegraphics[width=1.7 cm]{pic/bb.jpg}\end{aligned}+\begin{aligned}\includegraphics[width=2.7 cm]{pic/bb2.jpg}\end{aligned}\nonumber\\
+=&-i(-ie)^2\left[-\frac{\bar{u}^{s'}(p')\gamma^\mu u^s(p)\bar{v}^{r}(q)\gamma_\mu v^{r'}(q')}{(p-p')^2}+\frac{\bar{v}^{r}(q)\gamma^\mu u^s(p)\bar{u}^{s'}(p')\gamma_\mu v^{r'}(q')}{(p+q)^2}\right].
+\end{align}
+对于正负电子对湮灭, 我们有
+\begin{align}
+&i\mathcal{M}^{(2)}=\begin{aligned}\includegraphics[width=1.8 cm]{pic/eeg.jpg}\end{aligned}+\begin{aligned}\includegraphics[width=2.2 cm]{pic/eeg2.jpg}\end{aligned}\nonumber\\
+=&i(-ie)^2\bar{v}^r(q)\left[\frac{p\!\!\!/-p'\!\!\!\!\!/+m}{(p-p')^2-m^2}+\frac{p\!\!\!/-q'\!\!\!\!\!/+m}{(p-q')^2-m^2}\right]u^s(p)\gamma_\nu\epsilon^\nu_1(p')\gamma_\mu\epsilon_2^\mu(q').
+\end{align}
+对于康普顿散射, 我们有
+\begin{align}
+&i\mathcal{M}^{(2)}=\begin{aligned}\includegraphics[width=2.8 cm]{pic/comp.jpg}\end{aligned}+\begin{aligned}\includegraphics[width=2.8 cm]{pic/comp2.jpg}\end{aligned}\nonumber\\
+=&i(-ie)^2\bar{u}^{s'}(p')\left[\frac{p\!\!\!/+q\!\!\!/+m}{(p+q)^2-m^2}+\frac{p\!\!\!/-q'\!\!\!\!\!/+m}{(p-q')^2-m^2}\right]u^s(p)\gamma_\nu\epsilon^\nu_{in}(q)\gamma_\mu\epsilon_{out}^\mu(q').
+\end{align}
+
+下面, 我们以  为例, 来具体计算一下相应的散射截面.
+
+
+
+
+
+
+
+
+
+
+
+

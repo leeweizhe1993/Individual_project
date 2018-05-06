@@ -1,0 +1,57 @@
+\section{圈图发散及~(单圈) 重整化: 以量子电动力学为例}
+
+~~~~对于电磁散射问题 (或稍后的磁矩问题), 树图近似即能给出比较好的结果的. 可以想见, 近一步考虑高阶即圈图近似~(称为辐射修正), 将给出更好的结果. 然而写出解析表达式不难发现, 圈图是发散的. 解决这个困难, 便需要引入重整化这一理论. 本章我们就来一步步探讨之.
+
+前一章中, 我们已见识过~$\phi^4$ 理论的自能; 后者的物理意义, 便是两点自由传播子或多点树图~(的内线传播子) 的~(单粒子不可约) 修正. 由彼处进行类比, 我们不难得知电子的二阶自能为
+\begin{align}
+-i\Sigma^{(2)}(p)=\begin{aligned}\includegraphics[width=2.5 cm]{pic/eself.jpg}\end{aligned}=(-ie)^2\int\frac{d^4k}{(2\pi)^4}\frac{-ig_{\mu\nu}}{k^2+i\epsilon}\gamma^\mu\frac{i}{\slashed p-\slashed k-m+i\epsilon}\gamma^\nu.
+%\not p\not k\slashed{p}\hatslashed{D}\centernot{p} k\!\!\!/
+\end{align}
+另外, 光子的二阶自能~(又可叫二阶真空极化) 为
+\begin{align}
+i\Pi^{(2)}_{\mu\nu}(k)=\begin{aligned}\includegraphics[width=2.7 cm]{pic/pself.jpg}\end{aligned}=(-ie)^2(-1)\int\frac{d^4p}{(2\pi)^4}\operatorname{tr}\left[\gamma_\mu\frac{i}{\slashed p-m}\gamma_\nu\frac{i}{\slashed p-\slashed k-m}\right];
+\end{align}
+单粒子不可约顶角/正规顶角/完全顶角/顶角函数~(类比于电子或光子的自能)~$\Gamma_{\mu}$ 的二阶修正~(有三个电磁顶角) 写为
+\begin{align}
+\Lambda^{(2)}(p)=\begin{aligned}\includegraphics[width=2.5 cm]{pic/vertex2.jpg}\end{aligned}=-ie^2\int\frac{d^4k'}{(4\pi)^4}\frac{1}{k'^2}\gamma_\nu\frac{1}{\slashed{p}'-\slashed{k}'-m}\gamma_\mu\frac{1}{\slashed{p}-\slashed{k}'-m}\gamma^\nu.
+\end{align}
+显然, 上述三个结果, 都是发散的. 一般地, 量子场论中的高阶修正, 即圈图, 都面临这一问题. 重整化, 即系统地消除这些发散的一种手续.
+
+重整化的第一步, 是把圈图结果中的发散分离出来, 此一过程称为正规化. 正规化的方法, 有截断正规化, 格点正规化以及维数正规化~(将积分推广到~$d$ 维, 然后再令~$d\rightarrow4$) 等. 这里, 我们采用后者. 在具体进行正规化计算之前, 我们需要准备一些关于电荷维数分析, 费曼参数化公式以及~$\Gamma$ 函数等方面的知识. 下面我们先来完成这些预备工作.
+
+首先, 量纲分析可知, 推广到~$d$ 维以后, 对电荷我们有~$[q]=L^{d/2-2}=\Lambda^{2-d/2}$; 所以我们可令~$q=\mu^{2-d/2}e$, 其中~$\mu$ 称为质量参数. 其次, 我们有如下公式
+\begin{align}
+\frac{1}{ab}=\int^1_0\frac{dx}{\left[ax+b(1-x)\right]^2},
+\end{align}
+称为费曼参数化公式. 第三, 对于~$\gamma$ 矩阵, 在~$d$ 维时空仍有~$\{\gamma^\mu,\gamma^\nu\}=2g^{\mu\nu}$, 其它性质兹不赘列. 最后, 我们有如下~$d$ 维闵氏空间的动量积分公式
+\begin{align}
+\int\frac{d^dp}{(2\pi)^d}\frac{1}{(p^2-m^2)^\alpha}=\frac{(-1)^\alpha i}{(4\pi)^{d/2}}\frac{\Gamma(\alpha-d/2)}{\Gamma(\alpha)}\frac{1}{(m^2)^{\alpha-d/2}}.
+\end{align}
+若再利用平移不变性~$\int d^dpF(p)=\int d^dpF(p+q)$, 以及再将前述结果对~$q$ 进行求导, 我们还可分别得到下述第一式与后两式
+\begin{gather}
+\int\frac{d^dp}{(2\pi)^d}\frac{1}{(p^2+2pq-m^2)^\alpha}=\frac{(-1)^\alpha i}{(4\pi)^{d/2}}\frac{\Gamma(\alpha-d/2)}{\Gamma(\alpha)}\frac{1}{(q^2+m^2)^{\alpha-d/2}},\\
+\int\frac{d^dp}{(2\pi)^d}\frac{p^\mu}{(p^2+2pq-m^2)^\alpha}=\frac{(-1)^{\alpha-1} i}{(4\pi)^{d/2}}\frac{\Gamma(\alpha-d/2)}{\Gamma(\alpha)}\frac{1}{(q^2+m^2)^{\alpha-d/2}},\\
+\int\frac{d^dp}{(2\pi)^d}\frac{p^\mu p^\nu}{(p^2-m^2)^\alpha}=\frac{(-1)^{\alpha-1} i}{(4\pi)^{d/2}}\frac{g^{\mu\nu}\Gamma(\alpha-1-d/2)}{2\Gamma(\alpha)}\frac{1}{(m^2)^{\alpha-1-d/2}}.
+\end{gather}
+另外,
+
+
+旋量~QED 的完整拉氏密度为
+\begin{align}
+\mathcal{L}=\bar{\psi}(i\gamma^\mu \partial_\mu-m)\psi-q\bar{\psi}\gamma^\mu\psi A_\mu-\frac{1}{4}F_{\mu\nu}F^{\mu\nu}-\frac{\lambda}{2}(\partial_\mu A^\mu)^2
+\end{align}
+
+
+
+
+
+
+
+
+
+
+
+
+
+\subsection{Ward-Takahashi 恒等式, 光学定理}
+

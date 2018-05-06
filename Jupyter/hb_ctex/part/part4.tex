@@ -1,0 +1,176 @@
+
+\section{复旋量场: 1/2-自旋有质量有荷, 狄拉克费米子}
+\subsection{狄拉克方程及其共轭方程, 泡利-狄拉克表象, 外尔方程的拉氏密度, 马约拉纳费米子, 轴矢流}
+~~~~前文群论一章中, 我们已严格导出旋量满足的方程~$(\gamma^\mu p_\mu-m)\psi=0$. 作代换~$p_\mu=i\partial_\mu$, 便可得到量子方程
+\begin{align}
+(i\gamma^\mu\partial_\mu-m)\psi=0;
+\end{align}
+称为狄拉克方程. 能导致狄拉克方程的拉氏密度为
+\begin{align}
+\mathcal{L}=\bar{\psi}(i\gamma^\mu\partial_\mu-m)\psi;
+\end{align}
+%恰如前文分析, 此拉氏密度在值为零处, 取得运动方程; 或曰
+可见真实运动使场的拉氏密度为零. 将其对~$\bar{\psi}$ 应用拉格朗日方程即可得前述狄拉克方程; 将其对~$\psi$ 应用拉氏方程, 可得
+\begin{align}
+i\partial_\mu\bar{\psi}\gamma^\mu+m\bar{\psi}=0;
+\end{align}
+此即狄拉克方程的共轭方程. 当然, 上式也可由狄拉克方程作演换获得. 我们曾经说过, 任何场都是要满足~Klein-Gordon 方程的. 对狄拉克方程我们验证如下~$-(i\gamma^\nu\partial_\nu+m)(i\gamma^\mu\partial_\mu-m)\psi=(\gamma^\mu\gamma^\nu\partial_\mu\partial_\nu+m^2)\psi=(\partial^2+m^2)\psi=0$.
+
+我们已经证明了狄拉克方程对离散变换是对称的; 下面, 我们来证明狄拉克方程在连续洛伦兹变换下的不变性. 事实上, 原则地, 一个量只要由两个洛伦兹矢量构成, 则就是对洛伦兹变换不变的标量. 不过现在我们还是具体做一遍. 若体系或坐标系发生一个洛伦兹转动, 则有
+\begin{align}
+(i\gamma^\mu\partial_\mu-m)\psi=0&\rightarrow\left(i\Lambda_{\frac{1}{2}}\gamma^\mu\Lambda^{-1}_{\frac{1}{2}}{\Lambda_\mu}^\nu\partial_\nu-m\right)\Lambda_{\frac{1}{2}}\psi(\Lambda^{-1}x)\nonumber\\
+&=\left[i\Lambda_{\frac{1}{2}}\gamma^\mu\Lambda^{-1}_{\frac{1}{2}}\partial_\mu-m\right]\Lambda_{\frac{1}{2}}\psi(\Lambda^{-1}x)\nonumber\\
+&=\Lambda_{\frac{1}{2}}(i\gamma^\mu\partial_\mu-m)\psi(\Lambda^{-1}x)=0;
+\end{align}%如果原来的方程成立, 那我们观测系按洛伦兹转一下后, 体系仍有这样的方程.
+由此可见, 在连续洛伦兹变换下, 狄拉克方程的确是不变的.
+
+此外, 在群论一章中推导时, $\psi$ 的上下分量是具有确定手征性左右旋量; 相应得到的~$\gamma^\mu$ 或方和的矩阵形式, 称是外尔表象或手征表象下的. 数学上我们知道, 每一组满足~$\gamma^\mu$ 的代数的矩阵, 都是狄拉克方程的一个表示. 若取~$\gamma^0=\left[\begin{array}{cc}1&0\\0&-1\end{array}\right]$, 而取~$\gamma^i$ 的形式与外尔表象中的相同, 则不难发现, 这样的一组矩阵, 亦是满足~$\gamma^\mu$ 的代数的. 产生此表示的表象, 我们称为泡利-狄拉克表象. 此时, 狄拉克方程的矩阵形式如下
+\begin{align}
+\left[\begin{array}{cc}
+E-m&-\bm{\sigma}\cdot\bm{p}\\
+\bm{\sigma}\cdot\bm{p}&-E-m
+\end{array}\right]
+\left[\begin{array}{c}\varphi\\\chi\end{array}\right]=0.
+\end{align}
+我们已知, 当粒子质量为零时, 狄拉克方程退化为两个外尔方程, 狄拉克旋量退化为两个分别描述左右旋态的外尔旋量. 也就是说, 当粒子的动能远高于静质量时, 采用外尔表象是方便的. 同样可看出, 当粒子动能较小, 例如远小于静质量时, 采用狄拉克表象是方便的.
+
+容易用左右手外尔旋量的形式表达出狄拉克场拉氏密度\footnote{这里我们相当于令~$\psi=\left[\begin{array}{c}\psi_L\\\psi_R\end{array}\right]$. 若我们命~$\psi=\left[\begin{array}{c}L\\R\end{array}\right]$, 而~$\psi_L=\left[\begin{array}{c}L\\0\end{array}\right],~\psi_R=\left[\begin{array}{c}0\\R\end{array}\right]$, 则~$\psi=\psi_L+\psi_R,~\bar{\psi}\psi=R^\dag L+L^\dag R=\bar{\psi}_R\psi_L+\bar{\psi}_L\psi_R$; 而~$\bar{\psi}\gamma^\mu\psi=L^\dag\bar{\sigma}^\mu L+R^\dag\sigma^\mu R=\bar{\psi}_L\gamma^\mu\psi_L+\bar{\psi}_R\gamma^\mu\psi_R$.}:
+\begin{align}
+\mathcal{L}=\psi^\dag_L i\bar{\sigma}^\mu\partial_\mu\psi_L+\psi^\dag_R i\sigma^\mu\partial_\mu\psi_R-m(\psi_R^\dag\psi_L+\psi^\dag_L\psi_R).
+\end{align}
+显然, 质量造成了左右外尔旋量的耦合. 在质量为零时, 狄拉克场拉氏密度退化为外尔场的拉氏量, 后者即给出分别描述左右手旋量运动的两个方程.
+
+我们可以将狄拉克方程写为~$i\gamma^0\partial_0\psi=(-i\gamma^i\partial_i+m)\psi$, 从而~$i\partial_0\psi=(-i\gamma^0\gamma^i\partial_i+\gamma^0m)\psi$; 若命~$\gamma^0=\beta,~\alpha^i=\gamma^0\gamma^i$, 则就得
+\begin{align}
+i\partial_0\psi=(-i\alpha^i\partial_i+\beta m)\psi;
+\end{align}
+此即狄拉克最早写下的形式.
+
+
+
+
+
+
+
+我们来谈一下马约拉纳费米子. %狄拉克旋量是复的, 狄拉克表示是洛伦兹群的一个复表示; 这源自于我们为~$\gamma$ 算符所满足的~Clifford 代数所选定的相应矩阵.
+若我们为~Clifford 代数选取下述表示矩阵: $\gamma^0=
+\left[\begin{array}{cc}
+0&i\sigma^2\\
+i\sigma^2&0
+\end{array}\right],~
+\gamma^1=
+\left[\begin{array}{cc}
+i\sigma^3&0\\
+0&i\sigma^3
+\end{array}\right],~
+\gamma^2=
+\left[\begin{array}{cc}
+0&-\sigma^2\\
+\sigma^2&0
+\end{array}\right],~
+\gamma^3=
+\left[\begin{array}{cc}
+-i\sigma^1&0\\
+0&-i\sigma^1
+\end{array}\right],$
+称为马约拉纳基, 则可发现我们得到了洛伦兹群的一个实旋量表示; 相应的表示基函数就称为马维拉纳旋量. 显然, 马维拉纳旋量的荷共轭, 即~$C$ 变换结就是其自身~$\psi=\left[\begin{array}{c}\psi_L\\i\sigma^2\psi^*_L\end{array}\right]$. 我们反粒子是其自身的粒子, 为马约拉纳费米子.
+
+总之, 有质量复旋量场描述的粒子, 1/2-自旋有质量有荷, 如电子, 夸克等, 称为狄拉克费米子; 无质量复旋量场描述的粒子, 1/2-自旋无质量有荷, 称为外尔费米子; 有质量实旋量场描述的粒子, 1/2-自旋有质量无荷, 称为马约拉纳费米子.
+
+最后, 我们拿出本场的一些力学量. 本场的共轭正则动量及能量为
+\begin{gather}
+\pi=\frac{\partial\mathcal{L}}{\partial\dot{\psi}}=i\bar{\psi}\gamma^0=i\psi^\dag,\\
+\mathcal{H}=\pi\dot{\psi}-\mathcal{L}=i\psi^\dag\dot{\psi}-\bar{\psi}(i\gamma^\mu\partial_\mu-m)\psi=\bar{\psi}(-i\gamma^i\partial_i+m)\psi.
+\end{gather}
+在分析力学中, 我们已知本场的对应于作为内部对称性的规范变换的守恒流为
+\begin{align}
+j^\mu_{(q)}=\frac{q}{i}\left(\frac{\partial\mathcal{L}}{\partial\partial_\mu\phi}\phi-\phi^\dag\frac{\partial\mathcal{L}}{\partial\partial_\mu\phi^\dag}\right)=q\bar{\psi}\gamma^\mu\psi;
+\end{align}
+从而本场的总守恒荷即~$Q=q\int d^3\bm{x}\bar{\psi}\gamma^0\psi=q\int d^3\bm{x}\psi^\dag\psi$. 如果狄拉克旋量的左右旋部分按相反的方向作规范变换, 即~$\psi\rightarrow e^{iq_H\alpha\gamma^5}\psi,~\bar{\psi}\rightarrow\bar{\psi}e^{iq_H\alpha\gamma^5}$, --这又称为手征变换, --则相似地, 我们可以拿此对应于此的流为
+\begin{align}
+j^\mu_{(q)A}=q_H\bar{\psi}\gamma^\mu\gamma^5\psi;
+\end{align}
+称之为轴矢流. 但需注意, 因为~$\partial_\mu(\bar{\psi}\gamma^\mu\gamma^5\psi)=2im\bar{\psi}\gamma^5\psi$, 显然此流只在质量为零时才成为守恒流. 事实上, 此即外尔费米子的螺旋. 对左右部分, 显然有
+\begin{align}
+j^\mu_{(q)AL}=q_H\bar{\psi}\gamma^\mu P_L\psi,~j^\mu_{(q)AR}=q_H\bar{\psi}\gamma^\mu P_R\psi.
+\end{align}
+
+
+
+
+
+\subsection{狄拉克方程的解, $u^s(p),~v^s(p)$, Jordan-wigner 量子化: 反对易关系的赋予, 费曼传播子}
+
+~~~~我们可以直接定出, 作为四分量狄拉克旋量的狄拉克方程的解是
+\begin{align}
+\psi(x)&=\int\frac{d^3\bm{p}}{(2\pi)^3\sqrt{E_{\bm{p}}}}\sum_s\left(a^s_{\bm{p}}u^s(p)e^{-ipx}+b^{s\dag}_{\bm{p}}v^s(p)e^{ipx}\right);\\
+\bar{\psi}(x)&=\int\frac{d^3\bm{p}}{(2\pi)^3\sqrt{E_{\bm{p}}}}\sum_s\left(a^{s\dag}_{\bm{p}}\bar{u}^s(p)e^{ipx}+b^{s}_{\bm{p}}\bar{v}^s(p)e^{-ipx}\right).
+\end{align}
+重要之处, 是要定下其中~$u^s(p),~v^s(p)$ 的性质. 以正频部分为例, 我们方程的正频平面波解~$u(p)e^{-ipx}:=(u_1,u_2)^Te^{-ipx}$ 代入方程, 在手征表象中, 则有
+\begin{align}
+\left[\begin{array}{cc}
+-m&\sigma^\mu p_\mu\\
+\bar{\sigma}^\mu p_\mu&-m
+\end{array}\right]\left[\begin{array}{c}u_1\\u_2\end{array}\right]=0;
+\end{align}
+由此知~$\frac{u_1}{u_2}=\frac{\sigma^\mu p_\mu}{m}=\frac{m}{\bar{\sigma}^\mu p_\mu}$. 由此, 为了形式对称, 我们即可将~$u(p)$ 的结果定下来; 用相似的办法也可将~$v(p)$ 定下来; 它们的结果为
+\begin{align}
+u(p)=\left[\begin{array}{c}\sqrt{\sigma^\mu p_\mu}\xi\\\sqrt{\bar{\sigma}^\mu p_\mu}\xi\end{array}\right],~v(p)=\left[\begin{array}{c}\sqrt{\sigma^\mu p_\mu}\eta\\-\sqrt{\bar{\sigma}^\mu p_\mu}\eta\end{array}\right];
+\end{align}
+其中~$\xi^{s\dag}\xi^r=\delta^{sr},~\eta^{s\dag}\eta^r=\delta^{sr};~s,r=1,2$. 注意当粒子静止时, 我们有~$u(\bm{p}=0)=\sqrt{m}(\xi,\xi)^T,~v(\bm{p}=0)=\sqrt{m}(\eta,-\eta)^T$. 我们将确信, $\xi^s$ 表征了电子的自旋状态; 例如说, $\xi^1=(1,0)^T,~\xi^2=(0,1)^T$. 至此, 我们非常容易计算出:
+\begin{gather}
+u^{s\dag}(p)u^r(p)=2E_{\bm{p}}\delta^{sr},~\bar{u}^{s}(p)u^r(p)=2m\delta^{sr};\\
+v^{s\dag}(p)v^r(p)=2E_{\bm{p}}\delta^{sr},~\bar{v}^{s}(p)v^r(p)=-2m\delta^{sr};\\
+\bar{u}^{s}(p)v^r(p)=\bar{v}^{s}(p)u^r(p)=0;\\
+u^{s\dag}(\bm{p})v^r(-\bm{p})=v^{s\dag}(\bm{p})u^r(-\bm{p})=0;\\
+\sum_{s=1}^2u^s(p)\bar{u}^s(p)=\gamma^\mu p_\mu+m,~\sum_{s=1}^2v^s(p)\bar{v}^s(p)=\gamma^\mu p_\mu-m.
+\end{gather}
+显然~$\bar{u}^{s}(p)u^r(p)$ 与~$\bar{v}^{s}(p)v^r(p)$~是洛伦兹不变的.
+
+
+
+前文相关章节通过因果系我们已论述过, 因因果律的限制, 费米子必须被赋予反对易关系, --这或称为~Jordan-Wigner 量子化; 故本场有
+\begin{gather}
+\{a^{s}_{\bm{p}},a^{r\dag}_{\bm{p}'}\}=(2\pi)^3\delta^3(\bm{p}-\bm{p}')\delta_{sr},\\
+\Leftrightarrow~\{\psi_\alpha(\bm{s}),\psi^\dag_{\beta}(\bm{y})\}=\delta^3(\bm{x}-\bm{y})\delta_{\alpha\beta}.
+\end{gather}
+事实上, 我们也将看到, 只有被赋予反对易关系, 费米子的力学量才能得到正定结果. 例如体系的总能量为
+\begin{align}
+H=&\int d^3\bm{x}\bar{\psi}(-i\gamma^i\partial_i+m)\psi=\int d^3\bm{x}i\psi^\dag\dot{\psi}\nonumber\\
+=&\int\frac{d^3\bm{p}}{(2\pi)^3}\sum_sE_{\bm{p}}(a^{s\dag}_{\bm{p}}a^{s}_{\bm{p}}+b^{s\dag}_{\bm{p}}b^{s\dag}_{\bm{p}}).
+\end{align}
+再例如场的总电荷
+\begin{align}
+Q=q\int d^3\bm{x}\bar{\psi}\gamma^0\psi=q\int d^3\bm{x}\psi^\dag\psi=\int\frac{d^3\bm{p}}{(2\pi)^3}\sum_sq(a^{s\dag}_{\bm{p}}a^{s}_{\bm{p}}-b^{s\dag}_{\bm{p}}b^{s\dag}_{\bm{p}}).
+\end{align}
+场的总自旋是~$S^k=\int d^3\bm{x}\pi\frac{-i}{2}\Sigma^k\psi=\int d^3\bm{x}\psi^\dag\frac{1}{2}\Sigma^k\psi$; 将其在动量表象中展开, 便可发现~$\xi=(1,0)^T,~(0,1)^T$ 分别具有自旋~$1/2,~-1/2$; 而~$\eta=(1,0)^T,~(0,1)^T$ 分别具有自旋~$-1/2,~1/2$. %具体地, 下面, 我们不解出上述积分, 而通过将~$S^k$ 作用在
+
+不难解出场的如下传播关系
+\begin{gather}
+\langle0|\psi_\alpha(x)\bar{\psi}_\beta(y)|0\rangle=(i\gamma_\mu\partial^\mu_x+m)_{\alpha\beta}D(x-y),\\
+\langle0|\bar{\psi}_\beta(y)\psi_\alpha(x)|0\rangle=-(i\gamma_\mu\partial^\mu_x+m)_{\alpha\beta}D(y-x).
+\end{gather}
+于是本场的协变反对易关系就是
+\begin{align}
+\{\psi_\alpha(x),\bar{\psi}_\beta(y)\}=(i\gamma_\mu\partial^\mu_x+m)_{\alpha\beta}\left[D(x-y)-D(y-x)\right].
+\end{align}
+本场的费曼传播子就是
+\begin{align}
+S_F:=&\langle0|T\psi(x)\bar{\psi}(y)|0\rangle=\left\{\begin{array}{cl}\langle0|\psi(x)\bar{\psi}(y)|0\rangle,&x^0>y^0\\
+-\langle0|\bar{\psi}(y)\psi(x)|0\rangle,&x^0<y^0\end{array}\right.\\
+=&\int\frac{d^4p}{(2\pi)^4}\frac{i(\gamma^\mu p_\mu+m)}{p^2-m^2+i\epsilon}e^{-ip(x-y)}.
+\end{align}
+其中积分围道的选取, 与实标量场时的情况是相同的. %注意对费米子算符, 交换位置将出现一个负号.
+
+
+
+
+
+
+
+
+
+
+
+
+

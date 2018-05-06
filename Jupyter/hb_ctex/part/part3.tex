@@ -1,0 +1,406 @@
+
+\section{实标量场: 零自旋有质量无荷, $\pi^0$ 介子}
+
+%如果说时空中的一种分布, 就是一种场的话, 那什么都可以是, 量子力学中的概率幅也是. 量子场论中, 我们提到的场, 一般默认就是场算符. 但场算符, 从物理上讲, 真的就只是场的产生消灭算符. 物理上的场, 其实是作为场算符的作用空间的多粒子态. 如粒子数基等. (场算符, 不是粒子数表象上的算符, 而是作用在粒子数基上的算符!!!!!!!!!!)
+
+%不混淆时, 我们又把场算符直接称为某场; 事实上场是某算符的作用空间基.
+
+%为什么场的算符诠释是必要的? 因为, 一, 我们采用粒子数表象是方便的; 二, 粒子数表象的演化, 即超薛方程, 尽管可以拿出, 但不足以使我们获取所有信息; 三, 符号相对论动能关系的, 恰就是粒子数基上的产生消灭算符
+%场, 是什么???
+%上面的场算符, 末算符化, 就是经典的相对论场. 但, 一, 这样没多大意思; 二, 就算看化粒子的概率幅, 也不太正确;
+
+ %最后我们发现, 上面所说的~$\phi$, 算符化, 让他们变成作用在粒子基上的产生消灭算符, 事实就完美了!!!!!
+ %那么, 在量子场论中, 场是什么, 回答一, 场算符; 二, 场算符所作用的巨希尔伯特空间中的多粒子态.
+
+ %或曰, 场算符的作用空间是什么是粒子数表象!|n_1,\cdots,n_i\rangle, 这也可以叫场的一个位形, 另一个位形是另一个粒子数基.
+
+%因为方程描述的是\phi 是算符, 所以, 量子场论中我们一般都是在海森堡绘景, 或更一般地, 相互作用绘景下工作的.
+
+
+%某个粒子系上, 产生或消灭一个粒子这件事, 具有最直接, 简洁, 而根本的物理意义!!!!!!!!!!!!!!1
+\subsection{标量场的方程: Klein-Gordon 方程; 解中负能项的出现, 产生湮灭算符诠释, 场位形~(configuration)}
+%场的拉氏密度, 准确的讲, 叫场的拉氏密度算符. 场方程, 准确地讲, 叫场算符方程. 场算符方程, 与真正的场~(即场位形, 或粒子数基) 方程, 当然, 不相同, 但, 是等价的!
+
+%\phi 是位形, 即粒子数基上的产生消灭算符, 后者可以说才是物理的场. 但, 前者, 或前者在算符化之前, 对应的, 是场的势能!! 从这种意义上, 亦从简洁的相对论关系上, 我们把场算符直接叫做场!~~~$经典粒子的路径方程非惟一化, 对应于场方程的非惟一化!!!!!!!!!!1
+%重要!!!!!!!!!!!!!!!!!但是, 经典粒子的最小作用量路径方程不再有太大意义, 与此不同, 场的对应于最小作用量的方程, 仍大有意义!
+
+%薛定谔方程中, 不要求~$E=T+V$ 符合经典的运动路径!!!!!!!!
+
+~~~~在狭义相对论中我们已知, 相对论粒子的能动关系为~$p^2-m^2=0$; 由量子力学, 我们已知从经典到量子的一般代换原则为~$p^\mu=i\partial^\mu,~p_\mu=i\partial_\mu$; 据此, 我们可得方程
+\begin{align}
+(\partial^2+m^2)\phi(x)=0;
+\end{align}
+称为~Klein-Gordon 方程. 此方程, 是无论是洛伦兹标量, 矢量还是旋量场, 都必然满足的; 具体地, 矢量与标量还满足更强要求的式子; 只满足上式而无更强关系的--也就是本章将研究的场, 则只是自旋为~0 的标量场. 第二点, 场方程中含有质量项, 这表示对应粒子有质量. 最后, 本章的大部分篇幅中, 我们将取本场为实, 即~$\phi^\dag=\phi$. 由前文分析力学一章我们已知, 这意味着本场描述的粒子无荷. 总之, 本场描述的粒子为零自旋, 有质量, 无荷; 这对应的自然界中的粒子, 是~$\pi^0$ 介子.
+
+%下面研究方程的解.
+下面我们具体研究场方程的解. 由方程的形式可看出, 它有两部分解, 分别是~$\propto e^{-ip^\mu x_\mu}$ 的--称为正能解, 与~$\propto e^{ip^\mu x_\mu}$ 的-- 称为负能解. 由前二平面波叠加成的~K-G 方程的一般实解为
+\begin{align}\label{so of kg}
+\phi(x)&=\int\frac{d^3\bm{p}}{(2\pi)^3\sqrt{2E_{\bm{p}}}}\left(a_{\bm{p}}e^{-ipx}+a^\dag_{\bm{p}}e^{ipx}\right)\nonumber\\
+\bigg(:&=\phi^+(x)+\phi^-(x):=\int d^3\bm{p}\big[\varphi_{\bm{p}}(x) a_{\bm{p}}+\varphi^*_{\bm{p}}(x) a^\dag_{\bm{p}}\big]\bigg);
+\end{align}
+其中因子~$\frac{1}{(2\pi)^3}$ 是因归一化而出现的, 我们早已知晓; 而~$\frac{1}{\sqrt{2E_{\bm{p}}}}$ 是因相对论不变性而出现的, 证明如下: 数学上我们知\footnote{参考~ $\int dx\delta(cx)=\frac{1}{|c|},~\delta(g(x))=\sum_i\frac{\delta(x-x_i)}{|g'(x_i)|}$; 如~$\delta(x^2-c^2)=\frac{1}{2|c|}[\delta(x-c)+\delta(x+c)]$.}~$\int dx\delta(g(x))=\sum_i\frac{1}{|g'(x_i)|}$, 因此~$\int dp^0\delta(p^2-m^2)\theta(p_0)=\frac{1}{|2p^0|_{p^0=+E_{\bm{p}}}|}=\frac{1}{2E_{\bm{p}}}$, 故有相对论不变的
+\begin{align}
+\int \frac{d^4p}{(2\pi)^4}2\pi\delta(p^2-m^2)\theta(p_0)=\int\frac{d^3\bm{p}}{(2\pi)^32E_{\bm{p}}}.
+\end{align}
+注意, 上述式子左边的~$\delta$ 函数, 把四维动量积分~$\int d^4p$ 约束为满足相对论色散关系的积分~(正因此才能得到右边的结果), 这区别于以后将遇到的如费曼传播子或四维动量空间中的狄拉克~$\delta$ 函数等中的对四维动量的积分~(已被解析延拓到整个复平面) 并不要求色散关系. --稍后将见, 我们~$a_{\bm{p}}$ 并不是洛伦兹协变的, $\sqrt{2E_{\bm{p}}}a_{\bm{p}}$ 才是, 且是洛伦兹标量; 于是我们确信上述给出的一般解是洛伦兹标量.
+
+
+%将~$\frac{1}{\sqrt{2E_{\bm{p}}}}$ 吸收到了~$a^\dag_{\bm{p}},~a_{\bm{p}}$ 之中, 于是就有了现在的结果.
+
+
+%下面就~K-G 方程及其解作一番分析. 首先,
+从负能解的出现, 我们就可发现, 继续把~$\phi(x)$ 诠释为描述单粒子概率幅的波函数, 或即继续把~K-G 方程诠释为单粒子的概率波幅方程, 已是不可能的了: 否则会产生负能量的困难. 事实上, 稍后我们即将确知, 这里的~$a^\dag_{\bm{p}},~a_{\bm{p}}$ 应被诠释为具有确定动量的粒子的产生湮灭算符\footnote{我们曾将第~$i$ 个谐振子的~$x,~p$ 合成~$a,~a^\dag$, 从而以产生湮灭算符的手段得到了谐振子能级.}~(从而~$\phi(x)$ 就是具有确定空间位置的粒子的产生湮灭算符; K-G 方程就是算符的运算方程).% 由上述解的形式可以看出, 而由稍后的具体操作中我们更将确认,
+~具体地, 本方程/函数场的正能部分, 对应于粒子的湮灭; 负能部分, 对应于粒子的产生. 据此, 以免混淆, 我们一般又将正负能项分别称为正负频项. --单粒子概率波诠释下遇到的负能困难, 至此得以完满解决.
+
+%其次, K-G 方程, 是无论是洛伦兹标量, 矢量还是旋量, 都必然满足的; 具体地, 矢量与标量还满足更强要求的式子; 只满足上式而无更强关系的--也就是本场, 则只是自旋为~0 的标量场. 这说明本场/方程描述的粒子的自旋为~0. 第三, 由方程的形式可见, 它的确是洛伦兹协变的; 而由其表达看来, 场~$\phi(x)$ 也的确是洛伦兹标量. 第四,
+
+
+
+
+在算符诠释之前, 在洛伦兹群表示论中, 我们把~$\phi(x)$ 直接称为场; 由电磁场~(天生完成了一次量子化) 势满足的麦克斯韦方程可看出, ~$\phi(x)$ 具有场势的地位. 算符化~(因此包括以前分析力学中所拿出的场的各种力学量, 也就成了相应的力学量算符) 以后, $\phi(x)$ 可称之为场算符. 显然, 它的作用对象便是粒子数基, 或具有某种粒子数分布的量子态:
+\begin{align}
+|\phi\rangle:=|n_1,\cdots,n_i\rangle;
+\end{align}
+一般地, 我们称其为场的一种特定的位形~(configuration). 我们稍后就将发现, 场位形的随时演化仍是满足方程~$i\frac{\partial}{\partial t}|\phi\rangle_{S/I}=H_{\textrm{total}/I}|\phi\rangle_{S/I}$ 的, 这正是相互作用场论的根本基础之一.
+
+
+
+
+
+最后, 不难看出, 我们有
+\begin{gather}\label{rela.}
+\int d^3\bm{x}\varphi_{\bm{p}}(x)i\overset{\leftrightarrow}{\partial}_0\varphi_{\bm{p}'}(x)=0,\\\label{rela.2}
+\int d^3\bm{x}\varphi^*_{\bm{p}}(x)i\overset{\leftrightarrow}{\partial}_0\varphi_{\bm{p}'}(x)=\frac{1}{(2\pi)^3}\delta^3(\bm{p}-\bm{p}');
+\end{gather}
+其中~$A\overset{\leftrightarrow}{\partial}_\mu B:=A\partial_\mu B-\partial_\mu A\cdot B$. 恰当运用上两式, 可使计算过程变得大为明了与简洁. 由上式亦可看出
+\begin{gather}\label{diejia}
+a_{\bm{p}}=(2\pi)^3\int d^3\bm{x}\varphi^*_{\bm{p}}(x)i\overset{\leftrightarrow}{\partial}_0\phi(x),\\
+a^\dag_{\bm{p}}=-(2\pi)^3\int d^3\bm{x}\varphi_{\bm{p}}(x)i\overset{\leftrightarrow}{\partial}_0\phi(x).
+\end{gather}
+
+
+\subsection{正则量子化: 动量空间对易关系的赋予与粒子解的获得; 场位形的运动方程}
+~~~~
+%有了上一小节的分析, 即把~$\psi(x)$ 当作某特定粒子系上的产生消灭算符函数场,
+%至此, 我们就可把~$\phi(x)$ 当作描述一个多粒子体系算符函数场,
+在上一小节的基础上, 我们现在用分析力学的方法来找出其各力学量~(算符). 首先, 能导致本场方程的拉氏密度为
+\begin{align}
+\mathcal{L}=\frac{1}{2}(\partial_\mu\phi\partial^\mu\phi-m^2\phi^2);
+\end{align}
+显然上式为洛伦兹标量, --这是所有场的拉氏密度都应满足的. 于是, 可计算出场的共轭动量为
+\begin{align}
+\pi(x)=\frac{\partial\mathcal{L}}{\partial\dot{\phi}}=\dot{\phi}=\int\frac{d^3\bm{p}}{(2\pi)^3}(-i)\sqrt{\frac{E_{\bm{p}}}{2}}\left(a_{\bm{p}}e^{-ipx}-a^\dag_{\bm{p}}e^{ipx}\right);
+\end{align}
+注意场的共轭动量并非洛伦兹协变量. 接下来, 因为意义的鲜明性, 我们在动量空间中对本场赋予以下对易关系:
+\begin{gather}
+[a_{\bm{p}},a^\dag_{\bm{p}'}]=(2\pi)^3\delta^3(\bm{p}-\bm{p}'),\\
+[a_{\bm{p}},a_{\bm{p}'}]=[a^\dag_{\bm{p}},a^\dag_{\bm{p}'}]=0;
+\end{gather}
+至于为什么赋予此对易关系而不是反对易关系, 将由稍后力学量推导过程可以看出, 更由后文的因果律得以根本说明. 有了上述准备, 就可求得本场所描述的粒子的力学量了, 如能量为\footnote{一个小技巧: 为了运算简洁, 我们可以在推导过程中作简记~$K=\int \frac{d^3\bm{p}}{(2\pi)^3\sqrt{2E_{\bm{p}}}}$.}
+\begin{align}
+H=&\int d^3\bm{x}(\mathcal{\pi\dot{\phi}-\mathcal{L}})=\int d^3\bm{x}\frac{1}{2}\left[\dot{\phi}^2+(\nabla\phi)^2+m^2\phi^2\right]\nonumber\\
+=&\int d^3\bm{x}\frac{1}{2}(\partial_\mu\phi\partial_\mu\phi+m^2\phi^2)\nonumber\\
+=&\frac{1}{2}\int \frac{d^3\bm{p}}{(2\pi)^32E_{\bm{p}}}
+\left(p_\mu p_\mu a_{\bm{p}}a^\dag_{\bm{p}}+p_\mu p_\mu a^\dag_{\bm{p}} a_{\bm{p}}+m^2 a_{\bm{p}}a^\dag_{\bm{p}}+m^2 a^\dag_{\bm{p}}a_{\bm{p}}\right)\nonumber\\
+=&\frac{1}{2}\int \frac{d^3\bm{p}}{(2\pi)^32E_{\bm{p}}}(p_\mu p_\mu+m^2)(a_{\bm{p}}a^\dag_{\bm{p}}+a^\dag_{\bm{p}}a_{\bm{p}})\nonumber\\
+=&\int \frac{d^3\bm{p}}{(2\pi)^3}\frac{E_{\bm{p}}}{2}(a_{\bm{p}}a^\dag_{\bm{p}}+a^\dag_{\bm{p}}a_{\bm{p}})\nonumber\\
+=&\int\frac{d^3\bm{p}}{(2\pi)^3}\frac{E_{\bm{p}}}{2}\left[2a^\dag_{\bm{p}}a_{\bm{p}}+(2\pi)^3\delta^3(0)\right];
+\end{align}
+其中用到了归一化\footnote{作为对比, 回忆在三维情况, 我们有
+\begin{align}
+\delta^3(\bm{p}-\bm{p}')=\frac{1}{(2\pi\hbar)^3}\int d^3\bm{r}e^{i(\bm{p}'-\bm{p})\cdot\bm{r}/\hbar}.
+\end{align}
+--我们稍后还将见到~$\delta^4(p-p')$ 的表达.}
+\begin{align}
+\delta^3(\bm{p}-\bm{p}')=\int \frac{d^3\bm{x}}{(2\pi)^3}e^{\pm i(p-p')x}.
+\end{align}
+至此确认, 我们用产生湮灭算符来诠释函数场, 的确得到了一个可以接受的理论. 另外, 从相对论中我们早已知道, 作为四维动量的零分量的能量当然并不是洛伦兹协变量, 这与上述哈氏密度中出现了~$p_\mu p_\mu$ 这样组合的量值是一致的. 相似地, 我们亦可求得场/粒子的总动量如下
+\begin{align}
+P=&\int d^3\bm{x}\mathcal{P}=\int d^3\bm{x} (-\pi\nabla\phi)=\int d^3\bm{x} (-\dot{\phi}\nabla\phi)\nonumber\\
+=&\int\frac{d^3\bm{p}}{(2\pi)^3}\frac{\bm{p}}{2}\left[2a^\dag_{\bm{p}}a_{\bm{p}}+(2\pi)^3\delta^3(0)\right].
+\end{align}
+
+下面, 我们介绍一下计算动量空间中力学量表达式的另一种方法. 事实上, 此方法的核心理念就是充分利用关系式~(\ref{rela.}) 与~(\ref{rela.2}). 舍弃全散度项, 以及应用场满足的~K-G 方程, 我们就可得
+\begin{align}
+H=&\int d^3\bm{x}\frac{1}{2}\left[(\partial_0\phi)^2+(\nabla\phi)^2+m^2\phi^2\right]\nonumber\\
+=&\int d^3\bm{x}\frac{1}{2}\left[(\partial_0\phi)^2+\nabla\cdot(\phi\nabla\phi)-\phi\nabla^2\phi-\phi\partial^2\phi\right]\nonumber\\
+=&\int d^3\bm{x}\frac{1}{2}\left[(\partial_0\phi)^2-\phi\partial_0^2\phi\right]\nonumber\\
+=&\frac{1}{2}\int d^3\bm{x}i\phi i\overset{\leftrightarrow}{\partial}_0\partial_0\phi;
+\end{align}
+由此, 结合关系式~(\ref{rela.}) 与~(\ref{rela.2}), 我们可立马读出积分结果. 另外, 对动量, 我们也可计算出
+\begin{align}
+P^i=&\int d^3\bm{x}\partial_0\phi\partial^i\phi=\int d^3\bm{x}\left[\partial_0(\phi\partial^i\phi)-\phi\partial_0\partial^i\phi\right]\nonumber\\
+=&\frac{1}{2}\int d^3\bm{x}\left[\partial_0\phi\partial^i\phi-\phi\partial_0\partial^i\phi\right]\nonumber\\
+=&\frac{1}{2}\int d^3\bm{x}i\phi i\overset{\leftrightarrow}{\partial}_0\partial^i\phi;
+\end{align}
+由此读出积分结果亦是显然的. 由上式述过程可知我们可合写出四维能动矢量, 进一步读出其积分结果为
+\begin{align}
+P^\mu=&\frac{1}{2}\int d^3\bm{x}i\phi i\overset{\leftrightarrow}{\partial}_0\partial^\mu\phi\nonumber\\
+=&\int \frac{d^3\bm{p}}{(2\pi)^3}\frac{p^\mu}{2}(a_{\bm{p}}a^\dag_{\bm{p}}+a^\dag_{\bm{p}}a_{\bm{p}}).
+\end{align}
+
+
+
+
+
+
+
+
+
+%最后, 我们讲一下海森堡方程与场方程的一致性.
+由前文过程我们可以看到, 在此自由理论中, 算符含时, 场位形不含时; 即我们是工作在海森堡绘景中的. 我们可以算出~$i\frac{\partial}{\partial t}\phi(x)=i\pi(x)=[\phi(x),H],~i\frac{\partial}{\partial t}\pi(x)=i(\nabla^2-m^2)\phi(x)=[\pi(x),H]$, 从而得~$\frac{\partial^2}{\partial t^2}\phi=(\nabla^2-m^2)\phi$, 即~K-G 方程. 也就是说, 在量子场论中, 我们仍有海森堡方程
+\begin{align}
+i\frac{\partial}{\partial t}\mathcal{O}=[\mathcal{O},H]
+\end{align}
+是成立的. 从而也就意味着, 我们仍可将场写为~$\phi(x)=e^{iHt}\phi(\bm{x})e^{-iHt}$ 这样的形式. 进一步, $U(t,0):=e^{-iHt}$ 就可以看成是本场位形的传时间演化算符. 对于以后将研究的有相互作用的情况, 就有~$\phi_I(x):=e^{iH_0t}\phi(\bm{x})e^{-iH_0t}$, 以及~$\phi_H=e^{iHt}e^{-iH_0t}\phi_Ie^{iH_0t}e^{-iHt}$. 前述最后一式中即有~$U_I(t,0):=e^{iH_0t}e^{-iHt}$; 于是~$i\hbar\frac{\partial}{\partial t}U_I=H'_IU_I$. 这些结论, 与量子力学中都是完全一致的. 言而总之, 上述情况皆为表明, 转换到薛定谔或相互作用绘景中, 我们就有
+\begin{align}
+i\frac{\partial}{\partial t}|\phi\rangle_{S/I}=H_{\textrm{total}/I}|\phi\rangle_{S/I}
+\end{align}
+是场位形的运动方程. 正如前文已经说过, 以后即交见到的, 上式是相互作用场论的重要基础.
+
+
+%正因此, 我们说, 在薛定谔方程理论中就可发现的海森堡方程, 比前者更具广泛性.
+
+
+%粒子数基, 类比于坐标基, 动量基
+
+\subsection{发散基态能, 卡西米尔效应}
+
+
+~~~~
+可以看出, 以能量为例, 在基态时, 对每个动量模我们仍然存在~$\frac{1}{2}E_{\bm{p}}$ 的能量. 显然对分布于全空间/动量空间的场来说, 总基态值将是发散的. %事实上, 这是具有一般性的: 量子场论中的力学量都面临基态值发散的问题.
+因为一般来说, 我们关心的是能量在真空上的起伏, 故我们把此发散值直接略去是不成问题的. 简单地通过算符正规化~$N(a_{\bm{p}}a^\dag_{\bm{p}}+a^\dag_{\bm{p}}a_{\bm{p}})=2a^\dag_{\bm{p}}a_{\bm{p}}$ 即可实现这一点.
+%
+%真空能发散, 也是在量子场论中我们遇到的第一个发散; 以后我们还将见到其它的发散. 这些发散构成了量子场论的或关乎其基础的深刻困难. 解决这些困难的系统化的方法已被发展完善, 这便是重整化; 但此方案对彼困难之解决, 仍是从数学层面上的, 而非物理基础上的. 不过近年来人们渐渐已接受, 一个理论, 只要是在某种尺度上是可重整化的, 那么它就在相应的尺度上是正确的, 或曰有效的. 这种思想, 称作有效场论.
+%
+%
+%一般来说, ; 这时, 上一节把真空能舍掉是不成问题的. 甚至, 我们可以把上述发散的真空能当成是一种数学上的冗余. 但是, 如果上述之数学结果, 真的预示了某种物理存在, 那么我们就必须认真对待了. 事实上, 真空能, 的确将在某些状况下会表现出来, 例如卡西米尔效应. 下面我们就研究之.
+%
+%
+%
+%
+%
+%
+%
+\begin{figure}[!h]
+\begin{center}
+\includegraphics[width=4 cm]{pic/Casimir.jpg}
+\caption{卡西米尔效应.}
+\label{Casimir}
+\end{center}
+\end{figure}
+
+但是, 基态能的出现, 意味着我们所谓的真空也许并非真是那么空空如也的. 两块金属板之间有吸引力, 称为卡西米尔效应; 此效应, 就可以用电磁场的真空能来说明. 假设两块平行金属板距离为~$d$, 且平行于~$x-y$ 平面; 它们面积相等, 为~$A$. 于是我们可得~$d$ 间隔内, 对电磁场, 单位面积上的基态能量为
+\begin{align}
+\frac{\langle E\rangle}{A}=2\int \frac{dk_xdk_y}{(2\pi)^2}\sum_{n=1}^\infty\frac{\hbar}{2}\omega_n=2\int \frac{dk_xdk_y}{(2\pi)^2}\sum_{n=1}^\infty\frac{\hbar}{2}c\sqrt{k^2_x+k^2_y+\left(\frac{n\pi}{d}\right)^2};
+\end{align}
+其中对~$z$ 方向我们采用量子力学计算结果, 对~$x, y$ 方向我们采用了周期边界条件, 即~$k=\frac{2\pi}{L}$. 上述积分值是发散的; 我们采用~zeta 正规化, 并转移到极坐标之中, 就有
+\begin{align}
+\frac{\langle E(s)\rangle}{A}=&\hbar\int \frac{dk_xdk_y}{(2\pi)^2}\sum_{n=1}^\infty\omega_n|\omega_n|^{-s}\nonumber\\
+=&\frac{\hbar c^{1-s}}{4\pi^2}\sum_n\int_0^\infty 2\pi q dq\Big|q^2+\frac{n^2\pi^2}{d^2}\Big|^{(1-s)/2}\nonumber\\
+=&-\frac{\hbar^{1-s}\pi^{2-s}}{2a^{3-s}}\frac{1}{3-s}\sum_n|n|^{3-s}.
+\end{align}
+如此我们便可算出
+\begin{align}
+\frac{\langle E\rangle}{A}=\lim_{s\rightarrow0}\frac{\langle E(s)\rangle}{A}=-\frac{\hbar c\pi^2}{6a^3}\zeta(-3)=-\frac{\hbar c\pi^2}{720a^3};
+\end{align}
+其中用到了~$\zeta(-3)=\frac{1}{120}$. 于是卡西米尔力就是
+\begin{align}
+\frac{F_c}{A}=-\frac{\partial}{\partial d}\frac{\langle E\rangle}{A}=-\frac{\hbar c\pi^2}{240a^4}.
+\end{align}
+
+
+
+\subsection{单粒子态及其正交归一化分析, 坐标空间场算符对易关系, 协变对易式}
+
+~~~~
+从量子力学中我们已熟知, 前文动量空间场算符的对易关系, 意味着~$a^\dag_{\bm{p}}$ 是粒子的产生算符, 即~$a^\dag_{\bm{p}}|0\rangle=|\bm{p}\rangle$. 于是可知~$\langle0|[a_{\bm{p}},a^\dag_{\bm{p}'}]|0\rangle=\langle0|a_{\bm{p}}a^\dag_{\bm{p}'}|0\rangle=\langle\bm{p}|\bm{p}'\rangle=(2\pi)^3\delta^3(\bm{p}-\bm{p}')$. 进一步地,
+\begin{align}
+\phi(x)|0\rangle=&\phi^\dag(x)|0\rangle=\int\frac{d^3\bm{p}}{(2\pi)^3\sqrt{2E_{\bm{p}}}}e^{ipx}a^\dag_{\bm{p}}|0\rangle\nonumber\\
+=&\int\frac{d^3\bm{p}}{(2\pi)^3\sqrt{2E_{\bm{p}}}}e^{ipx}|\bm{p}\rangle:=|x\rangle
+\end{align}
+就表示在~$x$ 点处产生一个可分解为诸动量模叠加的粒子; 注意上述量子态是洛伦兹标量, 即对任何惯性系, 都给出同样的物理. 由此可以得到\footnote{作为对比, $\delta^3(\bm{r}-\bm{r}')=\frac{1}{(2\pi\hbar)^3}\int d^3\bm{p}e^{i\bm{p}\cdot(\bm{r}-\bm{r}')/\hbar}$.}
+\begin{align}
+\langle x|y\rangle:=\langle0|\phi(x)\phi(y)|0\rangle=\int\frac{d^3\bm{p}}{(2\pi)^32E_{\bm{p}}}e^{-ip(x-y)}:=D(x-y)
+\end{align}
+即描述粒子从~$y$ 到~$x$ 的传播. 注意此传播关系亦是洛伦兹标量.
+
+数学上我们知道, $\delta(f(x)-f(x_0))=\frac{1}{|f'(x_0)|}\delta(x-x_0)$, 故可计算得
+\begin{align}
+\delta^3(\bm{p}-\bm{p}')=&\delta^3(\bm{p}_b-\bm{p}'_b)\frac{dp^i_b}{dp^i}=\delta^3(\bm{p}_b-\bm{p}'_b)\gamma(1+\beta\frac{dE_{\bm{p}}}{dp^i})\nonumber\\
+=&\delta^3(\bm{p}_b-\bm{p}'_b)\frac{\gamma}{E_{\bm{p}}}(E_{\bm{p}}+\beta p^i)=\delta^3(\bm{p}_b-\bm{p}'_b)\frac{E_{\bm{p}_b}}{E_{\bm{p}}};
+\end{align}
+其中用到了能量动量四维矢量的洛伦兹变换式~(\ref{titi}). 由上述过程可见, $E_{\bm{p}}\delta^3(\bm{p}-\bm{p}')$ 是洛伦兹不变的. 把因子平分到产生湮灭算符上, 就得~$\sqrt{2E_{\bm{p}}}a_{\bm{p}}$ 是洛伦兹标量. 在表明~K-G 场方程解~(\ref{so of kg}) 是洛伦兹标量时, 前文曾提到过这个问题, 现在得以解决\footnote{用与第一章中描述场在实空间转动下的变化行为的语言相似的方式叙述, 就是~$U(\Lambda_p)\sqrt{2E_{\bm{p}}}a_{\bm{p}}=\sqrt{2E_{\Lambda^{-1}_p\bm{p}}}a_{\Lambda^{-1}_p\bm{p}}=\sqrt{2E_{\bm{p}}}a_{\bm{p}}$.}.~%; 于是有~$U(\Lambda_p)a_{\bm{p}}=\frac{\sqrt{2E_{\Lambda^{-1}_p\bm{p}}}}{\sqrt{2E_{\bm{p}}}}a_{\Lambda^{-1}_p\bm{p}}$.}
+%
+%\footnote{用与第一章中描述场在实空间转动下的变化行为的语言相似的方式叙述, 就是~$\sqrt{2E_{\bm{p}}}a_{\bm{p}}\rightarrow\sqrt{2E'_{\bm{p}}}a'_{\bm{p}}=\sqrt{2E_{\bm{p}}}a_{\bm{p}}= U(\Lambda_p)\sqrt{2E_{\bm{p}}}a_{\bm{p}}=\sqrt{2E_{\Lambda^{-1}_p\bm{p}}}a_{\Lambda^{-1}_p\bm{p}}$~(标量表示~$M=I$, 对比于~$\phi'(x)=U(\Lambda)\phi(x)=\phi(\Lambda^{-1}x)$); 于是有~$a'_{\bm{p}}=a_{\bm{p}}=\frac{\sqrt{2E_{\Lambda^{-1}_p\bm{p}}}}{\sqrt{2E'_{\bm{p}}}}a_{\Lambda^{-1}_p\bm{p}}=\frac{\sqrt{2E_{\Lambda^{-1}_p\bm{p}}}}{\sqrt{2E_{\bm{p}}}}a_{\Lambda^{-1}_p\bm{p}}$, 从而~$a_{\bm{p}}\rightarrow a'_{\bm{p}}=a_{\bm{p}}=U(\Lambda_p)a_{\bm{p}}=\frac{\sqrt{2E_{\Lambda^{-1}_p\bm{p}}}}{\sqrt{2E'_{\bm{p}}}}a_{\Lambda^{-1}_p\bm{p}}=\frac{\sqrt{2E_{\Lambda^{-1}_p\bm{p}}}}{\sqrt{2E_{\bm{p}}}}a_{\Lambda^{-1}_p\bm{p}}$. 注意后一表达并不构成什么表示, 而只表示一种变化关系; 如同长度等在~boost 下的行为那样; 但仍不妨与~$A'^\mu(x)=U(\Lambda)A^\mu(x)={\Lambda^\mu}_\nu A^\nu(\Lambda^{-1}x)$ 作一比较体会.}
+%
+%带撇读作新函数在某点, 不带读做老函数在某点
+%$\sqrt{2E_{\bm{p}}}a_{\bm{p}}\rightarrow U(\Lambda_p)\sqrt{2E_{\bm{p}}}a_{\bm{p}}=\sqrt{2E_{\Lambda_p\bm{p}}}a_{\Lambda_p\bm{p}}=\sqrt{2E_{\bm{p}}}a_{\bm{p}}$, 从而~$a_{\bm{p}}=\frac{\sqrt{2E_{\Lambda_p\bm{p}}}}{\sqrt{2E_{\bm{p}}}}a_{\Lambda_p\bm{p}}$, $a_{\bm{p}}\rightarrow a_{\Lambda_p\bm{p}}=U(\Lambda_p)a_{\bm{p}}=\frac{\sqrt{2E_{\bm{p}}}}{\sqrt{2E_{\Lambda_p\bm{p}}}}a_{\bm{p}}$
+%
+%结结是标量, 区别于标量函数.
+%
+%世界上为什么会有标量, 矢量等? 因为群有平庸表示, 基本表示.
+%
+于是, 如下量子态
+\begin{align}
+|p^\rangle:=|p^\mu\rangle:=\sqrt{2E_{\bm{p}}}a^\dag_{\bm{p}}|0\rangle=\sqrt{2E_{\bm{p}}}|\bm{p}\rangle
+\end{align}
+就是洛伦兹不变的; 还可得其归一化为~$\langle p|p'\rangle=2E_{\bm{p}}(2\pi)^3\delta^3(\bm{p}-\bm{p}')$. 有了以上知识, 我们就可计算出
+\begin{gather}
+\langle p|x\rangle=e^{ipx},~\langle x|p\rangle=e^{-ipx};
+\end{gather}
+于是就可得到
+\begin{gather}
+I=\int\frac{d^3\bm{p}}{(2\pi)^32E_{\bm{p}}}|p\rangle\langle p|,~I=2E_{\bm{p}}\int d^3\bm{x}|x\rangle\langle x|.
+\end{gather}
+%能量与体积相作用是不变量.
+若再选定等时的~$\langle \bm{p}|\bm{x}\rangle=e^{-i\bm{p}\cdot\bm{x}},~\langle \bm{x}|\bm{p}\rangle=e^{i\bm{p}\cdot\bm{x}}$, 以及~$\langle\bm{x}|\bm{y}\rangle=\delta^3(\bm{x}-\bm{y})$, 则还可计算出
+\begin{gather}
+I=\int\frac{d^3\bm{p}}{(2\pi)^3}|\bm{p}\rangle\langle\bm{p}|,~I=\int d^3\bm{x}|\bm{x}\rangle\langle\bm{x}|.
+\end{gather}
+类似刚才给出的~$|p\rangle$ 与~$|\bm{p}\rangle$ 的关系, 我们也可给出~$\sqrt{2E_{\bm{p}}}|x\rangle\leftrightarrow|\bm{x}\rangle$.
+
+
+应用前一节我们给出的动量空间场算符的对易关系, 不难计算出坐标空间:
+\begin{align}
+[\phi(x),\phi(y)]&=\int\frac{d^3\bm{p}}{(2\pi)^32E_{\bm{p}}}\left[e^{-ip(x-y)}-e^{-ip(y-x)}\right]\nonumber\\
+&=D(x-y)-D(y-x),\\
+[\pi(x),\pi(y)]&=\int\frac{d^3\bm{p}}{(2\pi)^3}\frac{E_{\bm{p}}}{2}\left[e^{-ip(x-y)}-e^{-ip(y-x)}\right],\\
+[\phi(x),\pi(y)]&=\frac{i}{2}\int\frac{d^3\bm{p}}{(2\pi)^3}\left[e^{-ip(x-y)}+e^{-ip(y-x)}\right];
+\end{align}
+上述第一个对易关系, 或称为协变对易关系, 是洛伦兹标量; 后两个则不是. 再应用本节给出的四维到三维的退变手续, 我们即可由上述式子读出等时对易关系
+\begin{gather}
+[\phi(\bm{x}),\phi(\bm{y})]=0,~[\pi(\bm{x}),\pi(\bm{y})]=0,\\
+[\phi(\bm{x}),\pi(\bm{y})]=i\delta^3(\bm{x}-\bm{y}).
+\end{gather}
+
+最后, 由式~(\ref{diejia}) 体现出的意涵不难写出出
+\begin{align}
+a_{\bm{p}}&=\sqrt{2E_{\bm{p}}}\int d^3\bm{x}e^{ipx}\frac{1}{2}\left[\phi(x)+\frac{i\pi(x)}{E_{\bm{p}}}\right],\\
+a^\dag_{\bm{p}}&=\sqrt{2E_{\bm{p}}}\int d^3\bm{x}e^{-ipx}\frac{1}{2}\left[\phi(x)-\frac{i\pi(x)}{E_{\bm{p}}}\right];
+\end{align}
+若先设出坐标空间场量的含时对易关系, 从上式亦是可以推出动量空间的对易式的.
+
+
+\subsection{狭义相对论微观因果律对量子场论的要求: 粒子自旋与对易性/对称性/统计的关系}
+
+~~~~
+狭义相对论表明, 类时或类光间隔的两个事件, 可以建立信号联接; 而类空间隔的事件是不可以的, 后者将失去确定的先后次序. 这称为狭义相对论所界定的微观世界的因果律. 反映在量子场论上, 这就是要求, 类空间隔两点上的力学量算符, 必须是互相对易的, 即
+\begin{align}
+[\mathcal{O}(x),\mathcal{O}(y)]=0,~\textrm{when}~(x-y)^2<0.
+\end{align}
+容易看出, 此条件反映在组成力学量算符的场算符上, 就是要求, 场算符所取的对易关系类型, 要使得在类空间隔内, 场的采取同样对易关系的协变运算式结果为零. 由上一小节的计算我们已知~$[\phi(x),\phi(y)]=D(x-y)-D(y-x)$; 在类空间隔内, 此对易式的值的确是等于零的. 同时也可看出, 若将场量取为反对易式, 则类空间隔内它们的反对易结果显然不为零. 是故自旋为零的标量场必取对易关系. 同样, 在下一章狄拉克场中我们也将看到, 对具有~$1/2$ 自旋的粒子, 在类空间隔内, 其采取反对易式的场的协变运算式结果为零. 是故自旋为~$1/2$ 的粒子必取反对易关系.
+
+进一步, 我们将发现, 因狭义相对论因果律的要求, 具有整数自旋的粒子, 必须被赋予对易关系; 粒子波函数对粒子交换是对称的, 粒子系满足玻色-爱因斯坦统计; 这样的粒子称为玻色子. 而具有半奇数自旋的粒子, 必须被赋予反对易关系; 粒子波函数对粒子交换是反对称的, 粒子系满足费米-狄拉克统计; 这样的粒子称为费米子.
+
+
+
+
+\subsection{单粒子传播概率幅: 费曼传播子; 四维狄拉克~$\delta$ 函数}
+
+~~~~前面我们已知道~$\langle x|y\rangle=D(x-y)$ 表示粒子从位置空间的~$y$ 点到~$x$ 点的传播; 但其中我们并没有计及时间的先后. 考虑进时间先后的传播关系~$D_F(x-y):=\langle0|T\phi(x)\phi(y)|0\rangle$, 称为费曼传播子. 另外, $D_R(x-y):=\theta(x^0-y^0)\langle0|[\phi(x),\phi(y)]|0\rangle$ 称为推迟格林函数, 等等. 下面, 我们以费曼传播子为例, 来进行进一步计算.
+\begin{align}
+&D_F(x-y)=\langle0|T\phi(x)\phi(y)|0\rangle\nonumber\\
+=&\theta(x^0-y^0)\langle0|\phi(x)\phi(y)|0\rangle+\theta(y^0-x^0)\langle0|\phi(y)\phi(x)|0\rangle\nonumber\\
+=&\theta(x^0-y^0)\int\frac{d^3\bm{p}}{(2\pi)^32E_{\bm{p}}}e^{-ip(x-y)}+\theta(y^0-x^0)\int\frac{d^3\bm{p}}{(2\pi)^32E_{\bm{p}}}e^{-ip(y-x)}\nonumber\\
+=&\theta(x^0-y^0)\int\frac{d^3\bm{p}}{(2\pi)^32E_{\bm{p}}}e^{-ip(x-y)}\Big|_{p^0=E_{\bm{p}}}\nonumber\\
+&~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-\theta(y^0-x^0)\int\frac{d^3\bm{p}}{(2\pi)^3(-2E_{\bm{p}})}e^{-ip(x-y)}\Big|_{p^0=-E_{\bm{p}}}\nonumber\\
+=&\int\frac{d^3\bm{p}}{(2\pi)^3}\int\frac{dp^0}{2\pi i}\frac{-1}{p^2-m^2}e^{-ip(x-y)}~\textrm{with~Feynman~prescription}\nonumber\\
+=&\int\frac{d^4p}{(2\pi)^4}\frac{i}{p^2-m^2}e^{-ip(x-y)}~\textrm{with~Feynman~prescription};
+\end{align}
+%粒子是满足色散关系的, 积分方法, 没有按照色散关系来; 当然, 这样积分出来的最终结果, 得到的粒子传播关系, 是满足色散关系的.
+%解析延拓到整个复平面, 则真实情况外, 就成了两个奇点.
+\begin{figure}[!h]
+\begin{center}
+\includegraphics[width=7 cm]{pic/feynman.jpg}
+\caption{费曼惯例: 费曼传播子积围道的选取.}
+\label{feynman}
+\end{center}
+\end{figure}
+其中用到了留数定理~$\oint_l f(z)dz=2\pi i\sum_k f(a_k)$, 而积分围道的选择表示在图~\ref{feynman} 中, 称为费曼惯例. 注意上述过程中的解析延拓意味着对四维动量的积分, 并不要求四维动量满足色散关系, 后者作为积分的奇点存在. 显然, 对~$\int\frac{d^4p}{(2\pi)^4}\frac{i}{p^2-m^2}e^{-ip(x-y)}$ 积分围道的不同选择, 将给出不同的传播子; 如图~\ref{ret} 即给出推迟格林函数.
+\begin{figure}[!h]
+\begin{center}
+\includegraphics[width=7 cm]{pic/ret.jpg}
+\caption{推迟势积分围道的选取.}
+\label{ret}
+\end{center}
+\end{figure}
+
+\noindent 对于费曼传播子, 一般我们又会采用如下记法:
+\begin{align}
+D_F(x-y)=\int\frac{d^4p}{(2\pi)^4}\frac{i}{p^2-m^2+i\epsilon}e^{-ip(x-y)},
+\end{align}
+或称为~$\epsilon$ 惯例.
+
+注意, 传播子的表达式, 以费曼传播子为例, 就是其与~$D_F(p):=\frac{i}{p^2-m^2+i\epsilon}$ 的四维傅立叶变换; 其中后者即传播子在动量空间的表达式. 把传播子代入~K-G 方程, 可得
+\begin{align}
+(\partial^2+m^2)D_F(x-y)=-i\int\frac{d^4p}{(2\pi)^4}e^{-ip(x-y)}:=-i\delta^4(x-y),
+\end{align}
+即传播子是场方程的格林函数. 由上述方程, 通过真接假设出~$D_F(x-y)=\int\frac{d^4p}{(2\pi)^4}D_F(p)e^{-ip(x-y)}$ 并代入之, 我们亦可直接得到~$D_F(p)$ 进而~$D_F(x-y)$ 的表达式. --在上式中, 我们定义了位置空间四维狄拉克~$\delta$ 函数
+\begin{align}
+\delta^4(x-y)=&\delta(x^0-y^0)\delta^3(\bm{x}-\bm{y})=\delta(x^0-y^0)\frac{1}{(2\pi)^3}\langle\bm{x}|\bm{y}\rangle\nonumber\\
+=&\int\frac{d^4p}{(2\pi)^4}e^{-ip(x-y)}.
+\end{align}
+注意, 正如前文已经说过的那样, 上述对四维动量的积分, 不要求色散关系, 否则显然又过渡回传播子了. 作为对比, 若我们定义~$\langle p|p'\rangle=2E_{\bm{p}}\langle\bm{p}|\bm{p}'\rangle=2E_{\bm{p}}(2\pi)^3\delta^3(\bm{p}-\bm{p}'):=(2\pi)^4\delta^4(p-p')$, 并取~$I=\int d^4x|x\rangle\langle x|$, 就可得到四维动量空间的狄拉克~$\delta$ 函数如下:
+\begin{align}
+\delta^4(p-p')=\int\frac{d^4x}{(2\pi)^4}e^{-i(p-p')x}.
+\end{align}
+
+
+%格林函数的积分, 不用满足色散关系, 满足, 则成了传播子了. 也就是说传播子是满足的.
+
+在以后的相互作用场论中, 对某个过程的某阶近似, 我们通常会将其相应的解析表达式用图形的方法画出. 这些图形, 称为费曼图; 图形与解析析式之间的对应规则, 称为费曼规则. 例如, 最简单的费曼图, 就是用连接两点的一条线段表示费曼传播子:
+\begin{align}\label{green f}
+D_F(x-y)=\begin{aligned}\includegraphics[width=1.3 cm]{pic/pp.jpg}\end{aligned}~.
+\end{align}
+
+
+%对于本传播子, 恰恰因为我们此处有~$p^2=m^2$, 即粒子是在壳的, 我们才知这样的传播子描述的是可被探到的真实的粒子. 作为对比, 在相互作用场论中, 中线粒子不在壳, 则是虚的, 是不可探测的.
+
+%费曼传播子是自由场论中得出的最重要的结果之一, 它对于日后的相互作用场论中的散射振幅的计算等有直接的关系. 另外, 与自由场费曼传播子具有相似形式的~$\langle\Omega|T\phi_H(x)\phi_H(y)|\Omega\rangle$--称为关联函数或格林函数--也是我们最关心的物理量之一. 那时我们要做的, 就是如何把关联函数与自由场论中的费曼传播子联系起来的问题.
+
+
+%传播子是否涉及到虚过程?
+
+
+
+\subsection{复标量场: 零自旋有质量有荷, $\pi^\pm$ 介子}
+
+~~~~我们已知, 本章以前部分讲述的实标量场, 描述的是~$\pi^0$ 介子. 还有一类带正负电荷的介子, 记为~$\pi^\pm$; 由前章内容知, 描述它们的即为复标量场. 复标量场的拉氏密度, 以及由之导致的场的运动方程, 进而场的解为:
+\begin{gather}
+\mathcal{L}=\partial_\mu\phi^\dag\partial^\mu\phi-m^2\phi^\dag\phi,\\
+(\partial^2+m^2)\phi=0,~(\partial^2+m^2)\phi^\dag=0;\\
+\phi(x)=\int\frac{d^3\bm{p}}{(2\pi)^3\sqrt{2E_{\bm{p}}}}\left(a_{\bm{p}}e^{-ipx}+b^\dag_{\bm{p}}e^{ipx}\right),\\
+\phi^\dag(x)=\int\frac{d^3\bm{p}}{(2\pi)^3\sqrt{2E_{\bm{p}}}}\left(a^\dag_{\bm{p}}e^{ipx}+b_{\bm{p}}e^{-ipx}\right);
+\end{gather}
+其中~$a^\dag_{\bm{p}}$ 与~$b^\dag_{\bm{p}}$ 即描述带分别带正负电荷的两种粒子. 本场的正则动量以及哈氏密度就是
+\begin{gather}
+\pi=\frac{\partial\mathcal{L}}{\partial\dot{\phi}}=\dot{\phi}^\dag,~\pi^\dag=\frac{\partial\mathcal{L}}{\partial\dot{\phi}^\dag}=\dot{\phi};\\
+\mathcal{H}=\pi\dot{\phi}+\pi^\dag\dot{\phi}^\dag-\mathcal{L}.
+\end{gather}
+赋予本场如下对易关系, 即可实现体系的量子化:
+\begin{gather}
+[a_{\bm{p}},a^\dag_{\bm{p}'}]=(2\pi)^3\delta^3(\bm{p}-\bm{p}'),~[b_{\bm{p}},b^\dag_{\bm{p}'}]=(2\pi)^3\delta^3(\bm{p}-\bm{p}');\\
+\Leftrightarrow~[\phi(\bm{x}),\pi(\bm{y})]=i\delta^3(\bm{x}-\bm{y}),~[\phi^\dag(\bm{x}),\pi^\dag(\bm{y})]=i\delta^3(\bm{x}-\bm{y});
+\end{gather}
+其它的对易皆为零. 场的协变对易关系很容易读出为~
+\begin{gather}
+[\phi(x),\phi(y)]=0,~[\phi^\dag(x),\phi^\dag(y)]=0,\\
+[\phi(x),\phi^\dag(y)]=D_a(x-y)-D_b(y-x).
+\end{gather}
+复标量场的大部分力学性质与实标量场的是对应一致的; 我们主要研究复标量场所带的规范荷. 复标量场对应于整体规范不变的守恒流密度为
+\begin{align}
+j^\mu_{(q)}=&\frac{q}{i}\left(\frac{\partial\mathcal{L}}{\partial\partial_\mu\phi}\phi-\phi^\dag\frac{\partial\mathcal{L}}{\partial\partial_\mu\phi^\dag}\right)\nonumber\\
+=&iq(\phi^\dag\partial^\mu\phi-\phi\partial_\mu\phi^\dag);
+\end{align}
+这是我们在分析力学中我们就已求出过的. 于是我们可以求出本场的总守恒荷为
+\begin{align}
+Q=&\int d^3\bm{x}j^0_{(q)}=iq\int d^3\bm{x}(\phi^\dag\partial^0\phi-\phi\partial_0\phi^\dag)\nonumber\\
+=&q\int\frac{d^3\bm{p}}{(2\pi)^3}(a^\dag_{\bm{p}}a_{\bm{p}}-b^\dag_{\bm{p}}b_{\bm{p}})
+\end{align}
+由此确认, $a^\dag_{\bm{p}}$ 与~$b^\dag_{\bm{p}}$ 描述的粒子荷性的确相反.
+
+
+
+
+
