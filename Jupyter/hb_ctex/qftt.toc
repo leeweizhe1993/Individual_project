@@ -1,0 +1,94 @@
+\contentsline {section}{\numberline {1}狭义相对论: 物理规律以闵氏几何为时空背景}{1}{section.1}
+\contentsline {subsection}{\numberline {1.1}间隔不变及其导致的时空特征, 狭义相对性原理}{1}{subsection.1.1}
+\contentsline {subsubsection}{\numberline {1.1.1}光速/间隔不变, 间隔/时空的划分, 因果律}{1}{subsubsection.1.1.1}
+\contentsline {subsubsection}{\numberline {1.1.2}惯性变换/洛伦兹\nobreakspace {}boost}{2}{subsubsection.1.1.2}
+\contentsline {subsubsection}{\numberline {1.1.3}四维量的协变性与三维量的相对性: 运动延缓, 长度收缩, 同时相对}{3}{subsubsection.1.1.3}
+\contentsline {subsubsection}{\numberline {1.1.4}狭义相对性原理: 物理规律四维协变}{3}{subsubsection.1.1.4}
+\contentsline {subsection}{\numberline {1.2}力学的洛伦兹协变性; 新发现: 能动关系与质能等价}{3}{subsection.1.2}
+\contentsline {subsection}{\numberline {1.3}电磁学的相对论效应, 电动力学的洛伦协协变性}{5}{subsection.1.3}
+\contentsline {subsubsection}{\numberline {1.3.1}光的多普勒效应与光行差的严格公式}{5}{subsubsection.1.3.1}
+\contentsline {subsubsection}{\numberline {1.3.2}麦克斯韦方程组的四维协变形式: 张量表达}{5}{subsubsection.1.3.2}
+\contentsline {subsubsection}{\numberline {1.3.3}势的规范冗余, 达朗贝尔方程的四维协变式}{7}{subsubsection.1.3.3}
+\contentsline {subsubsection}{\numberline {1.3.4}麦克斯韦方程组用微分形式表达}{8}{subsubsection.1.3.4}
+\contentsline {subsection}{\numberline {1.4}洛伦兹群表示论}{8}{subsection.1.4}
+\contentsline {subsubsection}{\numberline {1.4.1}正当正时的六个洛伦兹变换的具体形式}{8}{subsubsection.1.4.1}
+\contentsline {subsubsection}{\numberline {1.4.2}洛伦兹群的一般李群分析, 场的自旋的出现及其与场性质\nobreakspace {}(标/矢/旋等) 之间的关系--Wigner 定理}{11}{subsubsection.1.4.2}
+\contentsline {paragraph}{群元, 转动角}{11}{section*.4}
+\contentsline {paragraph}{角动量, 一般函数上的洛伦兹操作\nobreakspace {}$U(\Lambda )$}{11}{section*.5}
+\contentsline {paragraph}{角动量/李代数及其分解组合, SO$^+$(3,1)$\sim $SU(2)$\otimes $SU(2), 洛伦兹群\nobreakspace {}($\Lambda $ 或\nobreakspace {}$U(\Lambda )$) 的矩阵表示, 场的自旋的出现及其与场性质\nobreakspace {}(标/矢/旋等) 之间的关系--Wigner 定理, 复场与反粒子}{12}{section*.6}
+\contentsline {subsubsection}{\numberline {1.4.3}狄拉克方程与外尔方程的严格导出, 螺旋, $\gamma $ 矩阵, 狄拉克表示}{14}{subsubsection.1.4.3}
+\contentsline {subsubsection}{\numberline {1.4.4}由狄拉克旋量构造洛伦兹协变量, 狄拉克共轭, $\gamma ^5$}{15}{subsubsection.1.4.4}
+\contentsline {subsubsection}{\numberline {1.4.5}物理规律的离散变换性质: $CPT$ 对称性; $CP$ 破坏, 洛伦兹协变量的进一步分类, 狄拉克方程与外尔方程的离散对称性}{16}{subsubsection.1.4.5}
+\contentsline {paragraph}{$P$-对称性}{17}{section*.7}
+\contentsline {paragraph}{$T$-对称性}{18}{section*.8}
+\contentsline {paragraph}{$C$-对称性}{20}{section*.9}
+\contentsline {section}{\numberline {2}分析力学: 场的力学量的获得}{22}{section.2}
+\contentsline {subsection}{\numberline {2.1}欧拉-拉格朗日方程}{22}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}诺特定理: 对称性与守恒律}{22}{subsection.2.2}
+\contentsline {subsubsection}{\numberline {2.2.1}能动张量, 时空平移对称性与能动张量守恒}{23}{subsubsection.2.2.1}
+\contentsline {subsubsection}{\numberline {2.2.2}空间旋转对称性与角动量守恒, 自旋的出现}{24}{subsubsection.2.2.2}
+\contentsline {subsection}{\numberline {2.3}规范不变性原理}{24}{subsection.2.3}
+\contentsline {subsubsection}{\numberline {2.3.1}荷场的整体规范变换\nobreakspace {}(相位平移) 对称性及其守恒荷}{24}{subsubsection.2.3.1}
+\contentsline {subsubsection}{\numberline {2.3.2}定域规范变换对称性, 协变导数\nobreakspace {}$D_\mu $, 荷场与规范场的耦合/相互作用的引入}{25}{subsubsection.2.3.2}
+\contentsline {paragraph}{规范场, 4\nobreakspace {}种基本相互作用, 规范场的质量与自发对称破缺, 希格斯机制, 杨-Mills 规范场; QED, QCD, GWS 模型}{26}{section*.10}
+\contentsline {paragraph}{协变导数\nobreakspace {}$D_\mu $ 的运算性质}{27}{section*.11}
+\contentsline {section}{\numberline {3}实标量场: 零自旋有质量无荷, $\pi ^0$ 介子}{29}{section.3}
+\contentsline {subsection}{\numberline {3.1}标量场的方程: Klein-Gordon 方程; 解中负能项的出现, 产生湮灭算符诠释, 场位形\nobreakspace {}(configuration)}{29}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}正则量子化: 动量空间对易关系的赋予与粒子解的获得; 场位形的运动方程}{30}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}发散基态能, 卡西米尔效应}{33}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.4}单粒子态及其正交归一化分析, 坐标空间场算符对易关系, 协变对易式}{34}{subsection.3.4}
+\contentsline {subsection}{\numberline {3.5}狭义相对论微观因果律对量子场论的要求: 粒子自旋与对易性/对称性/统计的关系}{35}{subsection.3.5}
+\contentsline {subsection}{\numberline {3.6}单粒子传播概率幅: 费曼传播子; 四维狄拉克\nobreakspace {}$\delta $ 函数}{36}{subsection.3.6}
+\contentsline {subsection}{\numberline {3.7}复标量场: 零自旋有质量有荷, $\pi ^\pm $ 介子}{38}{subsection.3.7}
+\contentsline {section}{\numberline {4}复旋量场: 1/2-自旋有质量有荷, 狄拉克费米子}{39}{section.4}
+\contentsline {subsection}{\numberline {4.1}狄拉克方程及其共轭方程, 泡利-狄拉克表象, 外尔方程的拉氏密度, 马约拉纳费米子, 轴矢流}{39}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}狄拉克方程的解, $u^s(p),\nobreakspace {}v^s(p)$, Jordan-wigner 量子化: 反对易关系的赋予, 费曼传播子}{41}{subsection.4.2}
+\contentsline {section}{\numberline {5}实矢量场: 1-自旋无荷无质量, 光子}{43}{section.5}
+\contentsline {subsection}{\numberline {5.1}电磁场的量子化}{43}{subsection.5.1}
+\contentsline {subsubsection}{\numberline {5.1.1}辐射规范量子化, 对易关系的修改, 无散\nobreakspace {}$\delta $ 函数}{43}{subsubsection.5.1.1}
+\contentsline {subsubsection}{\numberline {5.1.2}协变\nobreakspace {}(洛伦茨规范) 量子化, 拉氏密度的修改, 费曼规范, Gupta-Bleuler 条件, 标量光子与纵向量子相消, 鬼态}{46}{subsubsection.5.1.2}
+\contentsline {subsection}{\numberline {5.2}有质量矢量场, 质量破坏规范变换}{49}{subsection.5.2}
+\contentsline {section}{\numberline {6}量子场论的泛函表述: 路径积分量子化}{50}{section.6}
+\contentsline {subsection}{\numberline {6.1}泛函微积分基础, 量子场论中心等式, 格拉斯曼数}{50}{subsection.6.1}
+\contentsline {subsubsection}{\numberline {6.1.1}高斯积分, 高斯重积分, 高斯矩}{50}{subsubsection.6.1.1}
+\contentsline {subsubsection}{\numberline {6.1.2}泛函积分, 高斯泛函积分}{51}{subsubsection.6.1.2}
+\contentsline {subsubsection}{\numberline {6.1.3}泛函微商, 量子场论中心等式}{51}{subsubsection.6.1.3}
+\contentsline {subsubsection}{\numberline {6.1.4}格拉斯曼数\nobreakspace {}(外代数) 及其微积分}{52}{subsubsection.6.1.4}
+\contentsline {subsection}{\numberline {6.2}量子力学的路径积分表述, 算符编时积, 生成泛函, Bethe-Salpeter 方程}{53}{subsection.6.2}
+\contentsline {subsection}{\numberline {6.3}量子场论的路径积分形式}{55}{subsection.6.3}
+\contentsline {subsubsection}{\numberline {6.3.1}量子场论中的路径积分及其与量子力学中的区别与联系, 场位形及其\nobreakspace {}``超薛定谔方程'', 生成泛函, 格林函数}{55}{subsubsection.6.3.1}
+\contentsline {subsubsection}{\numberline {6.3.2}自由标量场/旋量场与矢量场的传播子, 生成泛函与两点关联函数}{56}{subsubsection.6.3.2}
+\contentsline {paragraph}{自由标量场}{56}{section*.12}
+\contentsline {paragraph}{自由旋量场}{56}{section*.13}
+\contentsline {paragraph}{自由矢量场}{57}{section*.14}
+\contentsline {section}{\numberline {7}相互作用场论\nobreakspace {}(散射振幅/截面的计算): 以\nobreakspace {}$\phi ^4$ 模型, Yukawa\nobreakspace {}理论与\nobreakspace {}QED 等为例}{58}{section.7}
+\contentsline {subsection}{\numberline {7.1}QED 等基本相互作用, $\phi ^4$ 模型, Yukawa\nobreakspace {}理论}{58}{subsection.7.1}
+\contentsline {subsection}{\numberline {7.2}相互作用场论的基本理论工具}{59}{subsection.7.2}
+\contentsline {subsubsection}{\numberline {7.2.1}三种绘景, 相互作用绘景下的时间演化算符, $S$ 矩阵, 散射振幅; 关联函数, 维克定理}{59}{subsubsection.7.2.1}
+\contentsline {paragraph}{三种绘景}{59}{section*.15}
+\contentsline {paragraph}{相互作用绘景下的时间演化算符, $S$ 矩阵, 散射振幅}{60}{section*.16}
+\contentsline {paragraph}{关联函数, 维克定理}{61}{section*.17}
+\contentsline {subsubsection}{\numberline {7.2.2}以\nobreakspace {}$\phi ^4$ 理论的关联函数为例: 连通图, 全连通图; 有效散射图: 全联通+截断; 相互作用下的传播子: 1PI 图, 自能; LSZ 约化公式}{62}{subsubsection.7.2.2}
+\contentsline {subsubsection}{\numberline {7.2.3}$\phi ^4$ 理论的散射矩阵及其费曼图}{64}{subsubsection.7.2.3}
+\contentsline {subsubsection}{\numberline {7.2.4}衰变宽度, 散射截面}{66}{subsubsection.7.2.4}
+\contentsline {paragraph}{衰变宽度}{66}{section*.18}
+\contentsline {paragraph}{散射截面}{67}{section*.19}
+\contentsline {subsection}{\numberline {7.3}Yukawa\nobreakspace {}理论}{68}{subsection.7.3}
+\contentsline {subsubsection}{\numberline {7.3.1}以几个过程为例: 散射振幅及其费曼图与费曼规则, 树图\nobreakspace {}(及其中性虚粒子), 圈图\nobreakspace {}(与光子自能)}{68}{subsubsection.7.3.1}
+\contentsline {paragraph}{一个介子到两个核子衰变: $\pi -NN$ }{68}{section*.20}
+\contentsline {paragraph}{两个核子的散射: $NN-NN$}{69}{section*.21}
+\contentsline {paragraph}{两个正反核子的散射: $N\mathaccentV {bar}016{N}-N\mathaccentV {bar}016{N}$}{70}{section*.22}
+\contentsline {subsubsection}{\numberline {7.3.2}交叉对称性, $s/t/u$-channel, Mandelstam 变量}{70}{subsubsection.7.3.2}
+\contentsline {subsubsection}{\numberline {7.3.3}Yukawa\nobreakspace {}势}{71}{subsubsection.7.3.3}
+\contentsline {subsection}{\numberline {7.4}量子电动力学: 电磁散射过程振幅的二阶\nobreakspace {}(树图) 近似}{72}{subsection.7.4}
+\contentsline {section}{\numberline {8}圈图发散及\nobreakspace {}(单圈) 重整化: 以量子电动力学为例}{74}{section.8}
+\contentsline {subsection}{\numberline {8.1}Ward-Takahashi 恒等式, 光学定理}{75}{subsection.8.1}
+\contentsline {section}{\numberline {9}量子色动力学, 杨-Mills 理论}{76}{section.9}
+\contentsline {subsection}{\numberline {9.1}夸克: 六种味与三种荷, 色空间的\nobreakspace {}SU(3) 规范变换, 八种胶子, 杨-Mills 规范场拉氏密度}{76}{subsection.9.1}
+\contentsline {subsection}{\numberline {9.2}杨-Mills 场的路径积分量子化, Faddeev-Popov 方法}{78}{subsection.9.2}
+\contentsline {subsection}{\numberline {9.3}BRST 对称性}{79}{subsection.9.3}
+\contentsline {section}{\numberline {10}电弱统一: GWS 理论; 标准模型}{81}{section.10}
+\contentsline {subsection}{\numberline {10.1}电弱相互作用的拉氏密度: 以轻子为例; 初始轻子无质量; 弱同位旋, 弱超荷; 温伯格转动, 弱混合角; Gell-Mann-Nishijima 公式; 弱同位旋的带电流与中性流}{81}{subsection.10.1}
+\contentsline {subsection}{\numberline {10.2}整体规范对称性的自发破缺, 希格斯场, Goldstone 定理; 定域破缺, 希格斯机制: 规范场吃掉\nobreakspace {}Goldstone 玻色子获得质量; $W^\pm ,\nobreakspace {}Z^0$ 以及轻子的质量的获得}{85}{subsection.10.2}
+\contentsline {subsection}{\numberline {10.3}夸克的弱作用, CKM 矩阵}{90}{subsection.10.3}
+\contentsline {subsection}{\numberline {10.4}粒子物理的标准模型}{94}{subsection.10.4}
