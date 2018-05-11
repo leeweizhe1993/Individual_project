@@ -1,12 +1,11 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2018.5.2)  7 MAY 2018 16:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2018.5.7)  9 MAY 2018 22:01
 entering extended mode
  restricted \write18 enabled.
- file:line:error style messages enabled.
  %&-line parsing enabled.
-**d:/Git/Individual_project/Jupyter/Latex/first/first.tex
-(d:/Git/Individual_project/Jupyter/Latex/first/first.tex
-LaTeX2e <2018-04-01> patch level 3
-Babel <3.19> and hyphenation patterns for 84 language(s) loaded.
+**first.tex
+(./first.tex
+LaTeX2e <2018-04-01> patch level 4
+Babel <3.20> and hyphenation patterns for 84 language(s) loaded.
 (d:/texlive/2018/texmf-dist/tex/latex/ctex/ctexart.cls
 (d:/texlive/2018/texmf-dist/tex/latex/l3kernel/expl3.sty
 Package: expl3 2018-04-30 L3 programming layer (loader) 
@@ -161,7 +160,7 @@ Package: expl3 2018-04-30 L3 programming layer (code)
 File: l3pdfmode.def 2018-04-30 v L3 Experimental driver: PDF mode
 \l__driver_color_stack_int=\count163
 ))
-Document Class: ctexart 2018/01/28 v2.4.12 Chinese adapter for class article (C
+Document Class: ctexart 2018/05/02 v2.4.14 Chinese adapter for class article (C
 TEX)
 (d:/texlive/2018/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
 Package: xparse 2018-04-30 L3 Experimental document command parser
@@ -175,10 +174,10 @@ Package: xparse 2018-04-30 L3 Experimental document command parser
 Package: l3keys2e 2018-04-30 LaTeX2e option processing using LaTeX3 keys
 )
 (d:/texlive/2018/texmf-dist/tex/latex/ctex/ctexhook.sty
-Package: ctexhook 2018/01/28 v2.4.12 Document and package hooks (CTEX)
+Package: ctexhook 2018/05/02 v2.4.14 Document and package hooks (CTEX)
 )
 (d:/texlive/2018/texmf-dist/tex/latex/ctex/ctexpatch.sty
-Package: ctexpatch 2018/01/28 v2.4.12 Patching commands (CTEX)
+Package: ctexpatch 2018/05/02 v2.4.14 Patching commands (CTEX)
 )
 (d:/texlive/2018/texmf-dist/tex/latex/base/fix-cm.sty
 Package: fix-cm 2015/01/14 v1.1t fixes to LaTeX
@@ -270,7 +269,7 @@ Package: everysel 2011/10/28 v1.2 EverySelectfont Package (MS)
 \g__ctex_font_size_flag=\count170
 
 (d:/texlive/2018/texmf-dist/tex/latex/ctex/config/ctexopts.cfg
-File: ctexopts.cfg 2018/01/28 v2.4.12 Option configuration file (CTEX)
+File: ctexopts.cfg 2018/05/02 v2.4.14 Option configuration file (CTEX)
 )
 (d:/texlive/2018/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
@@ -290,7 +289,7 @@ File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \bibindent=\dimen135
 )
 (d:/texlive/2018/texmf-dist/tex/latex/ctex/engine/ctex-engine-pdftex.def
-File: ctex-engine-pdftex.def 2018/01/28 v2.4.12 (pdf)LaTeX adapter (CTEX)
+File: ctex-engine-pdftex.def 2018/05/02 v2.4.14 (pdf)LaTeX adapter (CTEX)
 
 (d:/texlive/2018/texmf-dist/tex/latex/cjk/texinput/CJKutf8.sty
 Package: CJKutf8 2015/04/18 4.8.4
@@ -401,7 +400,7 @@ Package: CJKpunct 2016/05/14 4.8.4
 Package: CJKspace 2015/04/18 3.8.0
 )
 (d:/texlive/2018/texmf-dist/tex/latex/ctex/ctexspa.def
-File: ctexspa.def 2018/01/28 v2.4.12 Space info for CJKpunct (CTEX)
+File: ctexspa.def 2018/05/01 v2.4.14 Space info for CJKpunct (CTEX)
 )
 (d:/texlive/2018/texmf-dist/tex/latex/cjk/texinput/CJKfntef.sty
 Package: CJKfntef 2015/04/18 4.8.4
@@ -566,10 +565,10 @@ File: zhnumber-utf8.cfg 2018/01/28 v2.6 Chinese numerals with UTF8 encoding
 
 (d:/texlive/2018/texmf-dist/tex/latex/ctex/scheme/ctex-scheme-chinese-article.d
 ef
-File: ctex-scheme-chinese-article.def 2018/01/28 v2.4.12 Chinese scheme for art
+File: ctex-scheme-chinese-article.def 2018/05/02 v2.4.14 Chinese scheme for art
 icle (CTEX)
  (d:/texlive/2018/texmf-dist/tex/latex/ctex/config/ctex-name-utf8.cfg
-File: ctex-name-utf8.cfg 2018/01/28 v2.4.12 Caption with encoding UTF8 (CTEX)
+File: ctex-name-utf8.cfg 2018/05/02 v2.4.14 Caption with encoding UTF8 (CTEX)
 ))
 .................................................
 . LaTeX info: "xparse/define-command"
@@ -578,7 +577,7 @@ File: ctex-name-utf8.cfg 2018/01/28 v2.4.12 Caption with encoding UTF8 (CTEX)
 .................................................
 
 (d:/texlive/2018/texmf-dist/tex/latex/ctex/ctex-c5size.clo
-File: ctex-c5size.clo 2018/01/28 v2.4.12 c5size option (CTEX)
+File: ctex-c5size.clo 2018/05/02 v2.4.14 c5size option (CTEX)
 )
 .................................................
 . LaTeX info: "xparse/define-command"
@@ -587,15 +586,15 @@ File: ctex-c5size.clo 2018/01/28 v2.4.12 c5size option (CTEX)
 .................................................
 
 (d:/texlive/2018/texmf-dist/tex/latex/ctex/fontset/ctex-fontset-windows.def
-File: ctex-fontset-windows.def 2018/01/28 v2.4.12 Windows fonts definition (CTE
+File: ctex-fontset-windows.def 2018/05/02 v2.4.14 Windows fonts definition (CTE
 X)
 
 (d:/texlive/2018/texmf-dist/tex/latex/ctex/fontset/ctex-fontset-windowsnew.def
-File: ctex-fontset-windowsnew.def 2018/01/28 v2.4.12 Windows fonts definition f
+File: ctex-fontset-windowsnew.def 2018/05/02 v2.4.14 Windows fonts definition f
 or Vista or later version (CTEX)
 
 (d:/texlive/2018/texmf-dist/tex/generic/ctex/zhwindowsfonts.tex
-File: zhwindowsfonts.tex 2018/01/28 v2.4.12 Windows font map loader for pdfTeX 
+File: zhwindowsfonts.tex 2018/05/01 v2.4.14 Windows font map loader for pdfTeX 
 and DVIPDFMx (CTEX)
 {d:/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{UGBK.sfd}{Unicod
 e.sfd})
@@ -636,7 +635,7 @@ e.sfd})
 .................................................
 )))
 (d:/texlive/2018/texmf-dist/tex/latex/ctex/config/ctex.cfg
-File: ctex.cfg 2018/01/28 v2.4.12 Configuration file (CTEX)
+File: ctex.cfg 2018/05/02 v2.4.14 Configuration file (CTEX)
 )
 (d:/texlive/2018/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.bdg
 File: UTF8.bdg 2015/04/18 4.8.4
@@ -732,7 +731,7 @@ LaTeX Info: Redefining \selectfont on input line 11.
 LaTeX Font Info:    Try loading font information for C70+rm on input line 13.
 
 (d:/texlive/2018/texmf-dist/tex/latex/ctex/fd/c70rm.fd
-File: c70rm.fd 2018/01/28 v2.4.12 Chinese font definition (CTEX)
+File: c70rm.fd 2018/05/01 v2.4.14 Chinese font definition (CTEX)
 )
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <12.045> on input line 13.
@@ -753,13 +752,13 @@ LaTeX Warning: Empty `thebibliography' environment on input line 3.
 
 ] (./first.aux) ) 
 Here is how much of TeX's memory you used:
- 12743 strings out of 492649
- 257123 string characters out of 6133385
- 309539 words of memory out of 5000000
+ 12742 strings out of 492649
+ 256987 string characters out of 6133385
+ 309500 words of memory out of 5000000
  16451 multiletter control sequences out of 15000+600000
  543837 words of font info for 71 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,6n,56p,10458b,275s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,6n,56p,10419b,275s stack positions out of 5000i,500n,10000p,200000b,80000s
 <c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/
 Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.
 ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts
@@ -772,7 +771,7 @@ ndows/Fonts/simsun.ttc><d:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/
 cm/cmbx10.pfb><d:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12
 .pfb><d:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><d:/t
 exlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb>
-Output written on first.pdf (1 page, 100199 bytes).
+Output written on first.pdf (1 page, 100261 bytes).
 PDF statistics:
  129 PDF objects out of 1000 (max. 8388607)
  82 compressed objects within 1 object stream
