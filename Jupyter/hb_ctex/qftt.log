@@ -1,84 +1,148 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2016.11.26)  10 JAN 2018 16:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.5.3)  9 MAY 2018 18:13
 entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
 **qftt.tex
-
-(D:\百度云同步盘\b-各科详细笔记-持续更新\d-量子场论\qftt.te
-x
-LaTeX2e <2011/06/27>
-Babel <v3.8m> and hyphenation patterns for loaded.
-(C:\CTEX\MiKTeX\tex\latex\base\article.cls
-Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
-(C:\CTEX\MiKTeX\tex\latex\base\size10.clo
-File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+(./qftt.tex
+LaTeX2e <2018-04-01> patch level 3
+Babel <3.19> and hyphenation patterns for 84 language(s) loaded.
+(/usr/local/texlive/2018/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+(/usr/local/texlive/2018/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
-\c@part=\count79
-\c@section=\count80
-\c@subsection=\count81
-\c@subsubsection=\count82
-\c@paragraph=\count83
-\c@subparagraph=\count84
-\c@figure=\count85
-\c@table=\count86
+\c@part=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-(C:\CTEX\MiKTeX\tex\latex\cjk\CJK.sty
-Package: CJK 2008/12/29 4.8.2
+(/usr/local/texlive/2018/texmf-dist/tex/latex/cjk/texinput/CJK.sty
+Package: CJK 2015/04/18 4.8.4
 
-(C:\CTEX\MiKTeX\tex\latex\cjk\mule\MULEenc.sty
-Package: MULEenc 2008/12/29 4.8.2
+(/usr/local/texlive/2018/texmf-dist/tex/latex/cjk/texinput/mule/MULEenc.sty
+Package: MULEenc 2015/04/18 4.8.4
 )
-(C:\CTEX\MiKTeX\tex\latex\cjk\CJK.enc
-File: CJK.enc 2008/12/29 4.8.2
+(/usr/local/texlive/2018/texmf-dist/tex/latex/cjk/texinput/CJK.enc
+File: CJK.enc 2015/04/18 4.8.4
+Now handling font encoding C00 ...
+... no UTF-8 mapping file for font encoding C00
+Now handling font encoding C05 ...
+... no UTF-8 mapping file for font encoding C05
+Now handling font encoding C09 ...
+... no UTF-8 mapping file for font encoding C09
+Now handling font encoding C10 ...
+... no UTF-8 mapping file for font encoding C10
+Now handling font encoding C20 ...
+... no UTF-8 mapping file for font encoding C20
+Now handling font encoding C19 ...
+... no UTF-8 mapping file for font encoding C19
+Now handling font encoding C40 ...
+... no UTF-8 mapping file for font encoding C40
+Now handling font encoding C42 ...
+... no UTF-8 mapping file for font encoding C42
+Now handling font encoding C43 ...
+... no UTF-8 mapping file for font encoding C43
+Now handling font encoding C50 ...
+... no UTF-8 mapping file for font encoding C50
+Now handling font encoding C52 ...
+... no UTF-8 mapping file for font encoding C52
+Now handling font encoding C49 ...
+... no UTF-8 mapping file for font encoding C49
+Now handling font encoding C60 ...
+... no UTF-8 mapping file for font encoding C60
+Now handling font encoding C61 ...
+... no UTF-8 mapping file for font encoding C61
+Now handling font encoding C63 ...
+... no UTF-8 mapping file for font encoding C63
+Now handling font encoding C64 ...
+... no UTF-8 mapping file for font encoding C64
+Now handling font encoding C65 ...
+... no UTF-8 mapping file for font encoding C65
+Now handling font encoding C70 ...
+... no UTF-8 mapping file for font encoding C70
+Now handling font encoding C31 ...
+... no UTF-8 mapping file for font encoding C31
+Now handling font encoding C32 ...
+... no UTF-8 mapping file for font encoding C32
+Now handling font encoding C33 ...
+... no UTF-8 mapping file for font encoding C33
+Now handling font encoding C34 ...
+... no UTF-8 mapping file for font encoding C34
+Now handling font encoding C35 ...
+... no UTF-8 mapping file for font encoding C35
+Now handling font encoding C36 ...
+... no UTF-8 mapping file for font encoding C36
+Now handling font encoding C37 ...
+... no UTF-8 mapping file for font encoding C37
+Now handling font encoding C80 ...
+... no UTF-8 mapping file for font encoding C80
+Now handling font encoding C81 ...
+... no UTF-8 mapping file for font encoding C81
+Now handling font encoding C01 ...
+... no UTF-8 mapping file for font encoding C01
+Now handling font encoding C11 ...
+... no UTF-8 mapping file for font encoding C11
+Now handling font encoding C21 ...
+... no UTF-8 mapping file for font encoding C21
+Now handling font encoding C41 ...
+... no UTF-8 mapping file for font encoding C41
+Now handling font encoding C62 ...
+... no UTF-8 mapping file for font encoding C62
 )
-LaTeX Info: Redefining \selectfont on input line 756.
+LaTeX Info: Redefining \selectfont on input line 755.
 \CJK@indent=\box26
 )
-(C:\CTEX\MiKTeX\tex\latex\ams\math\amsmath.sty
-Package: amsmath 2000/07/18 v2.13 AMS math features
+(/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2017/09/02 v2.17a AMS math features
 \@mathmargin=\skip43
 
 For additional information on amsmath, use the `?' option.
-(C:\CTEX\MiKTeX\tex\latex\ams\math\amstext.sty
-Package: amstext 2000/06/29 v2.01
+(/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
 
-(C:\CTEX\MiKTeX\tex\latex\ams\math\amsgen.sty
-File: amsgen.sty 1999/11/30 v2.0
+(/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks14
 \ex@=\dimen103
 ))
-(C:\CTEX\MiKTeX\tex\latex\ams\math\amsbsy.sty
-Package: amsbsy 1999/11/29 v1.2d
+(/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen104
 )
-(C:\CTEX\MiKTeX\tex\latex\ams\math\amsopn.sty
-Package: amsopn 1999/12/14 v2.01 operator names
+(/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count87
-LaTeX Info: Redefining \frac on input line 211.
-\uproot@=\count88
-\leftroot@=\count89
-LaTeX Info: Redefining \overline on input line 307.
-\classnum@=\count90
-\DOTSCASE@=\count91
-LaTeX Info: Redefining \ldots on input line 379.
-LaTeX Info: Redefining \dots on input line 382.
-LaTeX Info: Redefining \cdots on input line 467.
+\inf@bad=\count88
+LaTeX Info: Redefining \frac on input line 213.
+\uproot@=\count89
+\leftroot@=\count90
+LaTeX Info: Redefining \overline on input line 375.
+\classnum@=\count91
+\DOTSCASE@=\count92
+LaTeX Info: Redefining \ldots on input line 472.
+LaTeX Info: Redefining \dots on input line 475.
+LaTeX Info: Redefining \cdots on input line 596.
 \Mathstrutbox@=\box27
 \strutbox@=\box28
 \big@size=\dimen105
-LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
-\macc@depth=\count92
-\c@MaxMatrixCols=\count93
+LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
+\macc@depth=\count93
+\c@MaxMatrixCols=\count94
 \dotsspace@=\muskip10
-\c@parentequation=\count94
-\dspbrk@lvl=\count95
+\c@parentequation=\count95
+\dspbrk@lvl=\count96
 \tag@help=\toks15
-\row@=\count96
-\column@=\count97
-\maxfields@=\count98
+\row@=\count97
+\column@=\count98
+\maxfields@=\count99
 \andhelp@=\toks16
 \eqnshift@=\dimen106
 \alignsep@=\dimen107
@@ -90,166 +154,173 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
 \multlinegap=\skip44
 \multlinetaggap=\skip45
 \mathdisplay@stack=\toks18
-LaTeX Info: Redefining \[ on input line 2666.
-LaTeX Info: Redefining \] on input line 2667.
+LaTeX Info: Redefining \[ on input line 2817.
+LaTeX Info: Redefining \] on input line 2818.
 )
-(C:\CTEX\MiKTeX\tex\latex\tools\bm.sty
-Package: bm 2004/02/26 v1.1c Bold Symbol Support (DPC/FMi)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/tools/bm.sty
+Package: bm 2017/01/16 v1.2c Bold Symbol Support (DPC/FMi)
 \symboldoperators=\mathgroup4
 \symboldletters=\mathgroup5
 \symboldsymbols=\mathgroup6
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 138.
-LaTeX Info: Redefining \bm on input line 204.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 141.
+LaTeX Info: Redefining \bm on input line 207.
 )
-(C:\CTEX\MiKTeX\tex\latex\amsfonts\amsfonts.sty
-Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
+(/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup7
 \symAMSb=\mathgroup8
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
-(Font)                  U/euf/m/n --> U/euf/b/n on input line 96.
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 )
-(C:\CTEX\MiKTeX\tex\latex\amsfonts\amssymb.sty
-Package: amssymb 2009/06/22 v3.00
+(/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
 )
-(C:\CTEX\MiKTeX\tex\latex\cite\cite.sty
+(/usr/local/texlive/2018/texmf-dist/tex/latex/cite/cite.sty
 LaTeX Info: Redefining \cite on input line 302.
-LaTeX Info: Redefining \nocite on input line 373.
-Package: cite 2010/09/10  v 5.3
+LaTeX Info: Redefining \nocite on input line 332.
+Package: cite 2015/02/27  v 5.5
 )
-(C:\CTEX\MiKTeX\tex\latex\hyperref\hyperref.sty
-Package: hyperref 2012/02/06 v6.82o Hypertext links for LaTeX
+(/usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2018/02/06 v6.86b Hypertext links for LaTeX
 
-(C:\CTEX\MiKTeX\tex\generic\oberdiek\hobsub-hyperref.sty
-Package: hobsub-hyperref 2011/04/23 v1.4 Bundle oberdiek, subset hyperref (HO)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
 
-(C:\CTEX\MiKTeX\tex\generic\oberdiek\hobsub-generic.sty
-Package: hobsub-generic 2011/04/23 v1.4 Bundle oberdiek, subset generic (HO)
-Package: hobsub 2011/04/23 v1.4 Subsetting bundle oberdiek (HO)
-Package: infwarerr 2010/04/08 v1.3 Providing info/warning/message (HO)
-Package: ltxcmds 2011/04/18 v1.20 LaTeX kernel commands for general use (HO)
-Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+
+(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
-Package: ifvtex 2010/03/01 v1.5 Switches for detecting VTeX and its modes (HO)
+Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
-Package: intcalc 2007/09/27 v1.1 Expandable integer calculations (HO)
-Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
-Package ifpdf Info: pdfTeX in PDF mode is detected.
-Package: etexcmds 2011/02/16 v1.5 Prefix for e-TeX command names (HO)
+Package: intcalc 2016/05/16 v1.2 Expandable calculations with integers (HO)
+Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
 Package etexcmds Info: Could not find \expanded.
 (etexcmds)             That can mean that you are not using pdfTeX 1.50 or
 (etexcmds)             that some package has redefined \expanded.
 (etexcmds)             In the latter case, load this package earlier.
-Package: kvsetkeys 2011/04/07 v1.13 Key value parser (HO)
-Package: kvdefinekeys 2011/04/07 v1.3 Defining keys (HO)
-Package: pdftexcmds 2011/04/22 v0.16 Utilities of pdfTeX for LuaTeX (HO)
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+Package: pdftexcmds 2018/01/30 v0.27 Utility functions of pdfTeX for LuaTeX (HO
+)
 Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
-Package: pdfescape 2011/04/04 v1.12 Provides string conversions (HO)
-Package: bigintcalc 2011/01/30 v1.2 Expandable big integer calculations (HO)
-Package: bitset 2011/01/30 v1.1 Data type bit set (HO)
-Package: uniquecounter 2011/01/30 v1.2 Provides unlimited unique counter (HO)
+Package: pdfescape 2016/05/16 v1.14 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2016/05/16 v1.4 Expandable calculations on big integers (HO
+)
+Package: bitset 2016/05/16 v1.2 Handle bit-vector datatype (HO)
+Package: uniquecounter 2016/05/16 v1.3 Provide unlimited unique counter (HO)
 )
 Package hobsub Info: Skipping package `hobsub' (already loaded).
-Package: letltxmacro 2010/09/02 v1.4 Let assignment for LaTeX macros (HO)
-Package: hopatch 2011/01/30 v1.0 Wrapper for package hooks (HO)
-Package: xcolor-patch 2011/01/30 xcolor patch
-Package: atveryend 2011/04/23 v1.7 Hooks at very end of document (HO)
-Package: atbegshi 2011/01/30 v1.15 At begin shipout hook (HO)
-Package: refcount 2010/12/01 v3.2 Data extraction from references (HO)
-Package: hycolor 2011/01/30 v1.7 Color options of hyperref/bookmark (HO)
+Package: letltxmacro 2016/05/16 v1.5 Let assignment for LaTeX macros (HO)
+Package: hopatch 2016/05/16 v1.3 Wrapper for package hooks (HO)
+Package: xcolor-patch 2016/05/16 xcolor patch
+Package: atveryend 2016/05/16 v1.9 Hooks at the very end of document (HO)
+Package atveryend Info: \enddocument detected (standard20110627).
+Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
+Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
+Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
 )
-(C:\CTEX\MiKTeX\tex\latex\graphics\keyval.sty
-Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks19
 )
-(C:\CTEX\MiKTeX\tex\generic\ifxetex\ifxetex.sty
+(/usr/local/texlive/2018/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-(C:\CTEX\MiKTeX\tex\latex\oberdiek\kvoptions.sty
-Package: kvoptions 2010/12/23 v3.10 Keyval support for LaTeX options (HO)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/auxhook.sty
+Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 )
 \@linkdim=\dimen112
-\Hy@linkcounter=\count99
-\Hy@pagecounter=\count100
+\Hy@linkcounter=\count100
+\Hy@pagecounter=\count101
 
-(C:\CTEX\MiKTeX\tex\latex\hyperref\pd1enc.def
-File: pd1enc.def 2012/02/06 v6.82o Hyperref: PDFDocEncoding definition (HO)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2018/02/06 v6.86b Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
 )
-\Hy@SavedSpaceFactor=\count101
+\Hy@SavedSpaceFactor=\count102
 
-(C:\CTEX\MiKTeX\tex\latex\00miktex\hyperref.cfg
+(/usr/local/texlive/2018/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
-Package hyperref Info: Option `CJKbookmarks' set `true' on input line 3925.
-Package hyperref Info: Hyper figures OFF on input line 4046.
-Package hyperref Info: Link nesting OFF on input line 4051.
-Package hyperref Info: Hyper index ON on input line 4054.
-Package hyperref Info: Plain pages OFF on input line 4061.
-Package hyperref Info: Backreferencing OFF on input line 4066.
+Package hyperref Info: Option `CJKbookmarks' set `true' on input line 4383.
+Package hyperref Info: Hyper figures OFF on input line 4509.
+Package hyperref Info: Link nesting OFF on input line 4514.
+Package hyperref Info: Hyper index ON on input line 4517.
+Package hyperref Info: Plain pages OFF on input line 4524.
+Package hyperref Info: Backreferencing OFF on input line 4529.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
-Package hyperref Info: Bookmarks ON on input line 4284.
-\c@Hy@tempcnt=\count102
+Package hyperref Info: Bookmarks ON on input line 4762.
+\c@Hy@tempcnt=\count103
 
-(C:\CTEX\MiKTeX\tex\latex\ltxmisc\url.sty
+(/usr/local/texlive/2018/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip11
-Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-LaTeX Info: Redefining \url on input line 4637.
-\Fld@menulength=\count103
-\Field@Width=\dimen113
-\Fld@charsize=\dimen114
-Package hyperref Info: Hyper figures OFF on input line 5757.
-Package hyperref Info: Link nesting OFF on input line 5762.
-Package hyperref Info: Hyper index ON on input line 5765.
-Package hyperref Info: backreferencing OFF on input line 5772.
-Package hyperref Info: Link coloring OFF on input line 5777.
-Package hyperref Info: Link coloring with OCG OFF on input line 5782.
-Package hyperref Info: PDF/A mode OFF on input line 5787.
-LaTeX Info: Redefining \ref on input line 5827.
-LaTeX Info: Redefining \pageref on input line 5831.
-\Hy@abspage=\count104
-\c@Item=\count105
-\c@Hfootnote=\count106
+LaTeX Info: Redefining \url on input line 5115.
+\XeTeXLinkMargin=\dimen113
+\Fld@menulength=\count104
+\Field@Width=\dimen114
+\Fld@charsize=\dimen115
+Package hyperref Info: Hyper figures OFF on input line 6369.
+Package hyperref Info: Link nesting OFF on input line 6374.
+Package hyperref Info: Hyper index ON on input line 6377.
+Package hyperref Info: backreferencing OFF on input line 6384.
+Package hyperref Info: Link coloring OFF on input line 6389.
+Package hyperref Info: Link coloring with OCG OFF on input line 6394.
+Package hyperref Info: PDF/A mode OFF on input line 6399.
+LaTeX Info: Redefining \ref on input line 6439.
+LaTeX Info: Redefining \pageref on input line 6443.
+\Hy@abspage=\count105
+\c@Item=\count106
+\c@Hfootnote=\count107
 )
+Package hyperref Info: Driver (autodetected): hpdftex.
 
-Package hyperref Message: Driver (autodetected): hpdftex.
+(/usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2018/02/06 v6.86b Hyperref driver for pdfTeX
+\Fld@listcount=\count108
+\c@bookmark@seq@number=\count109
 
-(C:\CTEX\MiKTeX\tex\latex\hyperref\hpdftex.def
-File: hpdftex.def 2012/02/06 v6.82o Hyperref driver for pdfTeX
-\Fld@listcount=\count107
-\c@bookmark@seq@number=\count108
-
-(C:\CTEX\MiKTeX\tex\latex\oberdiek\rerunfilecheck.sty
-Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 )
 \Hy@SectionHShift=\skip46
 )
-(C:\CTEX\MiKTeX\tex\latex\graphics\graphicx.sty
-Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
 
-(C:\CTEX\MiKTeX\tex\latex\graphics\graphics.sty
-Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
 
-(C:\CTEX\MiKTeX\tex\latex\graphics\trig.sty
-Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-(C:\CTEX\MiKTeX\tex\latex\00miktex\graphics.cfg
-File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
-Package graphics Info: Driver file: pdftex.def on input line 91.
+Package graphics Info: Driver file: pdftex.def on input line 99.
 
-(C:\CTEX\MiKTeX\tex\latex\pdftex-def\pdftex.def
-File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
-\Gread@gobject=\count109
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 ))
-\Gin@req@height=\dimen115
-\Gin@req@width=\dimen116
+\Gin@req@height=\dimen116
+\Gin@req@width=\dimen117
 )
-(C:\CTEX\MiKTeX\tex\latex\simplewick\simplewick.sty
+(/usr/local/texlive/2018/texmf-dist/tex/latex/simplewick/simplewick.sty
 Package: simplewick 2007/11/23 v1.2a
 
 Package: simplewick v1.2a (2007/11/23)
@@ -257,55 +328,54 @@ Package: simplewick v1.2a (2007/11/23)
 \swb@xtwo=\box30
 \swb@xthree=\box31
 \swb@xfour=\box32
-\swdimen@ne=\dimen117
-\swdimentw@=\dimen118
-) (C:\CTEX\MiKTeX\tex\latex\jknappen\mathrsfs.sty
+\swdimen@ne=\dimen118
+\swdimentw@=\dimen119
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/jknapltx/mathrsfs.sty
 Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
 \symrsfs=\mathgroup9
 )
-(C:\CTEX\MiKTeX\tex\latex\mh\mathtools.sty
-Package: mathtools 2011/04/06 v1.11 mathematical typesetting tools
+(/usr/local/texlive/2018/texmf-dist/tex/latex/mathtools/mathtools.sty
+Package: mathtools 2018/01/08 v1.21 mathematical typesetting tools
 
-(C:\CTEX\MiKTeX\tex\latex\tools\calc.sty
-Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Acount=\count110
 \calc@Bcount=\count111
-\calc@Adimen=\dimen119
-\calc@Bdimen=\dimen120
+\calc@Adimen=\dimen120
+\calc@Bdimen=\dimen121
 \calc@Askip=\skip47
 \calc@Bskip=\skip48
-LaTeX Info: Redefining \setlength on input line 76.
-LaTeX Info: Redefining \addtolength on input line 77.
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
 \calc@Ccount=\count112
 \calc@Cskip=\skip49
 )
-(C:\CTEX\MiKTeX\tex\latex\mh\mhsetup.sty
-Package: mhsetup 2010/01/21 v1.2a programming setup (MH)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/mathtools/mhsetup.sty
+Package: mhsetup 2017/03/31 v1.3 programming setup (MH)
 )
+LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
 \g_MT_multlinerow_int=\count113
-\l_MT_multwidth_dim=\dimen121
+\l_MT_multwidth_dim=\dimen122
 \origjot=\skip50
-\l_MT_shortvdotswithinadjustabove_dim=\dimen122
-\l_MT_shortvdotswithinadjustbelow_dim=\dimen123
+\l_MT_shortvdotswithinadjustabove_dim=\dimen123
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen124
+\l_MT_above_intertext_sep=\dimen125
+\l_MT_below_intertext_sep=\dimen126
+\l_MT_above_shortintertext_sep=\dimen127
+\l_MT_below_shortintertext_sep=\dimen128
 )
-(C:\CTEX\MiKTeX\tex\latex\carlisle\slashed.sty
+(/usr/local/texlive/2018/texmf-dist/tex/latex/carlisle/slashed.sty
 Package: slashed 1997/01/16 v0.01 Feynman Slashed Character Notation (DPC)
 )
-(C:\CTEX\MiKTeX\tex\latex\oberdiek\centernot.sty
-Package: centernot 2010/03/29 v1.2 Centers the not symbol horizontally (HO)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/centernot.sty
+Package: centernot 2016/05/16 v1.4 Centers the not symbol horizontally (HO)
 )
-(D:\百度云同步盘\b-各科详细笔记-持续更新\d-量子场论\qftt.au
-x
+No file qftt.aux.
+\openout1 = `qftt.aux'.
 
-LaTeX Warning: Label `two n' multiply defined.
-
-
-LaTeX Warning: Label `Casimir' multiply defined.
-
-
-LaTeX Warning: Label `va' multiply defined.
-
-)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
 LaTeX Font Info:    ... okay on input line 26.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 26.
@@ -386,11 +456,11 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 26.
 LaTeX Font Info:    ... okay on input line 26.
 \AtBeginShipoutBox=\box33
 Package hyperref Info: Link coloring OFF on input line 26.
- (C:\CTEX\MiKTeX\tex\latex\hyperref\nameref.sty
-Package: nameref 2010/04/30 v2.40 Cross-referencing by name of section
+(/usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
-(C:\CTEX\MiKTeX\tex\generic\oberdiek\gettitlestring.sty
-Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count114
 )
@@ -398,1013 +468,876 @@ LaTeX Info: Redefining \ref on input line 26.
 LaTeX Info: Redefining \pageref on input line 26.
 LaTeX Info: Redefining \nameref on input line 26.
 
-(D:\百度云同步盘\b-各科详细笔记-持续更新\d-量子场论\qftt.ou
-t)
-(D:\百度云同步盘\b-各科详细笔记-持续更新\d-量子场论\qftt.ou
-t)
+(./qftt.out) (./qftt.out)
 \@outlinefile=\write3
- (C:\CTEX\MiKTeX\tex\context\base\supp-pdf.mkii
+\openout3 = `qftt.out'.
+
+
+(/usr/local/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count115
-\scratchdimen=\dimen124
+\scratchdimen=\dimen129
 \scratchbox=\box34
 \nofMPsegments=\count116
 \nofMParguments=\count117
 \everyMPshowfont=\toks20
 \MPscratchCnt=\count118
-\MPscratchDim=\dimen125
+\MPscratchDim=\dimen130
 \MPnumerator=\count119
 \makeMPintoPDFobject=\count120
 \everyMPtoPDFconversion=\toks21
-) (C:\CTEX\MiKTeX\tex\latex\cjk\standard.bdg
-File: standard.bdg 2008/12/29 4.8.2
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
 )
-(C:\CTEX\MiKTeX\tex\latex\cjk\extended.enc
-File: extended.enc 2008/12/29 4.8.2
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+38.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+(/usr/local/texlive/2018/texmf-dist/tex/latex/cjk/texinput/standard.bdg
+File: standard.bdg 2015/04/18 4.8.4
 )
-(C:\CTEX\MiKTeX\tex\latex\cjk\extended.chr
-File: extended.chr 2008/12/29 4.8.2
+(/usr/local/texlive/2018/texmf-dist/tex/latex/cjk/texinput/extended.enc
+File: extended.enc 2015/04/18 4.8.4
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/cjk/texinput/extended.chr
+File: extended.chr 2015/04/18 4.8.4
 )
 LaTeX Font Info:    Try loading font information for C19+song on input line 31.
 
 
-(C:\CTEX\CTeX\tex\latex\CJK\GB\c19song.fd
-File: c19song.fd 2009/09/23 4.8.2
+(/usr/local/texlive/2018/texmf-dist/tex/latex/cjk/texinput/GB/c19song.fd
+File: c19song.fd 2015/04/18 4.8.4
 )
 LaTeX Font Info:    Try loading font information for U+msa on input line 31.
 
-(C:\CTEX\MiKTeX\tex\latex\amsfonts\umsa.fd
-File: umsa.fd 2009/06/22 v3.00 AMS symbols A
+(/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 31.
 
-(C:\CTEX\MiKTeX\tex\latex\amsfonts\umsb.fd
-File: umsb.fd 2009/06/22 v3.00 AMS symbols B
+(/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Try loading font information for U+rsfs on input line 31.
 
-(C:\CTEX\MiKTeX\tex\latex\jknappen\ursfs.fd
+(/usr/local/texlive/2018/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
-) [1
+)
+! Improper alphabetic constant.
+<to be read again> 
+                   \end 
+l.31 \thispagestyle
+                   {empty}%去掉本页页码
+A one-character control sequence belongs after a ` mark.
+So I'm essentially inserting \0 here.
 
-{C:/CTEX/UserData/pdftex/config/pdftex.map{Unicode.sfd}{UGBK.sfd}}]
-(D:\百度云同步盘\b-各科详细笔记-持续更新\d-量子场论\qftt.to
-c [1] [2])
-\tf@toc=\write4
- [3]
-(D:\百度云同步盘\b-各科详细笔记-持续更新\d-量子场论\qftt.lo
-f)
-\tf@lof=\write5
- [4]
-(D:\百度云同步盘\b-各科详细笔记-持续更新\d-量子场论\qftt.lo
-t)
-\tf@lot=\write6
- [5]
-(D:\百度云同步盘\b-各科详细笔记-持续更新\d-量子场论\part/pa
-rt1.tex <pic/space.jpg, id=489, 362.10281pt x 359.84438pt>
-File: pic/space.jpg Graphic file (type jpg)
- <use pic/space.jpg>
-Package pdftex.def Info: pic/space.jpg used on input line 32.
-(pdftex.def)             Requested size: 122.34692pt x 121.58224pt.
-pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
-been already used, duplicate ignored
+! Missing = inserted for \ifnum.
+<to be read again> 
+                   \end< 
+l.31 \thispagestyle
+                   {empty}%去掉本页页码
+I was expecting to see `<', `=', or `>'. Didn't.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   \end< 
+l.31 \thispagestyle
+                   {empty}%去掉本页页码
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Improper alphabetic constant.
+<to be read again> 
+                   \end 
+l.31 \thispagestyle
+                   {empty}%去掉本页页码
+A one-character control sequence belongs after a ` mark.
+So I'm essentially inserting \0 here.
+
+! Missing = inserted for \ifnum.
+<to be read again> 
+                   \end> 
+l.31 \thispagestyle
+                   {empty}%去掉本页页码
+I was expecting to see `<', `=', or `>'. Didn't.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   \end> 
+l.31 \thispagestyle
+                   {empty}%去掉本页页码
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Improper alphabetic constant.
+<to be read again> 
+                   \end 
+l.31 \thispagestyle
+                   {empty}%去掉本页页码
+A one-character control sequence belongs after a ` mark.
+So I'm essentially inserting \0 here.
+
+! Missing \endcsname inserted.
 <to be read again> 
                    \relax 
-l.37 
-      [1] [2 <D:/百度云同步盘/b-各科详细笔记-持续更新/d-量子�
-��论/pic/space.jpg>] [3] [4] [5] [6] [7] [8] [9] [10] [11] [12] [13]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 658.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\gamma' on input line 658.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 658.
-
-[14]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 736.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\gamma' on input line 736.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 736.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 736.
-
-[15]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 760.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 760.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 760.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 760.
-
-[16] [17] [18] [19]
-Overfull \hbox (3.71855pt too wide) in paragraph at lines 895--897
-\C19/song/m/n/10/40  \C19/song/bx/n/10/64 y \C19/song/bx/n/10/50 � \C19/song/b
-x/n/10/64 � \C19/song/bx/n/10/39 d \C19/song/m/n/10/46 � \C19/song/m/n/10/55 � 
-\C19/song/m/n/10/53 � \C19/song/bx/n/10/41  \C19/song/m/n/10/61 � \C19/song/m/
-n/10/46 � \C19/song/m/n/10/40  \C19/song/m/n/10/49 
-\OT1/cmr/m/n/10 , \C19/song/bx/n/10/54 X \C19/song/m/n/10/40 � \C19/song/m/n/10
-/37 I \C19/song/m/n/10/48 � \C19/song/bx/n/10/62 k $\OML/cmm/m/it/10 C \OT1/cmr
-/m/n/10 : []\OML/cmm/m/it/10   \OMS/cmsy/m/n/10 ! \OML/cmm/m/it/10  []\OT1/cmr/
-m/n/10 (\OMS/cmsy/m/n/10  \OML/cmm/m/it/10 i[]\OT1/cmr/m/n/10 )\OML/cmm/m/it/1
-0 []\OT1/cmr/m/n/10 (\OMS/cmsy/m/n/10  \OML/cmm/m/it/10 i[]\OT1/cmr/m/n/10 )\
-OML/cmm/m/it/10 [][] \OT1/cmr/m/n/10 =$
- []
-
-[20]) [21]
-(D:\百度云同步盘\b-各科详细笔记-持续更新\d-量子场论\part/pa
-rt2.tex [22] [23]
-Overfull \hbox (7.64427pt too wide) in paragraph at lines 91--92
-[]\C19/song/m/n/10/59 e \C19/song/bx/n/10/50 � \C19/song/m/n/10/58 � \C19/song/
-bx/n/10/50 � \C19/song/bx/n/10/60 � \C19/song/m/n/10/46 � \C19/song/bx/n/10/60 
-^ \C19/song/m/n/10/48 � \C19/song/bx/n/10/38 |\OT1/cmr/m/n/10 . \C19/song/m/n/1
-0/40  \C19/song/bx/n/10/65 � \C19/song/m/n/10/47 � \C19/song/m/n/10/45 m \C19/
-song/bx/n/10/60 ^ \C19/song/bx/n/10/65 = \C19/song/m/n/10/55 �\OT1/cmr/m/n/10 ,
- \C19/song/m/n/10/40 � \C19/song/bx/n/10/60 ^ \C19/song/m/n/10/48 � \C19/song/b
-x/n/10/38 | \C19/song/m/n/10/58 � \C19/song/bx/n/10/50 � \C19/song/bx/n/10/62 k
- $\OML/cmm/m/it/10 []  \OT1/cmr/m/n/10 = []\OML/cmm/m/it/10 ![]S[]  \OT1/cmr/m
-/n/10 =$
- []
-
-[24]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 140.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 140.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\mu' on input line 140.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 140.
-
-[25] [26] [27]) [28]
-(D:\百度云同步盘\b-各科详细笔记-持续更新\d-量子场论\part/pa
-rt3.tex
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 2.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\pi' on input line 2.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 2.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 2.
-
-[29] [30] [31] <pic/Casimir.jpg, id=868, 405.76593pt x 407.27156pt>
-File: pic/Casimir.jpg Graphic file (type jpg)
-
-<use pic/Casimir.jpg>
-Package pdftex.def Info: pic/Casimir.jpg used on input line 187.
-(pdftex.def)             Requested size: 113.81102pt x 114.23412pt.
- [32] [33 <D:/百度云同步盘/b-各科详细笔记-持续更新/d-量子场�
-��/pic/Casimir.jpg>]
-Underfull \hbox (badness 1033) in paragraph at lines 233--233
-[][][]\C19/song/m/n/8/62 ^ � \C19/song/m/n/8/40 1 \C19/song/m/n/8/61 � \C19/son
-g/m/n/8/63 � \C19/song/m/n/8/64 � \C19/song/m/n/8/50 � \C19/song/m/n/8/55 � \C1
-9/song/m/n/8/38 | \C19/song/m/n/8/63 3 \C19/song/m/n/8/55 � \C19/song/m/n/8/47 
-� \C19/song/m/n/8/45 m \C19/song/m/n/8/65 = \C19/song/m/n/8/40 � \C19/song/m/n/
-8/59 e \C19/song/m/n/8/40  \C19/song/m/n/8/37 C \C19/song/m/n/8/44 z \C19/song
-/m/n/8/60 1 \C19/song/m/n/8/58 � \C19/song/m/n/8/40  \C19/song/m/n/8/62 � \C19
-/song/m/n/8/60 � \C19/song/m/n/8/59 � \C19/song/m/n/8/56 q \C19/song/m/n/8/40 
- \C19/song/m/n/8/41 � \C19/song/m/n/8/55 � \C19/song/m/n/8/60 Q \C19/song/m/n/8
-/55 �\OT1/cmr/m/n/8 , \C19/song/m/n/8/46 �
- []
-
-[34] [35]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 299.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\delta' on input line 299.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 299.
-
-<pic/feynman.jpg, id=916, 1043.39813pt x 149.05687pt>
-File: pic/feynman.jpg Graphic file (type jpg)
- <use pic/feynman.jpg>
-Package pdftex.def Info: pic/feynman.jpg used on input line 315.
-(pdftex.def)             Requested size: 199.16928pt x 28.45073pt.
-
-<pic/ret.jpg, id=919, 1114.1625pt x 153.57375pt>
-File: pic/ret.jpg Graphic file (type jpg)
- <use pic/ret.jpg>
-Package pdftex.def Info: pic/ret.jpg used on input line 323.
-(pdftex.def)             Requested size: 199.16928pt x 27.45226pt.
- [36 <D:/百度云同步盘/b-各科详细笔记-持续更新/d-量子场论/pi
-c/feynman.jpg>] <pic/pp.jpg, id=925, 926.71219pt x 414.04688pt>
-File: pic/pp.jpg Graphic file (type jpg)
- <use pic/pp.jpg>
-Package pdftex.def Info: pic/pp.jpg used on input line 355.
-(pdftex.def)             Requested size: 36.98866pt x 16.52113pt.
-File: pic/pp.jpg Graphic file (type jpg)
-
-<use pic/pp.jpg>
-Package pdftex.def Info: pic/pp.jpg used on input line 355.
-(pdftex.def)             Requested size: 36.98866pt x 16.52113pt.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 367.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\pi' on input line 367.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 367.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\pm' on input line 367.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 367.
-
-[37 <D:/百度云同步盘/b-各科详细笔记-持续更新/d-量子场论/pic
-/ret.jpg> <D:/百度云同步盘/b-各科详细笔记-持续更新/d-量子场�
-��/pic/pp.jpg>]) [38]
-(D:\百度云同步盘\b-各科详细笔记-持续更新\d-量子场论\part/pa
-rt4.tex [39] [40]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 102.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 102.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 102.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 102.
-
-[41]) [42]
-(D:\百度云同步盘\b-各科详细笔记-持续更新\d-量子场论\part/pa
-rt5.tex
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 40.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\delta' on input line 40.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 40.
-
-[43] [44] [45] [46] [47]
-Overfull \hbox (8.15503pt too wide) in paragraph at lines 198--200
-\C19/song/bx/n/10/62 d \C19/song/bx/n/10/54 � \C19/song/m/n/10/55 � \C19/song/b
-x/n/10/65 � \C19/song/bx/n/10/44   \C19/song/m/n/10/61 � \C19/song/m/n/10/55 � 
-\C19/song/m/n/10/37 � \C19/song/bx/n/10/51 J \C19/song/m/n/10/47 w \C19/song/bx
-/n/10/38 �\OT1/cmr/m/n/10 , \C19/song/m/n/10/37 I \C19/song/m/n/10/48 � \C19/so
-ng/m/n/10/43 1 \C19/song/bx/n/10/65 f \C19/song/m/n/10/40  \C19/song/m/n/10/43
- 8 \C19/song/m/n/10/61 � \C19/song/bx/n/10/44 z \C19/song/m/n/10/55 � \C19/song
-/bx/n/10/42 K \C19/song/m/n/10/40 \OT1/cmr/m/n/10 : $\OMS/cmsy/m/n/10 h\OT1/cm
-r/m/n/10 0\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 a[]a[]\OMS/cmsy/m/n/10 j\OT1/cmr/m
-/n/10 0\OMS/cmsy/m/n/10 i \OT1/cmr/m/n/10 = \OMS/cmsy/m/n/10  \OT1/cmr/m/n/10 (
-2\OML/cmm/m/it/10 \OT1/cmr/m/n/10 )[]\OML/cmm/m/it/10 []\OT1/cmr/m/n/10 (\OML
-/cmm/b/it/10 p \OMS/cmsy/m/n/10  $
- []
-
-[48]) [49]
-(D:\百度云同步盘\b-各科详细笔记-持续更新\d-量子场论\part/pa
-rt6.tex [50] [51] [52]
-Overfull \hbox (1.13878pt too wide) in paragraph at lines 158--159
-\C19/song/m/n/10/67 � \C19/song/bx/n/10/41 � \C19/song/bx/n/10/38 �\OT1/cmr/m/n
-/10 /\C19/song/bx/n/10/38 | \C19/song/m/n/10/40  \C19/song/bx/n/10/39 D \C19/s
-ong/m/n/10/37 � \C19/song/bx/n/10/65 f\OT1/cmr/m/n/10 /\C19/song/bx/n/10/63  \
-C19/song/m/n/10/53 [ \C19/song/bx/n/10/64  \C19/song/bx/n/10/41 �\OT1/cmr/m/n/
-10 , \C19/song/m/n/10/58 � \C19/song/bx/n/10/50 � \C19/song/m/n/10/47 � \C19/so
-ng/m/n/10/61 � \C19/song/m/n/10/46 ? \C19/song/bx/n/10/60 1 \C19/song/bx/n/10/5
-4 X \C19/song/m/n/10/59 e \C19/song/bx/n/10/63 $ \C19/song/bx/n/10/56 � \OT1/cm
-r/m/n/10 (\C19/song/bx/n/10/52 � \C19/song/bx/n/10/64 � \C19/song/m/n/10/58 � \
-C19/song/bx/n/10/50 � \C19/song/m/n/10/45 � $\OML/cmm/m/it/10 e[]$
- []
-
-[53]
-Overfull \hbox (5.76pt too wide) in paragraph at lines 218--218
-[] 
- []
-
-[54] [55] [56]) [57]
-(D:\百度云同步盘\b-各科详细笔记-持续更新\d-量子场论\part/pa
-rt7.tex
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 6.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\phi' on input line 6.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 6.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 6.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 7.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\phi' on input line 7.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 7.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 7.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 59.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 59.
-
-[58] [59] [60] <pic/feof4.jpg, id=1203, 961.34157pt x 258.9675pt>
-File: pic/feof4.jpg Graphic file (type jpg)
-
-<use pic/feof4.jpg>
-Package pdftex.def Info: pic/feof4.jpg used on input line 177.
-(pdftex.def)             Requested size: 142.26378pt x 38.32184pt.
-File: pic/feof4.jpg Graphic file (type jpg)
- <use pic/feof4.jpg>
-Package pdftex.def Info: pic/feof4.jpg used on input line 177.
-(pdftex.def)             Requested size: 142.26378pt x 38.32184pt.
- [61 <D:/百度云同步盘/b-各科详细笔记-持续更新/d-量子场论/pi
-c/feof4.jpg>]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 180.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\phi' on input line 180.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 180.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 180.
-
-<pic/c1.jpg, id=1214, 874.01532pt x 347.79938pt>
-File: pic/c1.jpg Graphic file (type jpg)
- <use pic/c1.jpg>
-Package pdftex.def Info: pic/c1.jpg used on input line 193.
-(pdftex.def)             Requested size: 56.9055pt x 22.63959pt.
-
-<pic/c2.jpg, id=1215, 360.59718pt x 175.40532pt>
-File: pic/c2.jpg Graphic file (type jpg)
- <use pic/c2.jpg>
-Package pdftex.def Info: pic/c2.jpg used on input line 193.
-(pdftex.def)             Requested size: 51.21504pt x 24.91254pt.
-File: pic/c1.jpg Graphic file (type jpg)
-
-<use pic/c1.jpg>
-Package pdftex.def Info: pic/c1.jpg used on input line 193.
-(pdftex.def)             Requested size: 56.9055pt x 22.63959pt.
-File: pic/c2.jpg Graphic file (type jpg)
- <use pic/c2.jpg>
-Package pdftex.def Info: pic/c2.jpg used on input line 193.
-(pdftex.def)             Requested size: 51.21504pt x 24.91254pt.
-
-<pic/pop.jpg, id=1216, 926.71219pt x 414.04688pt>
-File: pic/pop.jpg Graphic file (type jpg)
- <use pic/pop.jpg>
-Package pdftex.def Info: pic/pop.jpg used on input line 201.
-(pdftex.def)             Requested size: 36.98866pt x 16.52113pt.
-File: pic/pp.jpg Graphic file (type jpg)
-
-<use pic/pp.jpg>
-Package pdftex.def Info: pic/pp.jpg used on input line 201.
-(pdftex.def)             Requested size: 36.98866pt x 16.52113pt.
-File: pic/c2.jpg Graphic file (type jpg)
- <use pic/c2.jpg>
-Package pdftex.def Info: pic/c2.jpg used on input line 201.
-(pdftex.def)             Requested size: 45.52458pt x 22.1424pt.
-File: pic/pop.jpg Graphic file (type jpg)
- <use pic/pop.jpg>
-Package pdftex.def Info: pic/pop.jpg used on input line 201.
-(pdftex.def)             Requested size: 36.98866pt x 16.52113pt.
-File: pic/pp.jpg Graphic file (type jpg)
- <use pic/pp.jpg>
-Package pdftex.def Info: pic/pp.jpg used on input line 201.
-(pdftex.def)             Requested size: 36.98866pt x 16.52113pt.
-File: pic/c2.jpg Graphic file (type jpg)
-
-<use pic/c2.jpg>
-Package pdftex.def Info: pic/c2.jpg used on input line 201.
-(pdftex.def)             Requested size: 45.52458pt x 22.1424pt.
- [62 <D:/百度云同步盘/b-各科详细笔记-持续更新/d-量子场论/pi
-c/c1.jpg> <D:/百度云同步盘/b-各科详细笔记-持续更新/d-量子场�
-��/pic/c2.jpg> <D:/百度云同步盘/b-各科详细笔记-持续更新/d-量�
-�场论/pic/pop.jpg>]
-<pic/phi44.jpg, id=1226, 507.39563pt x 510.40688pt>
-File: pic/phi44.jpg Graphic file (type jpg)
- <use pic/phi44.jpg>
-Package pdftex.def Info: pic/phi44.jpg used on input line 207.
-(pdftex.def)             Requested size: 34.14322pt x 34.34583pt.
-File: pic/phi44.jpg Graphic file (type jpg)
-
-<use pic/phi44.jpg>
-Package pdftex.def Info: pic/phi44.jpg used on input line 207.
-(pdftex.def)             Requested size: 34.14322pt x 34.34583pt.
- <pic/1p.jpg, id=1227, 901.11656pt x 151.3153pt>
-File: pic/1p.jpg Graphic file (type jpg)
-
-<use pic/1p.jpg>
-Package pdftex.def Info: pic/1p.jpg used on input line 226.
-(pdftex.def)             Requested size: 31.2982pt x 5.255pt.
-File: pic/pop.jpg Graphic file (type jpg)
- <use pic/pop.jpg>
-Package pdftex.def Info: pic/pop.jpg used on input line 233.
-(pdftex.def)             Requested size: 36.98866pt x 16.52113pt.
-File: pic/pp.jpg Graphic file (type jpg)
- <use pic/pp.jpg>
-Package pdftex.def Info: pic/pp.jpg used on input line 233.
-(pdftex.def)             Requested size: 36.98866pt x 16.52113pt.
-
-<pic/1pi.jpg, id=1228, 926.71219pt x 414.04688pt>
-File: pic/1pi.jpg Graphic file (type jpg)
- <use pic/1pi.jpg>
-Package pdftex.def Info: pic/1pi.jpg used on input line 233.
-(pdftex.def)             Requested size: 36.98866pt x 16.52113pt.
-
-<pic/1pii.jpg, id=1229, 926.71219pt x 414.04688pt>
-File: pic/1pii.jpg Graphic file (type jpg)
- <use pic/1pii.jpg>
-Package pdftex.def Info: pic/1pii.jpg used on input line 233.
-(pdftex.def)             Requested size: 36.98866pt x 16.52113pt.
-File: pic/pop.jpg Graphic file (type jpg)
-
-<use pic/pop.jpg>
-Package pdftex.def Info: pic/pop.jpg used on input line 233.
-(pdftex.def)             Requested size: 36.98866pt x 16.52113pt.
-File: pic/pp.jpg Graphic file (type jpg)
- <use pic/pp.jpg>
-Package pdftex.def Info: pic/pp.jpg used on input line 233.
-(pdftex.def)             Requested size: 36.98866pt x 16.52113pt.
-File: pic/1pi.jpg Graphic file (type jpg)
- <use pic/1pi.jpg>
-Package pdftex.def Info: pic/1pi.jpg used on input line 233.
-(pdftex.def)             Requested size: 36.98866pt x 16.52113pt.
-File: pic/1pii.jpg Graphic file (type jpg)
- <use pic/1pii.jpg>
-Package pdftex.def Info: pic/1pii.jpg used on input line 233.
-(pdftex.def)             Requested size: 36.98866pt x 16.52113pt.
-
-[63 <D:/百度云同步盘/b-各科详细笔记-持续更新/d-量子场论/pic
-/phi44.jpg> <D:/百度云同步盘/b-各科详细笔记-持续更新/d-量子�
-�论/pic/1p.jpg> <D:/百度云同步盘/b-各科详细笔记-持续更新/d-量
-子场论/pic/1pi.jpg> <D:/百度云同步盘/b-各科详细笔记-持续更新
-/d-量子场论/pic/1pii.jpg>]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 258.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\phi' on input line 258.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 258.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 258.
-
-<pic/a1.jpg, id=1238, 387.69844pt x 425.33907pt>
-File: pic/a1.jpg Graphic file (type jpg)
- <use pic/a1.jpg>
-Package pdftex.def Info: pic/a1.jpg used on input line 267.
-(pdftex.def)             Requested size: 31.2982pt x 34.33286pt.
-
-<pic/a2.jpg, id=1239, 496.85625pt x 392.96812pt>
-File: pic/a2.jpg Graphic file (type jpg)
- <use pic/a2.jpg>
-Package pdftex.def Info: pic/a2.jpg used on input line 267.
-(pdftex.def)             Requested size: 48.36958pt x 38.25577pt.
-File: pic/a1.jpg Graphic file (type jpg)
-
-<use pic/a1.jpg>
-Package pdftex.def Info: pic/a1.jpg used on input line 267.
-(pdftex.def)             Requested size: 31.2982pt x 34.33286pt.
-File: pic/a2.jpg Graphic file (type jpg)
- <use pic/a2.jpg>
-Package pdftex.def Info: pic/a2.jpg used on input line 267.
-(pdftex.def)             Requested size: 48.36958pt x 38.25577pt.
- [64 <D:/百度云同步盘/b-各科详细笔记-持续更新/d-量子场论/pi
-c/a1.jpg> <D:/百度云同步盘/b-各科详细笔记-持续更新/d-量子场�
-��/pic/a2.jpg>]
-<pic/loop.jpg, id=1247, 195.73125pt x 480.29437pt>
-File: pic/loop.jpg Graphic file (type jpg)
- <use pic/loop.jpg>
-Package pdftex.def Info: pic/loop.jpg used on input line 273.
-(pdftex.def)             Requested size: 11.38092pt x 27.92232pt.
-File: pic/a1.jpg Graphic file (type jpg)
-
-<use pic/a1.jpg>
-Package pdftex.def Info: pic/a1.jpg used on input line 273.
-(pdftex.def)             Requested size: 31.2982pt x 34.33286pt.
-File: pic/a2.jpg Graphic file (type jpg)
- <use pic/a2.jpg>
-Package pdftex.def Info: pic/a2.jpg used on input line 273.
-(pdftex.def)             Requested size: 36.98866pt x 29.24947pt.
-
-<pic/kedou.jpg, id=1248, 493.845pt x 442.65375pt>
-File: pic/kedou.jpg Graphic file (type jpg)
- <use pic/kedou.jpg>
-Package pdftex.def Info: pic/kedou.jpg used on input line 273.
-(pdftex.def)             Requested size: 31.2982pt x 28.05078pt.
-
-<pic/aaa.jpg, id=1249, 496.85625pt x 392.96812pt>
-File: pic/aaa.jpg Graphic file (type jpg)
- <use pic/aaa.jpg>
-Package pdftex.def Info: pic/aaa.jpg used on input line 286.
-(pdftex.def)             Requested size: 48.36958pt x 38.25577pt.
-File: pic/aaa.jpg Graphic file (type jpg)
-
-<use pic/aaa.jpg>
-Package pdftex.def Info: pic/aaa.jpg used on input line 286.
-(pdftex.def)             Requested size: 48.36958pt x 38.25577pt.
- <pic/leg.jpg, id=1250, 447.92343pt x 484.81125pt>
-File: pic/leg.jpg Graphic file (type jpg)
-
-<use pic/leg.jpg>
-Package pdftex.def Info: pic/leg.jpg used on input line 287.
-(pdftex.def)             Requested size: 31.2982pt x 33.87367pt.
- [65 <D:/百度云同步盘/b-各科详细笔记-持续更新/d-量子场论/pi
-c/loop.jpg> <D:/百度云同步盘/b-各科详细笔记-持续更新/d-量子�
-�论/pic/kedou.jpg> <D:/百度云同步盘/b-各科详细笔记-持续更新/d-
-量子场论/pic/aaa.jpg> <D:/百度云同步盘/b-各科详细笔记-持续更
-新/d-量子场论/pic/leg.jpg>] [66] [67]
-<pic/meson.jpg, id=1284, 827.34094pt x 490.08093pt>
-File: pic/meson.jpg Graphic file (type jpg)
- <use pic/meson.jpg>
-Package pdftex.def Info: pic/meson.jpg used on input line 380.
-(pdftex.def)             Requested size: 68.28644pt x 40.44862pt.
-File: pic/meson.jpg Graphic file (type jpg)
-
-<use pic/meson.jpg>
-Package pdftex.def Info: pic/meson.jpg used on input line 380.
-(pdftex.def)             Requested size: 68.28644pt x 40.44862pt.
- <pic/meson2.jpg, id=1285, 904.88063pt x 546.54187pt>
-File: pic/meson2.jpg Graphic file (type jpg)
-
-<use pic/meson2.jpg>
-Package pdftex.def Info: pic/meson2.jpg used on input line 390.
-(pdftex.def)             Requested size: 68.28644pt x 41.23904pt.
-File: pic/meson2.jpg Graphic file (type jpg)
- <use pic/meson2.jpg>
-Package pdftex.def Info: pic/meson2.jpg used on input line 390.
-(pdftex.def)             Requested size: 68.28644pt x 41.23904pt.
-
-<pic/nn-nn.jpg, id=1286, 490.83376pt x 529.98pt>
-File: pic/nn-nn.jpg Graphic file (type jpg)
- <use pic/nn-nn.jpg>
-Package pdftex.def Info: pic/nn-nn.jpg used on input line 401.
-(pdftex.def)             Requested size: 48.36958pt x 52.22476pt.
-
-<pic/nn-nn2.jpg, id=1287, 502.12593pt x 553.31718pt>
-File: pic/nn-nn2.jpg Graphic file (type jpg)
- <use pic/nn-nn2.jpg>
-Package pdftex.def Info: pic/nn-nn2.jpg used on input line 401.
-(pdftex.def)             Requested size: 48.36958pt x 53.3002pt.
-File: pic/nn-nn.jpg Graphic file (type jpg)
-
-<use pic/nn-nn.jpg>
-Package pdftex.def Info: pic/nn-nn.jpg used on input line 401.
-(pdftex.def)             Requested size: 48.36958pt x 52.22476pt.
-File: pic/nn-nn2.jpg Graphic file (type jpg)
- <use pic/nn-nn2.jpg>
-Package pdftex.def Info: pic/nn-nn2.jpg used on input line 401.
-(pdftex.def)             Requested size: 48.36958pt x 53.3002pt.
-
-Overfull \hbox (1.91336pt too wide) in paragraph at lines 401--401
-[] 
- []
-
-[68 <D:/百度云同步盘/b-各科详细笔记-持续更新/d-量子场论/pic
-/meson.jpg> <D:/百度云同步盘/b-各科详细笔记-持续更新/d-量子�
-�论/pic/meson2.jpg>] <pic/vp.jpg, id=1296, 398.99063pt x 544.28343pt>
-File: pic/vp.jpg Graphic file (type jpg)
-
-<use pic/vp.jpg>
-Package pdftex.def Info: pic/vp.jpg used on input line 404.
-(pdftex.def)             Requested size: 34.14322pt x 46.57492pt.
- <pic/nn-nna.jpg, id=1297, 539.01375pt x 526.21594pt>
-File: pic/nn-nna.jpg Graphic file (type jpg)
-
-<use pic/nn-nna.jpg>
-Package pdftex.def Info: pic/nn-nna.jpg used on input line 416.
-(pdftex.def)             Requested size: 54.06006pt x 52.7692pt.
- <pic/nn-nnb.jpg, id=1298, 438.13687pt x 390.70969pt>
-File: pic/nn-nnb.jpg Graphic file (type jpg)
-
-<use pic/nn-nnb.jpg>
-Package pdftex.def Info: pic/nn-nnb.jpg used on input line 416.
-(pdftex.def)             Requested size: 56.9055pt x 50.74037pt.
-File: pic/nn-nna.jpg Graphic file (type jpg)
- <use pic/nn-nna.jpg>
-Package pdftex.def Info: pic/nn-nna.jpg used on input line 416.
-(pdftex.def)             Requested size: 54.06006pt x 52.7692pt.
-File: pic/nn-nnb.jpg Graphic file (type jpg)
- <use pic/nn-nnb.jpg>
-Package pdftex.def Info: pic/nn-nnb.jpg used on input line 416.
-(pdftex.def)             Requested size: 56.9055pt x 50.74037pt.
- [69 <D:/百度云同步盘/b-各科详细笔记-持续更新/d-量子场论/pi
-c/nn-nn.jpg> <D:/百度云同步盘/b-各科详细笔记-持续更新/d-量子�
-��论/pic/nn-nn2.jpg> <D:/百度云同步盘/b-各科详细笔记-持续更新/
-d-量子场论/pic/vp.jpg> <D:/百度云同步盘/b-各科详细笔记-持续�
-�新/d-量子场论/pic/nn-nna.jpg> <D:/百度云同步盘/b-各科详细笔记
--持续更新/d-量子场论/pic/nn-nnb.jpg>]
-<pic/nn-1.jpg, id=1306, 511.15968pt x 526.96875pt>
-File: pic/nn-1.jpg Graphic file (type jpg)
- <use pic/nn-1.jpg>
-Package pdftex.def Info: pic/nn-1.jpg used on input line 435.
-(pdftex.def)             Requested size: 51.21504pt x 52.79645pt.
-
-<pic/nn-2.jpg, id=1307, 728.7225pt x 318.43968pt>
-File: pic/nn-2.jpg Graphic file (type jpg)
- <use pic/nn-2.jpg>
-Package pdftex.def Info: pic/nn-2.jpg used on input line 435.
-(pdftex.def)             Requested size: 73.97733pt x 32.32687pt.
-File: pic/nn-1.jpg Graphic file (type jpg)
-
-<use pic/nn-1.jpg>
-Package pdftex.def Info: pic/nn-1.jpg used on input line 435.
-(pdftex.def)             Requested size: 51.21504pt x 52.79645pt.
-File: pic/nn-2.jpg Graphic file (type jpg)
- <use pic/nn-2.jpg>
-Package pdftex.def Info: pic/nn-2.jpg used on input line 435.
-(pdftex.def)             Requested size: 73.97733pt x 32.32687pt.
-
-<pic/nn-a.jpg, id=1308, 495.35063pt x 529.22719pt>
-File: pic/nn-a.jpg Graphic file (type jpg)
- <use pic/nn-a.jpg>
-Package pdftex.def Info: pic/nn-a.jpg used on input line 442.
-(pdftex.def)             Requested size: 51.21504pt x 54.71046pt.
-
-<pic/nn-b.jpg, id=1309, 723.45282pt x 368.87813pt>
-File: pic/nn-b.jpg Graphic file (type jpg)
- <use pic/nn-b.jpg>
-Package pdftex.def Info: pic/nn-b.jpg used on input line 442.
-(pdftex.def)             Requested size: 73.97733pt x 37.71738pt.
-File: pic/nn-a.jpg Graphic file (type jpg)
-
-<use pic/nn-a.jpg>
-Package pdftex.def Info: pic/nn-a.jpg used on input line 442.
-(pdftex.def)             Requested size: 51.21504pt x 54.71046pt.
-File: pic/nn-b.jpg Graphic file (type jpg)
- <use pic/nn-b.jpg>
-Package pdftex.def Info: pic/nn-b.jpg used on input line 442.
-(pdftex.def)             Requested size: 73.97733pt x 37.71738pt.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 449.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 449.
-
-[70 <D:/百度云同步盘/b-各科详细笔记-持续更新/d-量子场论/pic
-/nn-1.jpg> <D:/百度云同步盘/b-各科详细笔记-持续更新/d-量子场
-论/pic/nn-2.jpg> <D:/百度云同步盘/b-各科详细笔记-持续更新/d-�
-�子场论/pic/nn-a.jpg> <D:/百度云同步盘/b-各科详细笔记-持续更�
-��/d-量子场论/pic/nn-b.jpg>] [71]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 500.
-
- (C:\CTEX\MiKTeX\tex\latex\base\omscmr.fd
-File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 500.
-<pic/ee-ee.jpg, id=1330, 484.81125pt x 653.44125pt>
-File: pic/ee-ee.jpg Graphic file (type jpg)
- <use pic/ee-ee.jpg>
-Package pdftex.def Info: pic/ee-ee.jpg used on input line 517.
-(pdftex.def)             Requested size: 48.36958pt x 65.18842pt.
-
-<pic/ee-ee2.jpg, id=1331, 755.82375pt x 602.25pt>
-File: pic/ee-ee2.jpg Graphic file (type jpg)
- <use pic/ee-ee2.jpg>
-Package pdftex.def Info: pic/ee-ee2.jpg used on input line 517.
-(pdftex.def)             Requested size: 59.75095pt x 47.60204pt.
-File: pic/ee-ee.jpg Graphic file (type jpg)
-
-<use pic/ee-ee.jpg>
-Package pdftex.def Info: pic/ee-ee.jpg used on input line 517.
-(pdftex.def)             Requested size: 48.36958pt x 65.18842pt.
-File: pic/ee-ee2.jpg Graphic file (type jpg)
- <use pic/ee-ee2.jpg>
-Package pdftex.def Info: pic/ee-ee2.jpg used on input line 517.
-(pdftex.def)             Requested size: 59.75095pt x 47.60204pt.
-
-<pic/bb.jpg, id=1332, 482.55281pt x 616.55344pt>
-File: pic/bb.jpg Graphic file (type jpg)
- <use pic/bb.jpg>
-Package pdftex.def Info: pic/bb.jpg used on input line 522.
-(pdftex.def)             Requested size: 48.36958pt x 61.80006pt.
-
-<pic/bb2.jpg, id=1333, 576.65437pt x 332.74312pt>
-File: pic/bb2.jpg Graphic file (type jpg)
- <use pic/bb2.jpg>
-Package pdftex.def Info: pic/bb2.jpg used on input line 522.
-(pdftex.def)             Requested size: 76.82234pt x 44.32434pt.
-File: pic/bb.jpg Graphic file (type jpg)
-
-<use pic/bb.jpg>
-Package pdftex.def Info: pic/bb.jpg used on input line 522.
-(pdftex.def)             Requested size: 48.36958pt x 61.80006pt.
-File: pic/bb2.jpg Graphic file (type jpg)
- <use pic/bb2.jpg>
-Package pdftex.def Info: pic/bb2.jpg used on input line 522.
-(pdftex.def)             Requested size: 76.82234pt x 44.32434pt.
- [72 <D:/百度云同步盘/b-各科详细笔记-持续更新/d-量子场论/pi
-c/ee-ee.jpg> <D:/百度云同步盘/b-各科详细笔记-持续更新/d-量子�
-��论/pic/ee-ee2.jpg>]
-<pic/eeg.jpg, id=1339, 351.56343pt x 463.7325pt>
-File: pic/eeg.jpg Graphic file (type jpg)
- <use pic/eeg.jpg>
-Package pdftex.def Info: pic/eeg.jpg used on input line 527.
-(pdftex.def)             Requested size: 51.21504pt x 67.55437pt.
-
-<pic/eeg2.jpg, id=1340, 442.65375pt x 438.8897pt>
-File: pic/eeg2.jpg Graphic file (type jpg)
- <use pic/eeg2.jpg>
-Package pdftex.def Info: pic/eeg2.jpg used on input line 527.
-(pdftex.def)             Requested size: 62.59596pt x 62.06024pt.
-File: pic/eeg.jpg Graphic file (type jpg)
-
-<use pic/eeg.jpg>
-Package pdftex.def Info: pic/eeg.jpg used on input line 527.
-(pdftex.def)             Requested size: 51.21504pt x 67.55437pt.
-File: pic/eeg2.jpg Graphic file (type jpg)
- <use pic/eeg2.jpg>
-Package pdftex.def Info: pic/eeg2.jpg used on input line 527.
-(pdftex.def)             Requested size: 62.59596pt x 62.06024pt.
-
-<pic/comp.jpg, id=1341, 502.87875pt x 210.03468pt>
-File: pic/comp.jpg Graphic file (type jpg)
- <use pic/comp.jpg>
-Package pdftex.def Info: pic/comp.jpg used on input line 532.
-(pdftex.def)             Requested size: 79.6678pt x 33.27292pt.
-
-<pic/comp2.jpg, id=1342, 505.13719pt x 222.07968pt>
-File: pic/comp2.jpg Graphic file (type jpg)
- <use pic/comp2.jpg>
-Package pdftex.def Info: pic/comp2.jpg used on input line 532.
-(pdftex.def)             Requested size: 79.6678pt x 35.02516pt.
-File: pic/comp.jpg Graphic file (type jpg)
-
-<use pic/comp.jpg>
-Package pdftex.def Info: pic/comp.jpg used on input line 532.
-(pdftex.def)             Requested size: 79.6678pt x 33.27292pt.
-File: pic/comp2.jpg Graphic file (type jpg)
- <use pic/comp2.jpg>
-Package pdftex.def Info: pic/comp2.jpg used on input line 532.
-(pdftex.def)             Requested size: 79.6678pt x 35.02516pt.
-) [73 <D:/百度云同步盘/b-各科详细笔记-持续更新/d-量子场论/p
-ic/bb.jpg> <D:/百度云同步盘/b-各科详细笔记-持续更新/d-量子场
-论/pic/bb2.jpg> <D:/百度云同步盘/b-各科详细笔记-持续更新/d-量
-子场论/pic/eeg.jpg> <D:/百度云同步盘/b-各科详细笔记-持续更新
-/d-量子场论/pic/eeg2.jpg> <D:/百度云同步盘/b-各科详细笔记-持�
-�更新/d-量子场论/pic/comp.jpg> <D:/百度云同步盘/b-各科详细笔�
-�-持续更新/d-量子场论/pic/comp2.jpg>]
-(D:\百度云同步盘\b-各科详细笔记-持续更新\d-量子场论\part/pa
-rt8.tex <pic/eself.jpg, id=1351, 827.34094pt x 475.7775pt>
-File: pic/eself.jpg Graphic file (type jpg)
- <use pic/eself.jpg>
-Package pdftex.def Info: pic/eself.jpg used on input line 9.
-(pdftex.def)             Requested size: 71.13188pt x 40.90154pt.
-File: pic/eself.jpg Graphic file (type jpg)
-
-<use pic/eself.jpg>
-Package pdftex.def Info: pic/eself.jpg used on input line 9.
-(pdftex.def)             Requested size: 71.13188pt x 40.90154pt.
- <pic/pself.jpg, id=1352, 767.86874pt x 513.41812pt>
-File: pic/pself.jpg Graphic file (type jpg)
-
-<use pic/pself.jpg>
-Package pdftex.def Info: pic/pself.jpg used on input line 13.
-(pdftex.def)             Requested size: 76.82234pt x 51.36047pt.
-File: pic/pself.jpg Graphic file (type jpg)
- <use pic/pself.jpg>
-Package pdftex.def Info: pic/pself.jpg used on input line 13.
-(pdftex.def)             Requested size: 76.82234pt x 51.36047pt.
-
-Overfull \hbox (4.33188pt too wide) in paragraph at lines 13--13
-[] 
- []
-
-<pic/vertex2.jpg, id=1353, 362.10281pt x 355.3275pt>
-File: pic/vertex2.jpg Graphic file (type jpg)
- <use pic/vertex2.jpg>
-Package pdftex.def Info: pic/vertex2.jpg used on input line 17.
-(pdftex.def)             Requested size: 71.13188pt x 69.80093pt.
-File: pic/vertex2.jpg Graphic file (type jpg)
-
-<use pic/vertex2.jpg>
-Package pdftex.def Info: pic/vertex2.jpg used on input line 17.
-(pdftex.def)             Requested size: 71.13188pt x 69.80093pt.
- [74 <D:/百度云同步盘/b-各科详细笔记-持续更新/d-量子场论/pi
-c/eself.jpg> <D:/百度云同步盘/b-各科详细笔记-持续更新/d-量子�
-��论/pic/pself.jpg> <D:/百度云同步盘/b-各科详细笔记-持续更新/d
--量子场论/pic/vertex2.jpg>]) [75]
-(D:\百度云同步盘\b-各科详细笔记-持续更新\d-量子场论\part/pa
-rt9.tex [76] [77] [78] [79]) [80]
-(D:\百度云同步盘\b-各科详细笔记-持续更新\d-量子场论\part/pa
-rt10.tex [81] [82] [83]
-Overfull \hbox (1.01022pt too wide) in paragraph at lines 99--99
-[] 
- []
-
-
-Overfull \hbox (2.12692pt too wide) in paragraph at lines 126--126
-[] 
- []
-
-[84]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 140.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 140.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\pm' on input line 140.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 140.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 140.
-
-<pic/mexican.jpg, id=1468, 252.19218pt x 165.61874pt>
-File: pic/mexican.jpg Graphic file (type jpg)
- <use pic/mexican.jpg>
-Package pdftex.def Info: pic/mexican.jpg used on input line 164.
-(pdftex.def)             Requested size: 142.26378pt x 93.42818pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[85] [86 <D:/百度云同步盘/b-各科详细笔记-持续更新/d-量子场�
-�/pic/mexican.jpg>] [87] [88] [89]
-Overfull \hbox (4.2828pt too wide) in paragraph at lines 312--314
-     \C19/song/bx/n/10/62 � \C19/song/bx/n/10/54 n \C19/song/bx/n/10/39 � \C19/
-song/bx/n/10/53 � \C19/song/bx/n/10/65 f $\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 []
-; e\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ;  []\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 []
-; \OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ;  []\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 []
-; \OT1/cmr/m/n/10 )$ \C19/song/m/n/10/48 a \C19/song/bx/n/10/56 q \C19/song/m/
-n/10/40 /\OT1/cmr/m/n/10 , \C19/song/m/n/10/47 � � \C19/song/m/n/10/61 � \C19/s
-ong/bx/n/10/41 � \C19/song/m/n/10/58 � \C19/song/bx/n/10/54 n \C19/song/bx/n/10
-/39 � $\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 u; d\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 
-;  []\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 c; s\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; 
- []\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t; b\OT1/cmr/m/n/10 )$.
- []
-
-[90] [91] [92] [93]) [94]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 58.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 58.
-
-(D:\百度云同步盘\b-各科详细笔记-持续更新\d-量子场论\qftt.au
-x)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 58.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 58.
-
-
-Package rerunfilecheck Warning: File `qftt.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `qftt.out':
-(rerunfilecheck)             Before: EC55F09CD70A89E2D022CDB0DFC2EF1D;21069
-(rerunfilecheck)             After:  B365FF58D2D9FAF155995265BF98000E;7535.
-
-LaTeX Warning: There were multiply-defined labels.
-
- ) 
+l.31 \thispagestyle
+                   {empty}%去掉本页页码
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.31 \thispagestyle
+                   {empty}%去掉本页页码
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.31 \thispagestyle
+                   {empty}%去掉本页页码
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.31 \thispagestyle
+                   {empty}%去掉本页页码
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.31 \thispagestyle
+                   {empty}%去掉本页页码
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.31 \thispagestyle
+                   {empty}%去掉本页页码
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.31 \thispagestyle
+                   {empty}%去掉本页页码
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.31 \thispagestyle
+                   {empty}%去掉本页页码
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.31 \thispagestyle
+                   {empty}%去掉本页页码
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.31 \thispagestyle
+                   {empty}%去掉本页页码
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.31 \thispagestyle
+                   {empty}%去掉本页页码
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.31 \thispagestyle
+                   {empty}%去掉本页页码
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.31 \thispagestyle
+                   {empty}%去掉本页页码
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.31 \thispagestyle
+                   {empty}%去掉本页页码
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.31 \thispagestyle
+                   {empty}%去掉本页页码
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.31 \thispagestyle
+                   {empty}%去掉本页页码
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.31 \thispagestyle
+                   {empty}%去掉本页页码
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.31 \thispagestyle
+                   {empty}%去掉本页页码
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.31 \thispagestyle
+                   {empty}%去掉本页页码
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.31 \thispagestyle
+                   {empty}%去掉本页页码
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.31 \thispagestyle
+                   {empty}%去掉本页页码
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.31 \thispagestyle
+                   {empty}%去掉本页页码
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.31 \thispagestyle
+                   {empty}%去掉本页页码
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.31 \thispagestyle
+                   {empty}%去掉本页页码
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.31 \thispagestyle
+                   {empty}%去掉本页页码
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.31 \thispagestyle
+                   {empty}%去掉本页页码
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.31 \thispagestyle
+                   {empty}%去掉本页页码
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.31 \thispagestyle
+                   {empty}%去掉本页页码
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.31 \thispagestyle
+                   {empty}%去掉本页页码
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.31 \thispagestyle
+                   {empty}%去掉本页页码
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.31 \thispagestyle
+                   {empty}%去掉本页页码
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.31 \thispagestyle
+                   {empty}%去掉本页页码
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.31 \thispagestyle
+                   {empty}%去掉本页页码
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.31 \thispagestyle
+                   {empty}%去掉本页页码
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.31 \thispagestyle
+                   {empty}%去掉本页页码
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.31 \thispagestyle
+                   {empty}%去掉本页页码
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.31 \thispagestyle
+                   {empty}%去掉本页页码
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.31 \thispagestyle
+                   {empty}%去掉本页页码
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.31 \thispagestyle
+                   {empty}%去掉本页页码
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.31 \thispagestyle
+                   {empty}%去掉本页页码
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.31 \thispagestyle
+                   {empty}%去掉本页页码
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.31 \thispagestyle
+                   {empty}%去掉本页页码
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.31 \thispagestyle
+                   {empty}%去掉本页页码
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.31 \thispagestyle
+                   {empty}%去掉本页页码
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.31 \thispagestyle
+                   {empty}%去掉本页页码
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.31 \thispagestyle
+                   {empty}%去掉本页页码
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.31 \thispagestyle
+                   {empty}%去掉本页页码
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.31 \thispagestyle
+                   {empty}%去掉本页页码
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.31 \thispagestyle
+                   {empty}%去掉本页页码
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.31 \thispagestyle
+                   {empty}%去掉本页页码
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.31 \thispagestyle
+                   {empty}%去掉本页页码
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.31 \thispagestyle
+                   {empty}%去掉本页页码
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.31 \thispagestyle
+                   {empty}%去掉本页页码
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.31 \thispagestyle
+                   {empty}%去掉本页页码
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.31 \thispagestyle
+                   {empty}%去掉本页页码
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.31 \thispagestyle
+                   {empty}%去掉本页页码
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.31 \thispagestyle
+                   {empty}%去掉本页页码
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.31 \thispagestyle
+                   {empty}%去掉本页页码
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.31 \thispagestyle
+                   {empty}%去掉本页页码
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.31 \thispagestyle
+                   {empty}%去掉本页页码
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.31 \thispagestyle
+                   {empty}%去掉本页页码
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.31 \thispagestyle
+                   {empty}%去掉本页页码
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.31 \thispagestyle
+                   {empty}%去掉本页页码
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.31 \thispagestyle
+                   {empty}%去掉本页页码
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.31 \thispagestyle
+                   {empty}%去掉本页页码
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.31 \thispagestyle
+                   {empty}%去掉本页页码
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.31 \thispagestyle
+                   {empty}%去掉本页页码
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.31 \thispagestyle
+                   {empty}%去掉本页页码
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.31 \thispagestyle
+                   {empty}%去掉本页页码
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.31 \thispagestyle
+                   {empty}%去掉本页页码
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.31 \thispagestyle
+                   {empty}%去掉本页页码
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.31 \thispagestyle
+                   {empty}%去掉本页页码
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.31 \thispagestyle
+                   {empty}%去掉本页页码
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.31 \thispagestyle
+                   {empty}%去掉本页页码
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.31 \thispagestyle
+                   {empty}%去掉本页页码
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.31 \thispagestyle
+                   {empty}%去掉本页页码
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.31 \thispagestyle
+                   {empty}%去掉本页页码
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.31 \thispagestyle
+                   {empty}%去掉本页页码
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.31 \thispagestyle
+                   {empty}%去掉本页页码
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.31 \thispagestyle
+                   {empty}%去掉本页页码
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.31 \thispagestyle
+                   {empty}%去掉本页页码
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.31 \thispagestyle
+                   {empty}%去掉本页页码
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.31 \thispagestyle
+                   {empty}%去掉本页页码
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.31 \thispagestyle
+                   {empty}%去掉本页页码
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.31 \thispagestyle
+                   {empty}%去掉本页页码
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.31 \thispagestyle
+                   {empty}%去掉本页页码
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.31 \thispagestyle
+                   {empty}%去掉本页页码
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.31 \thispagestyle
+                   {empty}%去掉本页页码
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.31 \thispagestyle
+                   {empty}%去掉本页页码
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.31 \thispagestyle
+                   {empty}%去掉本页页码
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.31 \thispagestyle
+                   {empty}%去掉本页页码
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.31 \thispagestyle
+                   {empty}%去掉本页页码
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.31 \thispagestyle
+                   {empty}%去掉本页页码
+(That makes 100 errors; please try again.) 
 Here is how much of TeX's memory you used:
- 9912 strings out of 495354
- 145593 string characters out of 3183858
- 244193 words of memory out of 3000000
- 12101 multiletter control sequences out of 15000+200000
- 60174 words of font info for 212 fonts, out of 3000000 for 9000
- 14 hyphenation exceptions out of 8191
- 29i,17n,31p,1044b,886s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/
-chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTe
-X/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun
-.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truety
-pe/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/
-CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/sim
-sun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/tru
-etype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CT
-EX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/
-simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/
-truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:
-/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chine
-se/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fon
-ts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf>
-<C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/ch
-inese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/
-fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.t
-tf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype
-/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CT
-eX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsu
-n.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truet
-ype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX
-/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/si
-msun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/tr
-uetype/chinese/simsun.ttf><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10
-.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/CTEX/MiKTeX/
-fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/CTEX/MiKTeX/fonts/type1/public/am
-sfonts/cmextra/cmex7.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cmextra/cm
-ex8.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/CTEX/MiKT
-eX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/CTEX/MiKTeX/fonts/type1/public
-/amsfonts/cm/cmmi5.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb
-><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/CTEX/MiKTeX/fonts
-/type1/public/amsfonts/cm/cmmi8.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts
-/cm/cmmib10.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cmextra/cmmib5.pfb>
-<C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cmextra/cmmib6.pfb><C:/CTEX/MiKTeX/
-fonts/type1/public/amsfonts/cmextra/cmmib7.pfb><C:/CTEX/MiKTeX/fonts/type1/publ
-ic/amsfonts/cmextra/cmmib8.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/c
-mr10.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/CTEX/MiKT
-eX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/CTEX/MiKTeX/fonts/type1/public/a
-msfonts/cm/cmr6.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:
-/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/CTEX/MiKTeX/fonts/type
-1/public/amsfonts/cm/cmsy10.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/
-cmsy5.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/CTEX/MiK
-TeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/CTEX/MiKTeX/fonts/type1/public
-/amsfonts/cm/cmsy8.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm
-10.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm7.pfb><C:/CTEX/M
-iKTeX/fonts/type1/hoekwater/rsfs/rsfs10.pfb>
-Output written on qftt.pdf (100 pages, 3026473 bytes).
-PDF statistics:
- 1934 PDF objects out of 2073 (max. 8388607)
- 745 named destinations out of 1000 (max. 500000)
- 811 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 7862 strings out of 492649
+ 111191 string characters out of 6129623
+ 198833 words of memory out of 5000000
+ 11523 multiletter control sequences out of 15000+600000
+ 14547 words of font info for 55 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 101i,6n,102p,817b,441s stack positions out of 5000i,500n,10000p,200000b,80000s
 
+!  ==> Fatal error occurred, no output PDF file produced!
