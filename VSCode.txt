@@ -1,0 +1,126 @@
+{
+    "editor.fontSize": 10,
+    "files.autoGuessEncoding": true,
+    "git.confirmSync": false,
+    "git.enableSmartCommit": true,
+    "git.ignoreMissingGitWarning": true,
+    "latex-preview.command": "xelatex",
+    "latex-workshop.latex.clean.enabled": false,
+    "latex-workshop.latex.clean.fileTypes": [
+        "*.aux",
+        "*.bbl",
+        "*.blg",
+        "*.idx",
+        "*.ind",
+        "*.lof",
+        "*.lot",
+        "*.out",
+        "*.toc",
+        "*.acn",
+        "*.acr",
+        "*.alg",
+        "*.glg",
+        "*.glo",
+        "*.gls",
+        "*.ist",
+        "*.fls",
+        "*.log",
+        "*.fdb_latexmk",
+        "*.gz"
+    ],
+    "latex-workshop.latex.recipes": [
+        {
+            "name": "PDFLaTeX",
+            "tools": [
+                "pdflatex"
+            ]
+        },
+        {
+            "name": "XeLaTeX",
+            "tools": [
+                "xelatex"
+            ]
+        },
+        {
+            "name": "latexmk",
+            "tools": [
+                "latexmk"
+            ]
+        },
+        {
+            "name": "BibTeX",
+            "tools": [
+                "bibtex"
+            ]
+        },
+        {
+            "name": "pdflatex -> bibtex -> pdflatex*2",
+            "tools": [
+                "pdflatex",
+                "bibtex",
+                "pdflatex",
+                "pdflatex"
+            ]
+        },
+        {
+            "name": "xelatex -> bibtex -> xelatex*2",
+            "tools": [
+                "xelatex",
+                "bibtex",
+                "xelatex",
+                "xelatex"
+            ]
+        }
+    ],
+    "latex-workshop.latex.tools": [
+        {
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "-pdf",
+                "%DOC%"
+            ],
+            "command": "latexmk",
+            "name": "latexmk"
+        },
+        {
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "%DOC%"
+            ],
+            "command": "xelatex",
+            "name": "xelatex"
+        },
+        {
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "%DOC%"
+            ],
+            "command": "pdflatex",
+            "name": "pdflatex"
+        },
+        {
+            "args": [
+                "%DOCFILE%"
+            ],
+            "command": "bibtex",
+            "name": "bibtex"
+        }
+    ],
+    "latex-workshop.view.pdf.viewer": "tab",
+    "python.pythonPath": "/Users/lee_excited/anaconda3",
+    "window.zoomLevel": 1,
+    "workbench.colorTheme": "Visual Studio Dark",
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+    "workbench.iconTheme": "vscode-icons",
+    "cSpell.userWords": [
+        "ayadi",
+        "kaddour"
+    ]
+}
